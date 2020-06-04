@@ -1,0 +1,108 @@
+6.2438 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0.992, 0.992, 0.992]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1313cfda0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x13125fcc0>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.2439 	EXP 	window1: recordFrameIntervals = False
+6.4088 	EXP 	window1: recordFrameIntervals = True
+6.5930 	EXP 	window1: recordFrameIntervals = False
+6.9275 	EXP 	Created Instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Instruction_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Remember the image pairs', units='height', win=Window(...), wrapWidth=1)
+6.9629 	EXP 	Created a_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='a_image', opacity=1.0, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+6.9645 	EXP 	Created b_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='b_image', opacity=1.0, ori=0.0, pos=array([0.3, 0. ]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+6.9655 	EXP 	Created a_image_reactivate = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image=None, interpolate=True, mask=None, maskParams=None, name='a_image_reactivate', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+6.9755 	EXP 	Created instruct_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='instruct_text', opacity=1.0, ori=0, pos=array([0. , 0.5]), rgb=array([255., 255., 255.]), text='Retrieve the associate', units='height', win=Window(...), wrapWidth=1)
+6.9935 	EXP 	Instruction_text: autoDraw = True
+7.2801 	DATA 	Keypress: space
+7.4725 	EXP 	Imported intentional_encoding.xlsx as conditions, 12 conditions, 4 params
+7.4728 	EXP 	Created sequence: sequential, trialTypes=12, nReps=1, seed=None
+7.4731 	EXP 	New trial (rep=0, index=0): OrderedDict([('trial', 1), ('image_a', 'images/flipflopsBlue.png'), ('image_b', 'images/amy_poehler_c.jpg'), ('category_b', 'face')])
+7.5590 	EXP 	Instruction_text: autoDraw = False
+7.5590 	EXP 	a_image: image = 'images/flipflopsBlue.png'
+7.5590 	EXP 	b_image: image = 'images/amy_poehler_c.jpg'
+8.0476 	EXP 	a_image: autoDraw = True
+8.0476 	EXP 	b_image: autoDraw = True
+8.9601 	EXP 	New trial (rep=0, index=1): OrderedDict([('trial', 2), ('image_a', 'images/bag_gift.png'), ('image_b', 'images/bill_gates_a.jpg'), ('category_b', 'face')])
+8.9913 	EXP 	a_image: autoDraw = False
+8.9913 	EXP 	b_image: autoDraw = False
+8.9913 	EXP 	a_image: image = 'images/bag_gift.png'
+8.9913 	EXP 	b_image: image = 'images/bill_gates_a.jpg'
+9.4759 	EXP 	a_image: autoDraw = True
+9.4759 	EXP 	b_image: autoDraw = True
+10.4602 	EXP 	New trial (rep=0, index=2): OrderedDict([('trial', 3), ('image_a', 'images/ball_8.png'), ('image_b', 'images/courtney_cox_c.jpg'), ('category_b', 'face')])
+10.4922 	EXP 	a_image: autoDraw = False
+10.4922 	EXP 	b_image: autoDraw = False
+10.4922 	EXP 	a_image: autoDraw = False
+10.4922 	EXP 	b_image: autoDraw = False
+10.4922 	EXP 	a_image: image = 'images/ball_8.png'
+10.4922 	EXP 	b_image: image = 'images/courtney_cox_c.jpg'
+10.9755 	EXP 	a_image: autoDraw = True
+10.9755 	EXP 	b_image: autoDraw = True
+11.9593 	EXP 	New trial (rep=0, index=3): OrderedDict([('trial', 4), ('image_a', 'images/ball_baseball.png'), ('image_b', 'images/dakota_fanning_c.jpg'), ('category_b', 'face')])
+11.9909 	EXP 	a_image: autoDraw = False
+11.9909 	EXP 	b_image: autoDraw = False
+11.9909 	EXP 	a_image: autoDraw = False
+11.9909 	EXP 	b_image: autoDraw = False
+11.9909 	EXP 	a_image: image = 'images/ball_baseball.png'
+11.9909 	EXP 	b_image: image = 'images/dakota_fanning_c.jpg'
+12.4747 	EXP 	a_image: autoDraw = True
+12.4747 	EXP 	b_image: autoDraw = True
+13.4587 	EXP 	New trial (rep=0, index=4): OrderedDict([('trial', 5), ('image_a', 'images/balloon.jpg'), ('image_b', 'images/drew_barrymore_c.jpg'), ('category_b', 'face')])
+13.4919 	EXP 	a_image: autoDraw = False
+13.4919 	EXP 	b_image: autoDraw = False
+13.4919 	EXP 	a_image: autoDraw = False
+13.4919 	EXP 	b_image: autoDraw = False
+13.4919 	EXP 	a_image: image = 'images/balloon.jpg'
+13.4919 	EXP 	b_image: image = 'images/drew_barrymore_c.jpg'
+13.9743 	EXP 	a_image: autoDraw = True
+13.9743 	EXP 	b_image: autoDraw = True
+14.9589 	EXP 	New trial (rep=0, index=5): OrderedDict([('trial', 6), ('image_a', 'images/bandage.jpg'), ('image_b', 'images/ellen_degeneres_b.jpg'), ('category_b', 'face')])
+14.9937 	EXP 	a_image: autoDraw = False
+14.9937 	EXP 	b_image: autoDraw = False
+14.9937 	EXP 	a_image: autoDraw = False
+14.9937 	EXP 	b_image: autoDraw = False
+14.9937 	EXP 	a_image: image = 'images/bandage.jpg'
+14.9937 	EXP 	b_image: image = 'images/ellen_degeneres_b.jpg'
+15.4745 	EXP 	a_image: autoDraw = True
+15.4745 	EXP 	b_image: autoDraw = True
+16.4590 	EXP 	New trial (rep=0, index=6): OrderedDict([('trial', 7), ('image_a', 'images/barrel.jpg'), ('image_b', 'images/emma_stone.jpg'), ('category_b', 'face')])
+16.5084 	EXP 	a_image: autoDraw = False
+16.5084 	EXP 	b_image: autoDraw = False
+16.5084 	EXP 	a_image: autoDraw = False
+16.5084 	EXP 	b_image: autoDraw = False
+16.5084 	EXP 	a_image: image = 'images/barrel.jpg'
+16.5084 	EXP 	b_image: image = 'images/emma_stone.jpg'
+16.9917 	EXP 	a_image: autoDraw = True
+16.9917 	EXP 	b_image: autoDraw = True
+17.9752 	EXP 	New trial (rep=0, index=7): OrderedDict([('trial', 8), ('image_a', 'images/bathrobe.png'), ('image_b', 'images/emma_watson.jpg'), ('category_b', 'face')])
+18.0081 	EXP 	a_image: autoDraw = False
+18.0081 	EXP 	b_image: autoDraw = False
+18.0081 	EXP 	a_image: image = 'images/bathrobe.png'
+18.0081 	EXP 	b_image: image = 'images/emma_watson.jpg'
+18.4907 	EXP 	a_image: autoDraw = True
+18.4907 	EXP 	b_image: autoDraw = True
+19.4757 	EXP 	New trial (rep=0, index=8): OrderedDict([('trial', 9), ('image_a', 'images/beetle.png'), ('image_b', 'images/george_clooney_a.jpg'), ('category_b', 'face')])
+19.5084 	EXP 	a_image: autoDraw = False
+19.5084 	EXP 	b_image: autoDraw = False
+19.5084 	EXP 	a_image: image = 'images/beetle.png'
+19.5084 	EXP 	b_image: image = 'images/george_clooney_a.jpg'
+19.9911 	EXP 	a_image: autoDraw = True
+19.9911 	EXP 	b_image: autoDraw = True
+20.9750 	EXP 	New trial (rep=0, index=9): OrderedDict([('trial', 10), ('image_a', 'images/bench_park.png'), ('image_b', 'images/gwen_stefani_c.jpg'), ('category_b', 'face')])
+21.0077 	EXP 	a_image: autoDraw = False
+21.0077 	EXP 	b_image: autoDraw = False
+21.0077 	EXP 	a_image: image = 'images/bench_park.png'
+21.0077 	EXP 	b_image: image = 'images/gwen_stefani_c.jpg'
+21.4908 	EXP 	a_image: autoDraw = True
+21.4908 	EXP 	b_image: autoDraw = True
+22.4755 	EXP 	New trial (rep=0, index=10): OrderedDict([('trial', 11), ('image_a', 'images/bib.png'), ('image_b', 'images/hillary_clinton_a.jpg'), ('category_b', 'face')])
+22.5743 	EXP 	a_image: autoDraw = False
+22.5743 	EXP 	b_image: autoDraw = False
+22.5743 	EXP 	a_image: image = 'images/bib.png'
+22.5743 	EXP 	b_image: image = 'images/hillary_clinton_a.jpg'
+23.0584 	EXP 	a_image: autoDraw = True
+23.0584 	EXP 	b_image: autoDraw = True
+23.9752 	EXP 	New trial (rep=0, index=11): OrderedDict([('trial', 12), ('image_a', 'images/bird_parrot.png'), ('image_b', 'images/jackie_kennedy_a.jpg'), ('category_b', 'face')])
+24.0082 	EXP 	a_image: autoDraw = False
+24.0082 	EXP 	b_image: autoDraw = False
+24.0082 	EXP 	a_image: image = 'images/bird_parrot.png'
+24.0082 	EXP 	b_image: image = 'images/jackie_kennedy_a.jpg'
+24.4917 	EXP 	a_image: autoDraw = True
+24.4917 	EXP 	b_image: autoDraw = True
+25.4891 	EXP 	Imported test_encoding.xlsx as conditions, 48 conditions, 6 params
+25.7619 	EXP 	window1: mouseVisible = True

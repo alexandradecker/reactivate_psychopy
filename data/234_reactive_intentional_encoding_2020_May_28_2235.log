@@ -1,0 +1,215 @@
+11.5268 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0.992, 0.992, 0.992]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x131342ba8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1311d1ac8>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.5269 	EXP 	window1: recordFrameIntervals = False
+11.6924 	EXP 	window1: recordFrameIntervals = True
+11.8757 	EXP 	window1: recordFrameIntervals = False
+12.2022 	EXP 	Created Instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Instruction_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Remember the image pairs', units='height', win=Window(...), wrapWidth=1)
+12.2365 	EXP 	Created a_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='a_image', opacity=1.0, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+12.2380 	EXP 	Created b_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='b_image', opacity=1.0, ori=0.0, pos=array([0.3, 0. ]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+12.2603 	EXP 	Instruction_text: autoDraw = True
+21.1552 	EXP 	Imported intentional_encoding.xlsx as conditions, 48 conditions, 6 params
+21.1556 	EXP 	Created sequence: sequential, trialTypes=48, nReps=1, seed=None
+21.1560 	EXP 	New trial (rep=0, index=0): OrderedDict([('trial', 1), ('image_a', 'images/flipflopsBlue.png'), ('image_b', 'images/amy_poehler_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+21.2237 	DATA 	Keypress: space
+21.2390 	EXP 	Instruction_text: autoDraw = False
+21.2390 	EXP 	a_image: image = 'images/flipflopsBlue.png'
+21.2390 	EXP 	b_image: image = 'images/amy_poehler_c.jpg'
+21.7396 	EXP 	a_image: autoDraw = True
+21.7396 	EXP 	b_image: autoDraw = True
+25.6571 	EXP 	New trial (rep=0, index=1): OrderedDict([('trial', 2), ('image_a', 'images/bag_gift.png'), ('image_b', 'images/bill_gates_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+25.6896 	EXP 	a_image: autoDraw = False
+25.6896 	EXP 	b_image: autoDraw = False
+25.6896 	EXP 	a_image: image = 'images/bag_gift.png'
+25.6896 	EXP 	b_image: image = 'images/bill_gates_a.jpg'
+26.1727 	EXP 	a_image: autoDraw = True
+26.1727 	EXP 	b_image: autoDraw = True
+30.1586 	EXP 	New trial (rep=0, index=2): OrderedDict([('trial', 3), ('image_a', 'images/ball_8.png'), ('image_b', 'images/courtney_cox_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+30.1902 	EXP 	a_image: autoDraw = False
+30.1902 	EXP 	b_image: autoDraw = False
+30.1902 	EXP 	a_image: image = 'images/ball_8.png'
+30.1902 	EXP 	b_image: image = 'images/courtney_cox_c.jpg'
+30.6725 	EXP 	a_image: autoDraw = True
+30.6725 	EXP 	b_image: autoDraw = True
+34.6560 	EXP 	New trial (rep=0, index=3): OrderedDict([('trial', 4), ('image_a', 'images/ball_baseball.png'), ('image_b', 'images/dakota_fanning_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+34.6894 	EXP 	a_image: autoDraw = False
+34.6894 	EXP 	b_image: autoDraw = False
+34.6894 	EXP 	a_image: image = 'images/ball_baseball.png'
+34.6894 	EXP 	b_image: image = 'images/dakota_fanning_c.jpg'
+35.1729 	EXP 	a_image: autoDraw = True
+35.1729 	EXP 	b_image: autoDraw = True
+39.1561 	EXP 	New trial (rep=0, index=4): OrderedDict([('trial', 5), ('image_a', 'images/balloon.jpg'), ('image_b', 'images/drew_barrymore_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+39.1890 	EXP 	a_image: autoDraw = False
+39.1890 	EXP 	b_image: autoDraw = False
+39.1890 	EXP 	a_image: image = 'images/balloon.jpg'
+39.1890 	EXP 	b_image: image = 'images/drew_barrymore_c.jpg'
+39.6728 	EXP 	a_image: autoDraw = True
+39.6728 	EXP 	b_image: autoDraw = True
+43.6571 	EXP 	New trial (rep=0, index=5): OrderedDict([('trial', 6), ('image_a', 'images/bandage.jpg'), ('image_b', 'images/ellen_degeneres_b.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+43.6932 	EXP 	a_image: autoDraw = False
+43.6932 	EXP 	b_image: autoDraw = False
+43.6932 	EXP 	a_image: image = 'images/bandage.jpg'
+43.6932 	EXP 	b_image: image = 'images/ellen_degeneres_b.jpg'
+44.1727 	EXP 	a_image: autoDraw = True
+44.1727 	EXP 	b_image: autoDraw = True
+48.1572 	EXP 	New trial (rep=0, index=6): OrderedDict([('trial', 7), ('image_a', 'images/barrel.jpg'), ('image_b', 'images/emma_stone.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+48.2059 	EXP 	a_image: autoDraw = False
+48.2059 	EXP 	b_image: autoDraw = False
+48.2059 	EXP 	a_image: image = 'images/barrel.jpg'
+48.2059 	EXP 	b_image: image = 'images/emma_stone.jpg'
+48.6894 	EXP 	a_image: autoDraw = True
+48.6894 	EXP 	b_image: autoDraw = True
+52.6576 	EXP 	New trial (rep=0, index=7): OrderedDict([('trial', 8), ('image_a', 'images/bathrobe.png'), ('image_b', 'images/emma_watson.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+52.6896 	EXP 	a_image: autoDraw = False
+52.6896 	EXP 	b_image: autoDraw = False
+52.6896 	EXP 	a_image: image = 'images/bathrobe.png'
+52.6896 	EXP 	b_image: image = 'images/emma_watson.jpg'
+53.1729 	EXP 	a_image: autoDraw = True
+53.1729 	EXP 	b_image: autoDraw = True
+57.1574 	EXP 	New trial (rep=0, index=8): OrderedDict([('trial', 9), ('image_a', 'images/beetle.png'), ('image_b', 'images/george_clooney_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+57.1893 	EXP 	a_image: autoDraw = False
+57.1893 	EXP 	b_image: autoDraw = False
+57.1893 	EXP 	a_image: image = 'images/beetle.png'
+57.1893 	EXP 	b_image: image = 'images/george_clooney_a.jpg'
+57.6729 	EXP 	a_image: autoDraw = True
+57.6729 	EXP 	b_image: autoDraw = True
+61.6572 	EXP 	New trial (rep=0, index=9): OrderedDict([('trial', 10), ('image_a', 'images/bench_park.png'), ('image_b', 'images/gwen_stefani_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+61.6887 	EXP 	a_image: autoDraw = False
+61.6887 	EXP 	b_image: autoDraw = False
+61.6887 	EXP 	a_image: image = 'images/bench_park.png'
+61.6887 	EXP 	b_image: image = 'images/gwen_stefani_c.jpg'
+62.1728 	EXP 	a_image: autoDraw = True
+62.1728 	EXP 	b_image: autoDraw = True
+66.1570 	EXP 	New trial (rep=0, index=10): OrderedDict([('trial', 11), ('image_a', 'images/bib.png'), ('image_b', 'images/hillary_clinton_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+66.1924 	EXP 	a_image: autoDraw = False
+66.1924 	EXP 	b_image: autoDraw = False
+66.1924 	EXP 	a_image: image = 'images/bib.png'
+66.1924 	EXP 	b_image: image = 'images/hillary_clinton_a.jpg'
+66.6726 	EXP 	a_image: autoDraw = True
+66.6726 	EXP 	b_image: autoDraw = True
+70.6572 	EXP 	New trial (rep=0, index=11): OrderedDict([('trial', 12), ('image_a', 'images/bird_parrot.png'), ('image_b', 'images/jackie_kennedy_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+70.6890 	EXP 	a_image: autoDraw = False
+70.6890 	EXP 	b_image: autoDraw = False
+70.6890 	EXP 	a_image: image = 'images/bird_parrot.png'
+70.6890 	EXP 	b_image: image = 'images/jackie_kennedy_a.jpg'
+71.1727 	EXP 	a_image: autoDraw = True
+71.1727 	EXP 	b_image: autoDraw = True
+75.1568 	EXP 	New trial (rep=0, index=12): OrderedDict([('trial', 13), ('image_a', 'images/blankets.jpg'), ('image_b', 'images/james_franco_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+75.2392 	EXP 	a_image: autoDraw = False
+75.2392 	EXP 	b_image: autoDraw = False
+75.2392 	EXP 	a_image: image = 'images/blankets.jpg'
+75.2392 	EXP 	b_image: image = 'images/james_franco_c.jpg'
+75.7054 	EXP 	a_image: autoDraw = True
+75.7054 	EXP 	b_image: autoDraw = True
+79.6568 	EXP 	New trial (rep=0, index=13): OrderedDict([('trial', 14), ('image_a', 'images/boar.png'), ('image_b', 'images/jamie_foxx_b.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+79.6887 	EXP 	a_image: autoDraw = False
+79.6887 	EXP 	b_image: autoDraw = False
+79.6887 	EXP 	a_image: image = 'images/boar.png'
+79.6887 	EXP 	b_image: image = 'images/jamie_foxx_b.jpg'
+80.1725 	EXP 	a_image: autoDraw = True
+80.1725 	EXP 	b_image: autoDraw = True
+84.1570 	EXP 	New trial (rep=0, index=14): OrderedDict([('trial', 15), ('image_a', 'images/boat_sail.png'), ('image_b', 'images/queen_elizabeth_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+84.1891 	EXP 	a_image: autoDraw = False
+84.1891 	EXP 	b_image: autoDraw = False
+84.1891 	EXP 	a_image: image = 'images/boat_sail.png'
+84.1891 	EXP 	b_image: image = 'images/queen_elizabeth_a.jpg'
+84.6724 	EXP 	a_image: autoDraw = True
+84.6724 	EXP 	b_image: autoDraw = True
+88.6570 	EXP 	New trial (rep=0, index=15): OrderedDict([('trial', 16), ('image_a', 'images/carton_eggs.jpg'), ('image_b', 'images/jennifer_aniston_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+88.6881 	EXP 	a_image: autoDraw = False
+88.6881 	EXP 	b_image: autoDraw = False
+88.6881 	EXP 	a_image: image = 'images/carton_eggs.jpg'
+88.6881 	EXP 	b_image: image = 'images/jennifer_aniston_a.jpg'
+89.1725 	EXP 	a_image: autoDraw = True
+89.1725 	EXP 	b_image: autoDraw = True
+93.1569 	EXP 	New trial (rep=0, index=16): OrderedDict([('trial', 17), ('image_a', 'images/cashregister.png'), ('image_b', 'images/jimmy_fallon.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+93.1928 	EXP 	a_image: autoDraw = False
+93.1928 	EXP 	b_image: autoDraw = False
+93.1928 	EXP 	a_image: image = 'images/cashregister.png'
+93.1928 	EXP 	b_image: image = 'images/jimmy_fallon.jpg'
+93.6725 	EXP 	a_image: autoDraw = True
+93.6725 	EXP 	b_image: autoDraw = True
+97.6568 	EXP 	New trial (rep=0, index=17): OrderedDict([('trial', 18), ('image_a', 'images/castle_sand.png'), ('image_b', 'images/julia_roberts_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+97.6889 	EXP 	a_image: autoDraw = False
+97.6889 	EXP 	b_image: autoDraw = False
+97.6889 	EXP 	a_image: image = 'images/castle_sand.png'
+97.6889 	EXP 	b_image: image = 'images/julia_roberts_c.jpg'
+98.1719 	EXP 	a_image: autoDraw = True
+98.1719 	EXP 	b_image: autoDraw = True
+102.1568 	EXP 	New trial (rep=0, index=18): OrderedDict([('trial', 19), ('image_a', 'images/castle.png'), ('image_b', 'images/katy_perry.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+102.1903 	EXP 	a_image: autoDraw = False
+102.1903 	EXP 	b_image: autoDraw = False
+102.1903 	EXP 	a_image: image = 'images/castle.png'
+102.1903 	EXP 	b_image: image = 'images/katy_perry.jpg'
+102.6720 	EXP 	a_image: autoDraw = True
+102.6720 	EXP 	b_image: autoDraw = True
+106.6565 	EXP 	New trial (rep=0, index=19): OrderedDict([('trial', 20), ('image_a', 'images/cat.png'), ('image_b', 'images/kristen_stewart.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+106.6887 	EXP 	a_image: autoDraw = False
+106.6887 	EXP 	b_image: autoDraw = False
+106.6887 	EXP 	a_image: image = 'images/cat.png'
+106.6887 	EXP 	b_image: image = 'images/kristen_stewart.jpg'
+107.1722 	EXP 	a_image: autoDraw = True
+107.1722 	EXP 	b_image: autoDraw = True
+111.1567 	EXP 	New trial (rep=0, index=20): OrderedDict([('trial', 21), ('image_a', 'images/caterpillar_green.png'), ('image_b', 'images/mark_zuckerberg_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+111.1883 	EXP 	a_image: autoDraw = False
+111.1883 	EXP 	b_image: autoDraw = False
+111.1883 	EXP 	a_image: image = 'images/caterpillar_green.png'
+111.1883 	EXP 	b_image: image = 'images/mark_zuckerberg_c.jpg'
+111.6721 	EXP 	a_image: autoDraw = True
+111.6721 	EXP 	b_image: autoDraw = True
+115.6563 	EXP 	New trial (rep=0, index=21): OrderedDict([('trial', 22), ('image_a', 'images/cautionSignFrench.jpg'), ('image_b', 'images/michelle_obama_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+115.6880 	EXP 	a_image: autoDraw = False
+115.6880 	EXP 	b_image: autoDraw = False
+115.6880 	EXP 	a_image: image = 'images/cautionSignFrench.jpg'
+115.6880 	EXP 	b_image: image = 'images/michelle_obama_a.jpg'
+116.1720 	EXP 	a_image: autoDraw = True
+116.1720 	EXP 	b_image: autoDraw = True
+120.1594 	EXP 	New trial (rep=0, index=22): OrderedDict([('trial', 23), ('image_a', 'images/chain_rusty.png'), ('image_b', 'images/neil_patrick_harris.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+120.1922 	EXP 	a_image: autoDraw = False
+120.1922 	EXP 	b_image: autoDraw = False
+120.1922 	EXP 	a_image: image = 'images/chain_rusty.png'
+120.1922 	EXP 	b_image: image = 'images/neil_patrick_harris.jpg'
+120.6720 	EXP 	a_image: autoDraw = True
+120.6720 	EXP 	b_image: autoDraw = True
+124.6560 	EXP 	New trial (rep=0, index=23): OrderedDict([('trial', 24), ('image_a', 'images/chair_deck.jpg'), ('image_b', 'images/oprah_b.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+124.6879 	EXP 	a_image: autoDraw = False
+124.6879 	EXP 	b_image: autoDraw = False
+124.6879 	EXP 	a_image: image = 'images/chair_deck.jpg'
+124.6879 	EXP 	b_image: image = 'images/oprah_b.jpg'
+125.1716 	EXP 	a_image: autoDraw = True
+125.1716 	EXP 	b_image: autoDraw = True
+129.1563 	EXP 	New trial (rep=0, index=24): OrderedDict([('trial', 25), ('image_a', 'images/chalkboarderaser.png'), ('image_b', 'images/acropolis_c.jpg'), ('category_b', 'scene'), ('location_a', 'left'), ('Location_b', 'right')])
+129.1884 	EXP 	a_image: autoDraw = False
+129.1884 	EXP 	b_image: autoDraw = False
+129.1884 	EXP 	a_image: image = 'images/chalkboarderaser.png'
+129.1884 	EXP 	b_image: image = 'images/acropolis_c.jpg'
+129.6719 	EXP 	a_image: autoDraw = True
+129.6719 	EXP 	b_image: autoDraw = True
+133.6561 	EXP 	New trial (rep=0, index=25): OrderedDict([('trial', 26), ('image_a', 'images/champagne.jpg'), ('image_b', 'images/arches_national_park_a.jpg'), ('category_b', 'scene'), ('location_a', 'left'), ('Location_b', 'right')])
+133.6884 	EXP 	a_image: autoDraw = False
+133.6884 	EXP 	b_image: autoDraw = False
+133.6884 	EXP 	a_image: image = 'images/champagne.jpg'
+133.6884 	EXP 	b_image: image = 'images/arches_national_park_a.jpg'
+134.1718 	EXP 	a_image: autoDraw = True
+134.1718 	EXP 	b_image: autoDraw = True
+138.1559 	EXP 	New trial (rep=0, index=26): OrderedDict([('trial', 27), ('image_a', 'images/checkers_board.png'), ('image_b', 'images/cn_tower_b.jpg'), ('category_b', 'scene'), ('location_a', 'left'), ('Location_b', 'right')])
+138.2045 	EXP 	a_image: autoDraw = False
+138.2045 	EXP 	b_image: autoDraw = False
+138.2045 	EXP 	a_image: image = 'images/checkers_board.png'
+138.2045 	EXP 	b_image: image = 'images/cn_tower_b.jpg'
+138.6883 	EXP 	a_image: autoDraw = True
+138.6883 	EXP 	b_image: autoDraw = True
+142.6561 	EXP 	New trial (rep=0, index=27): OrderedDict([('trial', 28), ('image_a', 'images/cheeseGouda.png'), ('image_b', 'images/eiffel_tower_c.jpg'), ('category_b', 'scene'), ('location_a', 'left'), ('Location_b', 'right')])
+142.6880 	EXP 	a_image: autoDraw = False
+142.6880 	EXP 	b_image: autoDraw = False
+142.6880 	EXP 	a_image: image = 'images/cheeseGouda.png'
+142.6880 	EXP 	b_image: image = 'images/eiffel_tower_c.jpg'
+143.1715 	EXP 	a_image: autoDraw = True
+143.1715 	EXP 	b_image: autoDraw = True
+147.1562 	EXP 	New trial (rep=0, index=28): OrderedDict([('trial', 29), ('image_a', 'images/chest_toys.png'), ('image_b', 'images/empire_state_building_a.jpg'), ('category_b', 'scene'), ('location_a', 'left'), ('Location_b', 'right')])
+147.1873 	EXP 	a_image: autoDraw = False
+147.1873 	EXP 	b_image: autoDraw = False
+147.1873 	EXP 	a_image: image = 'images/chest_toys.png'
+147.1873 	EXP 	b_image: image = 'images/empire_state_building_a.jpg'
+147.6714 	EXP 	a_image: autoDraw = True
+147.6714 	EXP 	b_image: autoDraw = True
+149.3746 	DATA 	Keypress: escape
+149.7989 	EXP 	window1: mouseVisible = True

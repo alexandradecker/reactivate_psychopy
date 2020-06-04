@@ -1,0 +1,2 @@
+﻿trial,image_a,image_b,category_b,location_a,Location_b,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Instruction_text.started,Instruction_text.stopped,a_image.started,a_image.stopped,b_image.started,b_image.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+1,images/flipflopsBlue.png,images/amy_poehler_c.jpg,face,left,right,0,0,0,0,6.205423702995176,None,7.287683059999836,None,7.287683059999836,None,k,001,2020_May_28_2222,reactive_intentional_encoding,3.2.4,60.06228687497907,

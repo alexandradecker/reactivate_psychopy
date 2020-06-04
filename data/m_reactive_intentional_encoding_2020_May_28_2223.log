@@ -1,0 +1,35 @@
+5.3452 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x131489b38>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x13121ea58>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.3453 	EXP 	window1: recordFrameIntervals = False
+5.5452 	EXP 	window1: recordFrameIntervals = True
+5.7446 	WARNING 	t of last frame was 33.57ms (=1/29)
+5.9118 	EXP 	window1: recordFrameIntervals = False
+6.2359 	EXP 	Created Instruction_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Instruction_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Remember the image pairs', units='height', win=Window(...), wrapWidth=1)
+6.2700 	EXP 	Created a_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='a_image', opacity=1.0, ori=0.0, pos=array([0.2, 0. ]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+6.2717 	EXP 	Created b_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='b_image', opacity=1.0, ori=0.0, pos=array([5., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+6.2943 	EXP 	Instruction_text: autoDraw = True
+7.2609 	EXP 	Imported intentional_encoding.xlsx as conditions, 48 conditions, 6 params
+7.2613 	EXP 	Created sequence: sequential, trialTypes=48, nReps=48, seed=None
+7.2619 	EXP 	New trial (rep=0, index=0): OrderedDict([('trial', 1), ('image_a', 'images/flipflopsBlue.png'), ('image_b', 'images/amy_poehler_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+7.3329 	DATA 	Keypress: space
+7.3445 	EXP 	Instruction_text: autoDraw = False
+7.3445 	EXP 	a_image: image = 'images/flipflopsBlue.png'
+7.3445 	EXP 	b_image: image = 'images/amy_poehler_c.jpg'
+7.8471 	EXP 	a_image: autoDraw = True
+7.8471 	EXP 	b_image: autoDraw = True
+10.7513 	EXP 	New trial (rep=0, index=1): OrderedDict([('trial', 2), ('image_a', 'images/bag_gift.png'), ('image_b', 'images/bill_gates_a.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+10.7817 	EXP 	a_image: autoDraw = False
+10.7817 	EXP 	b_image: autoDraw = False
+10.7817 	EXP 	a_image: image = 'images/bag_gift.png'
+10.7817 	EXP 	b_image: image = 'images/bill_gates_a.jpg'
+11.2633 	EXP 	a_image: autoDraw = True
+11.2633 	EXP 	b_image: autoDraw = True
+13.6515 	DATA 	Keypress: space
+14.2493 	EXP 	New trial (rep=0, index=2): OrderedDict([('trial', 3), ('image_a', 'images/ball_8.png'), ('image_b', 'images/courtney_cox_c.jpg'), ('category_b', 'face'), ('location_a', 'left'), ('Location_b', 'right')])
+14.2801 	EXP 	a_image: autoDraw = False
+14.2801 	EXP 	b_image: autoDraw = False
+14.2801 	EXP 	a_image: image = 'images/ball_8.png'
+14.2801 	EXP 	b_image: image = 'images/courtney_cox_c.jpg'
+14.7628 	EXP 	a_image: autoDraw = True
+14.7628 	EXP 	b_image: autoDraw = True
+15.2487 	DATA 	Keypress: escape
+15.6679 	EXP 	window1: mouseVisible = True
