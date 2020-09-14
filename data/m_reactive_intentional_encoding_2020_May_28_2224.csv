@@ -1,3 +1,0 @@
-﻿trial,image_a,image_b,category_b,location_a,Location_b,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Instruction_text.started,Instruction_text.stopped,a_image.started,a_image.stopped,b_image.started,b_image.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-1,images/flipflopsBlue.png,images/amy_poehler_c.jpg,face,left,right,0,0,0,0,6.592687822994776,None,7.69271025400667,None,7.69271025400667,None,m,001,2020_May_28_2224,reactive_intentional_encoding,3.2.4,59.94275407172289,
-2,images/bag_gift.png,images/bill_gates_a.jpg,face,left,right,0,1,1,1,,,11.115816185003496,None,11.115816185003496,None,m,001,2020_May_28_2224,reactive_intentional_encoding,3.2.4,59.94275407172289,

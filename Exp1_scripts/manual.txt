@@ -1,0 +1,34 @@
+My script that I ran Scott's scripts from: create_ordered_stim.py; his functions are run from this file.
+
+Function 1: For properly pairing object-scene and object-face pairs and assigning them to lists.
+
+File: list_assignment.py
+Function: group(intentional_encoding_test.xlsx)
+
+Description: The file list_assignment.py contains a function at the end called group(file). This function takes in a file with the columns Trial, ImageA, imageB, categoryB, and listNum. This function pseudorandomizses the list (shuffles the order of the stimuli!) so that there are random a-b pairs; and so that each ab pair is assigned to one of 4 lists. There are 12 AB pairs in each list and importantly 6 of the ab pairs are object-scene and six are object-face pairs.
+
+Note: this function didn't work after checking; instead use the R file called create_intentional_encoding.Rmd
+
+Function 2: 
+File: reorder_test_set.py
+
+Description: This file contains the function generate_test_set which creates the file for the test that occurs after intentional encoding. This function takes in the file generated from the group() function above as well as a test file that contains a file with 6 columns (trial, image_a which contains 48 images from phase 1 during intentional encoding), the correct_category_pair column, and location_1, 2, 3. The file it takes as input has all of the correct_images in location_1 column, but ideally the correct image should appear in different locations across the task. (Location2 and location3) as well. This function shuffles them so they appear in different locations.
+
+Link for further description:
+https://www.notion.so/alexandradecker/Copy-of-Generate-the-xlsx-files-for-the-reactivate-study-4b26626911b9405ebfad2b5823219fc1
+
+
+Function 3:
+
+generate_test_set(list_num_file, test_file) this function produces test.xlsx under your current directory.
+
+Function: generate_final_test
+
+Description: This function will take in the intentional_encoding_test file as well as a file containing all of the images that will be tested during the memory test.
+
+
+phase 3: generate_final_test(intentional_encoding_file, final_memory_test_file) this function produces final_test.xlsx under your current directory
+
+
+
+

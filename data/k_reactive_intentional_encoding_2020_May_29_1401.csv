@@ -1,6 +1,0 @@
-﻿trial,image_a,image_b,category_b,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Instruction_text.started,Instruction_text.stopped,a_image.started,a_image.stopped,b_image.started,b_image.stopped,participant,sex,age,,date,expName,psychopyVersion,frameRate,
-1,images/flipflopsBlue.png,images/amy_poehler_c.jpg,face,0,0,0,0,5.995056817002478,None,7.61571524500323,None,7.61571524500323,None,k,001,,,2020_May_29_1401,reactive_intentional_encoding,3.2.4,59.831339046631705,
-2,images/bag_gift.png,images/bill_gates_a.jpg,face,0,1,1,1,,,9.078020065004239,None,9.078020065004239,None,k,001,,,2020_May_29_1401,reactive_intentional_encoding,3.2.4,59.831339046631705,
-3,images/ball_8.png,images/courtney_cox_c.jpg,face,0,2,2,2,,,10.577250614005607,None,10.577250614005607,None,k,001,,,2020_May_29_1401,reactive_intentional_encoding,3.2.4,59.831339046631705,
-4,images/ball_baseball.png,images/dakota_fanning_c.jpg,face,0,3,3,3,,,12.077644310003961,None,12.077644310003961,None,k,001,,,2020_May_29_1401,reactive_intentional_encoding,3.2.4,59.831339046631705,
-5,images/balloon.jpg,images/drew_barrymore_c.jpg,face,0,4,4,4,,,13.533393762001651,None,13.533393762001651,None,k,001,,,2020_May_29_1401,reactive_intentional_encoding,3.2.4,59.831339046631705,

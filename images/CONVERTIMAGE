@@ -1,0 +1,81 @@
+import os
+os.chdir('/Users/alexandradecker/Desktop/Research/outside project/sustainedAttention/stimuli')
+
+import pandas as pd
+trialsDf = pd.read_csv('shuffledDF.csv')
+
+from PIL import Image
+i = 10
+thisImage = trialsDf.loc[i, :]
+imageName = '1bear_polarbear.png'
+
+for i, thisImage in trialsDf.iterrows():
+    #print thisImage['stimulus']
+    imageName = thisImage['stimulus']
+    # imageName = 'mousepad.jpg'
+    #imageNameNew = 'new_'+imageName
+    imageNameNew = imageName.replace('.png', '.jpg')
+    image = Image.open(imageName)
+    image.save(imageNameNew)
+    
+    if os.stat(imageName).st_size <= 150000:
+        image.save(imageNameNew, optimize=True, quality=99)
+    else:
+        fileSize = os.stat(imageName).st_size
+        # image=image.resize((int(image.size[0] * 0.5), int(image.size[1] * 0.5)))
+        image.save('stimulusResized/' + imageNameNew, optimize=True, quality=50)
+        #fileSize = os.stat(imageNameNew).st_size
+        
+fileSize = os.stat(imageName.st_size)
+while fileSize >= 100000:
+    image.save(imageNameNew, optimize=Fals, quality=30)
+    fileSize = os.stat(imageNameNew).st_size
+    
+    
+
+
+
+
+
+
+for imageI in os.listdir("."):
+    if '.png' in imageI:
+        # print imageI
+        imageNameNew = imageI.replace('.png', '.jpg')
+        os.rename(os.getcwd() + os.path.sep + imageI, os.getcwd() + os.path.sep + imageNameNew)
+
+
+imageI = 'lionWalking.jpg'
+
+for imageI in os.listdir("."):
+    if any(x in imageI for x in ['.jpg', '.png']):
+        # print(imageI)
+        image = Image.open(imageI)
+        # image.size
+        
+        if image.size[1] < 400:
+            image.save('stimulusResized/' + imageI, quality=100)
+        else:
+            scaleFactor = float(700) / float(image.size[1])
+            imageResized = image.resize((int(image.size[0] * scaleFactor), int(image.size[1] * scaleFactor)), Image.ANTIALIAS)
+            imageResized.save('stimulusResized/' + imageI, subsampling=0, quality=100)
+            
+
+
+
+if image.size[1] < 700:
+    image.save('stimulusResized/' + imageI, quality=100)
+else:
+    scaleFactor = float(700) / float(image.size[1])
+    imageResized = image.resize((int(image.size[0] * scaleFactor), int(image.size[1] * scaleFactor)), Image.ANTIALIAS)
+    imageResized.save('stimulusResized/' + imageI, subsampling=0, quality=100)
+
+
+
+if any(x in str for x in a):
+
+
+any(x in 'assdfads.png' for x in ['jpg', 'png'])
+
+    
+

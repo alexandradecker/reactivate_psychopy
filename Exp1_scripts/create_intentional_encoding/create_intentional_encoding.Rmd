@@ -1,0 +1,200 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r set working directory}
+library(data.table); library(dtplyr); library(tidyr); library(tidyverse)
+setwd('/Users/alexandradecker/Dropbox/Projects/reactivate/trialorder')
+```
+
+Read intentional encoding file; ensure each stimulus is unique
+```{r read intentional encoding file}
+list.files()
+df <- fread("1_intentional_encoding.csv") # this file contains ImageA, ImageB, CategoryB and ImageC
+
+df[, n_distinct(ImageA)]
+df[, n_distinct(ImageB)]
+df[, n_distinct(ImageC)]
+combined_stims <- as.data.table(x = c(df$ImageA, df$ImageB, df$ImageC))
+combined_stims[, n_distinct(V1)]
+```
+
+For creating a new intentional encoding file
+```{r shuffle intentional encoding file}
+df[, ImageA := sample(ImageA)]
+df[, n_distinct(ImageA)]
+rows <- sample(nrow(df)) #shuffle the rows
+df <- df[rows,]
+df <- df%>%arrange(CategoryB)
+df[, ListNum := rep(x  = c(1:4), times = 12)]
+df <- df%>%arrange(ListNum)
+
+rows <- sample(nrow(df))
+rows1 <- sample(1:12)
+rows2 <- sample(13:24)
+rows3 <- sample(25:36)
+rows4 <- sample(37:48)
+rows <- c(rows1, rows2, rows3, rows4)
+
+df <- df[rows,]
+df[, Trial:= 1:.N]
+df
+write.csv(file = "4_intentional_encoding.csv", x = df)
+```
+
+Create intentional encoding test file
+```{r}
+df <- fread("4_intentional_encoding.csv")
+df_test_template <- fread("intentional_encoding_test_template.csv")
+
+#check for repeats
+df_test_template[, n_distinct(location2)]
+df_test_template[, n_distinct(location3)]
+
+combined_stims <- as.data.table(x = c(df$ImageB, df_test_template$location2, df_test_template$location3))
+combined_stims[, n_distinct(V1)]
+```
+
+
+Merge intentional encoding file with location 2 and location 3 images
+```{r}
+# create new test df
+dftest_new <- cbind(df_test_template, df[, .(ImageA, location1 = ImageB, CategoryB, correct_image = ImageB, ImageC, ListNum)])
+```
+
+Check for repeats in intentional encoding test file
+```{r}
+dftest_new <- dftest_new[, .(ImageA, location1, location2, location3, CategoryB, correct_image, ImageC, ListNum)]
+combined_stims <- as.data.table(x = c(dftest_new$ImageA, dftest_new$location1, dftest_new$location2, dftest_new$location3, dftest_new$ImageC))
+combined_stims[, n_distinct(V1)]
+combined_stims[, .N, by = V1][N == 2]
+```
+
+Skip this chunk if creating intentional encoding test FINAL
+```{r}
+#shuffle location 1, 2, and 3
+dftest_new[, correct_location := rep(c(1,2,3),4), by = ListNum]
+dftest_new[correct_location == 2, `:=` (location2 = location1, location1 = location2)]
+dftest_new[correct_location == 3, `:=` (location3 = location1, location1 = location3)]
+
+
+rows1 <- sample(1:12)
+rows2 <- sample(13:24)
+rows3 <- sample(25:36)
+rows4 <- sample(37:48)
+#rows <- sample(1:48)
+rows <- c(rows1, rows2, rows3, rows4)
+dftest_new <- dftest_new[rows,]
+dftest_new[1:12]
+dftest_new[, trial := 1:.N]
+
+i <- sample(1:48, size = 1)
+dftest_new[trial == i, .(ImageA, correct_image, ImageC, ListNum)]
+image <- dftest_new[trial == i, .(ImageA, correct_image, ImageC)]$ImageA
+df[ImageA == image, .(ImageA, ImageB, ImageC, ListNum)]
+
+
+#check repeats again
+dftest_new[, n_distinct(ImageA)]
+dftest_new[, n_distinct(location1)]
+dftest_new[, .N, by = location1]
+dftest_new[, n_distinct(location2)]
+dftest_new[, n_distinct(location3)]
+dftest_new[, n_distinct(ImageC)]
+
+combined_stims <- as.data.table(x = c(dftest_new$ImageA, dftest_new$location1, dftest_new$location2, dftest_new$location3, dftest_new$ImageC))
+combined_stims[, n_distinct(V1)]
+combined_stims[, .N, by = V1][N ==2]
+
+write.csv(file = "4_intentional_encoding_test.csv", x = dftest_new)
+
+```
+
+
+Create final intentional encoding test FINAL
+```{r}
+#shuffle location 1, 2, and 3
+dftest_new[, correct_location := rep(c(1,2,3),16)]
+dftest_new[correct_location == 2, `:=` (location2 = location1, location1 = location2)]
+dftest_new[correct_location == 3, `:=` (location3 = location1, location1 = location3)]
+
+
+rows <- sample(1:48)
+dftest_new <- dftest_new[rows,]
+dftest_new[, trial := 1:.N]
+
+i <- sample(1:48, size = 1)
+dftest_new[trial == i, .(ImageA, correct_image, ImageC, ListNum)]
+image <- dftest_new[trial == i, .(ImageA, correct_image, ImageC)]$ImageA
+df[ImageA == image, .(ImageA, ImageB, ImageC, ListNum)]
+
+
+#check repeats again
+dftest_new[, n_distinct(ImageA)]
+dftest_new[, n_distinct(location1)]
+dftest_new[, .N, by = location1]
+dftest_new[, n_distinct(location2)]
+dftest_new[, n_distinct(location3)]
+dftest_new[, n_distinct(ImageC)]
+
+combined_stims <- as.data.table(x = c(dftest_new$ImageA, dftest_new$location1, dftest_new$location2, dftest_new$location3, dftest_new$ImageC))
+combined_stims[, n_distinct(V1)]
+combined_stims[, .N, by = V1][N ==2]
+
+write.csv(file = "4_intentional_encoding_test_final.csv", x = dftest_new)
+```
+
+
+Make sure two of each for 'old' images (are actually old)
+```{r}
+list.files()
+final_mem <- fread("final_memory_test.csv")
+final_mem
+final_mem[image_type != "new", ]%>%print(n=Inf)
+combined_stims <- as.data.table(x = c(dftest_new$ImageA, dftest_new$ImageC, dftest_new$correct_image, final_mem[image_type != "new"]$Image ))
+combined_stims[, .N, by = V1][N==1]
+```
+
+
+
+check that new images are all actually new
+```{r}
+list.files()
+dftest <- fread("4_intentional_encoding_test.csv")
+final_test <- fread("final_memory_test.csv")
+names(final_test); names(df_test)
+final_test%>%print(n=Inf)
+
+#all images presented at encoding are also presented at retrieval
+combined_stims <- as.data.table(x = c(dftest$ImageA, dftest$ImageC, dftest$correct_image, final_test[image_type != "new"]$Image))
+combined_stims[, n_distinct(V1), by = V1]
+combined_stims[, unique(V1)]
+
+
+combined_stims <- as.data.table(x = c(dftest$ImageA, dftest$ImageC, dftest$location1, dftest$location2, dftest$location3, final_test$Image))
+combined_stims[, n_distinct(V1), by = V1]
+combined_stims[, unique(V1)]
+```
+
+Check same images across four conditions
+```{r}
+list.files()
+dftest <- fread("1_intentional_encoding_test.csv")
+dftest2 <- fread("2_intentional_encoding_test.csv")
+dftest3 <- fread("3_intentional_encoding_test.csv")
+dftest4 <- fread("4_intentional_encoding_test.csv")
+
+
+combined_stims <- as.data.table(x = c(dftest$ImageA, dftest$ImageC, dftest$location1, dftest$location2, dftest$location3,
+                                      dftest2$ImageA, dftest2$ImageC, dftest2$location1, dftest2$location2, dftest2$location3,
+                                      dftest3$ImageA, dftest3$ImageC, dftest3$location1, dftest3$location2, dftest3$location3,
+                                      dftest4$ImageA, dftest4$ImageC, dftest4$location1, dftest4$location2, dftest4$location3))
+
+combined_stims[, unique(V1)]
+
+
+```
+

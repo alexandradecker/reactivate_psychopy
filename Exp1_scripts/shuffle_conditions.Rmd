@@ -1,0 +1,69 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+setwd("/Users/alexandradecker/Dropbox/Projects/reactivate/trialorder/")
+list.files()
+library(readxl)
+df <- read_excel("test.xlsx")
+```
+
+# paste 'image' where necessary
+```{r}
+setDT(df)
+#location1
+df[!location1 %in% c(grep(pattern = "images/", value  = T, x = location1)), .(location1)]
+df[!location1 %in% c(grep(pattern = "images/", value  = T, x = location1)), location1 := paste0("images/",location1)]
+
+#location2
+df[!location2 %in% c(grep(pattern = "images/", value  = T, x = location2)), .(location2)]
+df[!location2 %in% c(grep(pattern = "images/", value  = T, x = location2)), location2 := paste0("images/",location2)]
+df[, .(location2)]
+
+#location3
+df[!location3 %in% c(grep(pattern = "images/", value  = T, x = location3)), .(location3)]
+df[!location3 %in% c(grep(pattern = "images/", value  = T, x = location3)), location3 := paste0("images/",location3)]
+df[, .(location3)]
+
+write_csv(x = df, file = "test.csv")
+```
+
+# randomly shuffle the number of faces and scenes in each column
+```{r}
+df[, trial_num := 1:.N]
+
+trials_to_shuffle <- floor(runif(10, min=0, max=49))
+df[trial_num %in% c(trials_to_shuffle), .(location2, location1)]
+
+for (i in trials_to_shuffle) {
+  df[trial_num == i, `:=` (location2 = location1, location1 = location2)]
+}
+
+df[, .(location1, location2, location3)]
+
+```
+
+
+```{r}
+write.csv(x = df, file = "test.csv")
+```
+
+
+
+```{r}
+library(data.table); library(dtplyr); library(tidyverse)
+list.files()
+df_test <- fread("2_intentional_encoding_test.csv")
+df_incidental <- fread("2_intentional_encoding.csv")
+names(df_test); names(df_incidental)
+df_test <- left_join(df_test, df_incidental[, .(ImageA, ImageC)])
+
+write.csv(file = "2_intentional_encoding_test.csv", x = df_test )
+
+```
+
