@@ -181,20 +181,21 @@ combined_stims[, unique(V1)]
 
 Check same images across four conditions
 ```{r}
+library(readxl)
 list.files()
 dftest <- fread("1_intentional_encoding_test.csv")
-dftest2 <- fread("2_intentional_encoding_test.csv")
-dftest3 <- fread("3_intentional_encoding_test.csv")
-dftest4 <- fread("4_intentional_encoding_test.csv")
+memory <- as.data.table(read_excel("1_priming_recognition_test.xlsx"))
 
 
-combined_stims <- as.data.table(x = c(dftest$ImageA, dftest$ImageC, dftest$location1, dftest$location2, dftest$location3,
-                                      dftest2$ImageA, dftest2$ImageC, dftest2$location1, dftest2$location2, dftest2$location3,
-                                      dftest3$ImageA, dftest3$ImageC, dftest3$location1, dftest3$location2, dftest3$location3,
-                                      dftest4$ImageA, dftest4$ImageC, dftest4$location1, dftest4$location2, dftest4$location3))
-
+combined_stims <- as.data.table(x = c(dftest$ImageA, dftest$ImageC, dftest$location1, dftest$location2, dftest$location3, memory[image_type == "new"]$Image))
 combined_stims[, unique(V1)]
 
+```
 
+
+```{r}
+combined_stims[, unique(V1)]
+names(combined_stims)[1] <- "stimuli"
+write.csv(x = combined_stims, file = "to_extract_images.csv")
 ```
 
