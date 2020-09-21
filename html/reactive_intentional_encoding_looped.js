@@ -47,6 +47,9 @@ const trials_24LoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(trials_24LoopBegin, trials_24LoopScheduler);
 flowScheduler.add(trials_24LoopScheduler);
 flowScheduler.add(trials_24LoopEnd);
+flowScheduler.add(fixation_2RoutineBegin);
+flowScheduler.add(fixation_2RoutineEachFrame);
+flowScheduler.add(fixation_2RoutineEnd);
 const practice_trials_intentional_encodingLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(practice_trials_intentional_encodingLoopBegin, practice_trials_intentional_encodingLoopScheduler);
 flowScheduler.add(practice_trials_intentional_encodingLoopScheduler);
@@ -211,11 +214,11 @@ var instructions_text2_2;
 var response_2;
 var image1_2;
 var image2_2;
+var fixation_2Clock;
+var text_31;
 var trialClock;
 var imageA;
 var b_image;
-var fixation_2Clock;
-var text_31;
 var intructions_post_practice_intentional_encodingClock;
 var text_9;
 var key_resp_3;
@@ -409,6 +412,32 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -4.0 
   });
+  // Initialize components for Routine "fixation_2"
+  fixation_2Clock = new util.Clock();
+  text_31 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_31',
+    text: ' ',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('black'),  opacity: 1,
+    depth: 0.0 
+  });
+  
+  // Initialize components for Routine "fixation_2"
+  fixation_2Clock = new util.Clock();
+  text_31 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_31',
+    text: ' ',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('black'),  opacity: 1,
+    depth: 0.0 
+  });
+  
   // Initialize components for Routine "trial"
   trialClock = new util.Clock();
   imageA = new visual.ImageStim({
@@ -2680,6 +2709,9 @@ function trials_24LoopBegin(thisScheduler) {
     thisScheduler.add(instructions_firstRoutineBegin);
     thisScheduler.add(instructions_firstRoutineEachFrame);
     thisScheduler.add(instructions_firstRoutineEnd);
+    thisScheduler.add(fixation_2RoutineBegin);
+    thisScheduler.add(fixation_2RoutineEachFrame);
+    thisScheduler.add(fixation_2RoutineEnd);
     thisScheduler.add(endLoopIteration({thisScheduler, isTrials : false}));
   }
 
@@ -3684,6 +3716,83 @@ function instructions_firstRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
+var fixation_2Components;
+function fixation_2RoutineBegin() {
+  //------Prepare to start Routine 'fixation_2'-------
+  t = 0;
+  fixation_2Clock.reset(); // clock
+  frameN = -1;
+  routineTimer.add(0.500000);
+  // update component parameters for each repeat
+  // keep track of which components have finished
+  fixation_2Components = [];
+  fixation_2Components.push(text_31);
+  
+  for (const thisComponent of fixation_2Components)
+    if ('status' in thisComponent)
+      thisComponent.status = PsychoJS.Status.NOT_STARTED;
+  
+  return Scheduler.Event.NEXT;
+}
+
+var frameRemains;
+function fixation_2RoutineEachFrame() {
+  //------Loop for each frame of Routine 'fixation_2'-------
+  let continueRoutine = true; // until we're told otherwise
+  // get current time
+  t = fixation_2Clock.getTime();
+  frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+  // update/draw components on each frame
+  
+  // *text_31* updates
+  if (t >= 0.0 && text_31.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    text_31.tStart = t;  // (not accounting for frame time here)
+    text_31.frameNStart = frameN;  // exact frame index
+    text_31.setAutoDraw(true);
+  }
+
+  frameRemains = 0.0 + 0.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+  if (text_31.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+    text_31.setAutoDraw(false);
+  }
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
+  }
+  
+  // check if the Routine should terminate
+  if (!continueRoutine) {  // a component has requested a forced-end of Routine
+    return Scheduler.Event.NEXT;
+  }
+  
+  continueRoutine = false;  // reverts to True if at least one component still running
+  for (const thisComponent of fixation_2Components)
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+      continueRoutine = true;
+      break;
+    }
+  
+  // refresh the screen if continuing
+  if (continueRoutine && routineTimer.getTime() > 0) {
+    return Scheduler.Event.FLIP_REPEAT;
+  }
+  else {
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function fixation_2RoutineEnd() {
+  //------Ending Routine 'fixation_2'-------
+  for (const thisComponent of fixation_2Components) {
+    if (typeof thisComponent.setAutoDraw === 'function') {
+      thisComponent.setAutoDraw(false);
+    }
+  }
+  return Scheduler.Event.NEXT;
+}
+
 var trialComponents;
 function trialRoutineBegin() {
   //------Prepare to start Routine 'trial'-------
@@ -3705,7 +3814,7 @@ function trialRoutineBegin() {
   return Scheduler.Event.NEXT;
 }
 
-var frameRemains;
+
 function trialRoutineEachFrame() {
   //------Loop for each frame of Routine 'trial'-------
   let continueRoutine = true; // until we're told otherwise
@@ -3773,83 +3882,6 @@ function trialRoutineEachFrame() {
 function trialRoutineEnd() {
   //------Ending Routine 'trial'-------
   for (const thisComponent of trialComponents) {
-    if (typeof thisComponent.setAutoDraw === 'function') {
-      thisComponent.setAutoDraw(false);
-    }
-  }
-  return Scheduler.Event.NEXT;
-}
-
-var fixation_2Components;
-function fixation_2RoutineBegin() {
-  //------Prepare to start Routine 'fixation_2'-------
-  t = 0;
-  fixation_2Clock.reset(); // clock
-  frameN = -1;
-  routineTimer.add(0.500000);
-  // update component parameters for each repeat
-  // keep track of which components have finished
-  fixation_2Components = [];
-  fixation_2Components.push(text_31);
-  
-  for (const thisComponent of fixation_2Components)
-    if ('status' in thisComponent)
-      thisComponent.status = PsychoJS.Status.NOT_STARTED;
-  
-  return Scheduler.Event.NEXT;
-}
-
-
-function fixation_2RoutineEachFrame() {
-  //------Loop for each frame of Routine 'fixation_2'-------
-  let continueRoutine = true; // until we're told otherwise
-  // get current time
-  t = fixation_2Clock.getTime();
-  frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-  // update/draw components on each frame
-  
-  // *text_31* updates
-  if (t >= 0.0 && text_31.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    text_31.tStart = t;  // (not accounting for frame time here)
-    text_31.frameNStart = frameN;  // exact frame index
-    text_31.setAutoDraw(true);
-  }
-
-  frameRemains = 0.0 + 0.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-  if (text_31.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-    text_31.setAutoDraw(false);
-  }
-  // check for quit (typically the Esc key)
-  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
-  }
-  
-  // check if the Routine should terminate
-  if (!continueRoutine) {  // a component has requested a forced-end of Routine
-    return Scheduler.Event.NEXT;
-  }
-  
-  continueRoutine = false;  // reverts to True if at least one component still running
-  for (const thisComponent of fixation_2Components)
-    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-      continueRoutine = true;
-      break;
-    }
-  
-  // refresh the screen if continuing
-  if (continueRoutine && routineTimer.getTime() > 0) {
-    return Scheduler.Event.FLIP_REPEAT;
-  }
-  else {
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function fixation_2RoutineEnd() {
-  //------Ending Routine 'fixation_2'-------
-  for (const thisComponent of fixation_2Components) {
     if (typeof thisComponent.setAutoDraw === 'function') {
       thisComponent.setAutoDraw(false);
     }
