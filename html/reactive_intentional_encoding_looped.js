@@ -3801,7 +3801,6 @@ function trialRoutineBegin() {
   frameN = -1;
   routineTimer.add(3.500000);
   // update component parameters for each repeat
-  b_image.setImage(correct_image);
   // keep track of which components have finished
   trialComponents = [];
   trialComponents.push(imageA);
@@ -3851,6 +3850,10 @@ function trialRoutineEachFrame() {
   frameRemains = 0 + 3.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
   if (b_image.status === PsychoJS.Status.STARTED && t >= frameRemains) {
     b_image.setAutoDraw(false);
+  }
+  
+  if (b_image.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    b_image.setImage(correct_image);
   }
   // check for quit (typically the Esc key)
   if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
