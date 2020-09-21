@@ -544,8 +544,8 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_3', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 1.0, pos : [0, 0], size : 1.0,
-    color : new util.Color([1, 1, 1]), opacity : 1.0,
+    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
   });
@@ -581,8 +581,8 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 1.0, pos : [0, 0], size : 1.0,
-    color : new util.Color([1, 1, 1]), opacity : 1.0,
+    ori : 0, pos : [0, 0], size : 1.0,
+    color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
   });
@@ -590,8 +590,8 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_2', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 1.0, pos : [0, 0], size : 1.0,
-    color : new util.Color([1, 1, 1]), opacity : 1.0,
+    ori : 0, pos : [0.52, 0], size : [0.3, 0.3],
+    color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -4.0 
   });
@@ -599,8 +599,8 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_5', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 1.0, pos : [0, 0], size : 1.0,
-    color : new util.Color([1, 1, 1]), opacity : 1.0,
+    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -5.0 
   });
@@ -608,8 +608,8 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_6', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 1.0, pos : [0, 0], size : 1.0,
-    color : new util.Color([1, 1, 1]), opacity : 1.0,
+    ori : 0, pos : [0, 0], size : 1.0,
+    color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -6.0 
   });
@@ -4090,6 +4090,17 @@ function instructions_retreival_testing1RoutineBegin() {
   instructions_retreival_testing1Clock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  text_3.setColor(new util.Color('black'));
+  text_3.setPos([position_1x, position_1y]);
+  text_3.setText(instructions1);
+  text_3.setFont('Helvetica');
+  text_3.setHeight(0.03);
+  text_4.setColor(new util.Color('black'));
+  text_4.setPos([position_2x, position_2y]);
+  text_4.setText(Instructions2);
+  text_4.setFont('Helvetica');
+  text_4.setHeight(0.03);
+  image_3.setImage(Image1);
   key_resp.keys = undefined;
   key_resp.rt = undefined;
   // keep track of which components have finished
@@ -4124,14 +4135,6 @@ function instructions_retreival_testing1RoutineEachFrame() {
   }
 
   
-  if (text_3.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    text_3.setColor(new util.Color('black'));
-    text_3.setPos([position_1x, position_1y]);
-    text_3.setText(instructions1);
-    text_3.setFont('Helvetica');
-    text_3.setHeight(0.03);
-  }
-  
   // *text_4* updates
   if (t >= 0.0 && text_4.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4141,14 +4144,6 @@ function instructions_retreival_testing1RoutineEachFrame() {
   }
 
   
-  if (text_4.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    text_4.setColor(new util.Color('black'));
-    text_4.setPos([position_2x, position_2y]);
-    text_4.setText(Instructions2);
-    text_4.setFont('Helvetica');
-    text_4.setHeight(0.03);
-  }
-  
   // *image_3* updates
   if (t >= 0.0 && image_3.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4157,14 +4152,6 @@ function instructions_retreival_testing1RoutineEachFrame() {
     image_3.setAutoDraw(true);
   }
 
-  
-  if (image_3.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image_3.setOpacity(1);
-    image_3.setPos([0, 0]);
-    image_3.setSize([0.3, 0.3]);
-    image_3.setOri(0);
-    image_3.setImage(Image1);
-  }
   
   // *key_resp* updates
   if (t >= 0.05 && key_resp.status === PsychoJS.Status.NOT_STARTED) {
@@ -4249,11 +4236,41 @@ function instructions_retreival_testingRoutineBegin() {
   instructions_retreival_testingClock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  text_5.setColor(new util.Color('black'));
+  text_5.setPos([position_1x, position_1y]);
+  text_5.setText(instructions1);
+  text_5.setFont('Helvetica');
+  text_5.setHeight(0.03);
+  text_8.setColor(new util.Color('black'));
+  text_8.setPos([position_2x, position_2y]);
+  text_8.setText(Instructions2);
+  text_8.setFont('Helvetica');
+  text_8.setHeight(0.03);
   key_resp_2.keys = undefined;
   key_resp_2.rt = undefined;
+  image.setPos([0, 0]);
+  image.setSize([0.3, 0.3]);
+  image.setImage(Image1);
+  image_2.setImage(Image2);
+  image_5.setImage(Image3);
+  image_6.setPos([(- 0.52), 0]);
+  image_6.setSize([0.3, 0.3]);
+  image_6.setImage(Image4);
+  K.setColor(new util.Color('black'));
+  K.setPos([0, (- 0.25)]);
   K.setText(K_key);
+  K.setFont('Arial');
+  K.setHeight(0.03);
+  L.setColor(new util.Color('black'));
+  L.setPos([0.5, (- 0.25)]);
   L.setText(L_key);
+  L.setFont('Helvetica');
+  L.setHeight(0.03);
+  J.setColor(new util.Color('black'));
+  J.setPos([(- 0.5), (- 0.25)]);
   J.setText(J_key);
+  J.setFont('Helvetica');
+  J.setHeight(0.03);
   // keep track of which components have finished
   instructions_retreival_testingComponents = [];
   instructions_retreival_testingComponents.push(text_5);
@@ -4292,14 +4309,6 @@ function instructions_retreival_testingRoutineEachFrame() {
   }
 
   
-  if (text_5.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    text_5.setColor(new util.Color('black'));
-    text_5.setPos([position_1x, position_1y]);
-    text_5.setText(instructions1);
-    text_5.setFont('Helvetica');
-    text_5.setHeight(0.03);
-  }
-  
   // *text_8* updates
   if (t >= 0.0 && text_8.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4308,14 +4317,6 @@ function instructions_retreival_testingRoutineEachFrame() {
     text_8.setAutoDraw(true);
   }
 
-  
-  if (text_8.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    text_8.setColor(new util.Color('black'));
-    text_8.setPos([position_2x, position_2y]);
-    text_8.setText(Instructions2);
-    text_8.setFont('Helvetica');
-    text_8.setHeight(0.03);
-  }
   
   // *key_resp_2* updates
   if (t >= 0.3 && key_resp_2.status === PsychoJS.Status.NOT_STARTED) {
@@ -4356,14 +4357,6 @@ function instructions_retreival_testingRoutineEachFrame() {
   }
 
   
-  if (image.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image.setOpacity(1);
-    image.setPos([0, 0]);
-    image.setSize([0.3, 0.3]);
-    image.setOri(0);
-    image.setImage(Image1);
-  }
-  
   // *image_2* updates
   if (t >= 0.0 && image_2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4372,14 +4365,6 @@ function instructions_retreival_testingRoutineEachFrame() {
     image_2.setAutoDraw(true);
   }
 
-  
-  if (image_2.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image_2.setOpacity(1);
-    image_2.setPos([0.52, 0]);
-    image_2.setSize([0.3, 0.3]);
-    image_2.setOri(0);
-    image_2.setImage(Image2);
-  }
   
   // *image_5* updates
   if (t >= 0.0 && image_5.status === PsychoJS.Status.NOT_STARTED) {
@@ -4390,14 +4375,6 @@ function instructions_retreival_testingRoutineEachFrame() {
   }
 
   
-  if (image_5.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image_5.setOpacity(1);
-    image_5.setPos([0, 0]);
-    image_5.setSize([0.3, 0.3]);
-    image_5.setOri(0);
-    image_5.setImage(Image3);
-  }
-  
   // *image_6* updates
   if (t >= 0.0 && image_6.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4406,14 +4383,6 @@ function instructions_retreival_testingRoutineEachFrame() {
     image_6.setAutoDraw(true);
   }
 
-  
-  if (image_6.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image_6.setOpacity(1);
-    image_6.setPos([(- 0.52), 0]);
-    image_6.setSize([0.3, 0.3]);
-    image_6.setOri(0);
-    image_6.setImage(Image4);
-  }
   
   // *K* updates
   if (t >= 0.0 && K.status === PsychoJS.Status.NOT_STARTED) {
@@ -4424,13 +4393,6 @@ function instructions_retreival_testingRoutineEachFrame() {
   }
 
   
-  if (K.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    K.setColor(new util.Color('black'));
-    K.setPos([0, (- 0.25)]);
-    K.setFont('Arial');
-    K.setHeight(0.03);
-  }
-  
   // *L* updates
   if (t >= 0.0 && L.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4440,13 +4402,6 @@ function instructions_retreival_testingRoutineEachFrame() {
   }
 
   
-  if (L.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    L.setColor(new util.Color('black'));
-    L.setPos([0.5, (- 0.25)]);
-    L.setFont('Helvetica');
-    L.setHeight(0.03);
-  }
-  
   // *J* updates
   if (t >= 0.0 && J.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4455,13 +4410,6 @@ function instructions_retreival_testingRoutineEachFrame() {
     J.setAutoDraw(true);
   }
 
-  
-  if (J.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    J.setColor(new util.Color('black'));
-    J.setPos([(- 0.5), (- 0.25)]);
-    J.setFont('Helvetica');
-    J.setHeight(0.03);
-  }
   // check for quit (typically the Esc key)
   if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
     return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
