@@ -2370,7 +2370,7 @@ function experimentInit() {
   text_27 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_27',
-    text: 'Great job! You are now finished the practice. When you are ready to start the real thing, press space!',
+    text: 'beep! Great job! You are now finished the practice. When you are ready to start the real thing, press space!',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -3390,7 +3390,7 @@ function trials_19LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_19 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '22:26'),
     seed: undefined, name: 'trials_19'});
@@ -3421,7 +3421,7 @@ function trials_20LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_20 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/final_acb_memory_test_practice.xlsx',
     seed: undefined, name: 'trials_20'});
@@ -3455,7 +3455,7 @@ function trials_21LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_21 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: priming_recognition_path,
     seed: undefined, name: 'trials_21'});
