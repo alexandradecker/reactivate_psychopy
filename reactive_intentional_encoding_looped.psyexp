@@ -3584,12 +3584,12 @@
       <Param name="conditionsFile" updates="None" val="trialorder/test_practice.csv" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="practice_trials_intentional_encoding" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="trial"/>
+    <Routine name="real_intentional_encoding"/>
     <Routine name="fixation_2"/>
     <LoopTerminator name="practice_trials_intentional_encoding"/>
     <Routine name="intructions_post_practice_intentional_encoding"/>
