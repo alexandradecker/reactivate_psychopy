@@ -4013,8 +4013,6 @@ function real_intentional_encodingRoutineBegin() {
   frameN = -1;
   routineTimer.add(3.500000);
   // update component parameters for each repeat
-  image_pair1.setImage(ImageA);
-  image_pair2.setImage(ImageB);
   // keep track of which components have finished
   real_intentional_encodingComponents = [];
   real_intentional_encodingComponents.push(image_pair1);
@@ -4049,6 +4047,10 @@ function real_intentional_encodingRoutineEachFrame() {
     image_pair1.setAutoDraw(false);
   }
   
+  if (image_pair1.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image_pair1.setImage(ImageA);
+  }
+  
   // *image_pair2* updates
   if (t >= 0 && image_pair2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4060,6 +4062,10 @@ function real_intentional_encodingRoutineEachFrame() {
   frameRemains = 0 + 3.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
   if (image_pair2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
     image_pair2.setAutoDraw(false);
+  }
+  
+  if (image_pair2.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image_pair2.setImage(ImageB);
   }
   // check for quit (typically the Esc key)
   if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -4532,12 +4538,6 @@ function practice_retrieval_after_encodingRoutineBegin() {
   frameN = -1;
   routineTimer.add(9.000000);
   // update component parameters for each repeat
-  image_a_practice.setImage(image_a);
-  location1_practice.setImage(location1);
-  location2_practice.setImage(location2);
-  location3_practice.setImage(location3);
-  image_11.setImage(image_a);
-  image_12.setImage(correct_image);
   key_resp_13.keys = undefined;
   key_resp_13.rt = undefined;
   // keep track of which components have finished
@@ -4585,6 +4585,10 @@ function practice_retrieval_after_encodingRoutineEachFrame() {
     image_a_practice.setAutoDraw(false);
   }
   
+  if (image_a_practice.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image_a_practice.setImage(image_a);
+  }
+  
   // *afc_test_practice* updates
   if (t >= 3.5 && afc_test_practice.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4611,6 +4615,10 @@ function practice_retrieval_after_encodingRoutineEachFrame() {
     location1_practice.setAutoDraw(false);
   }
   
+  if (location1_practice.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    location1_practice.setImage(location1);
+  }
+  
   // *location2_practice* updates
   if (t >= 3.5 && location2_practice.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4624,6 +4632,10 @@ function practice_retrieval_after_encodingRoutineEachFrame() {
     location2_practice.setAutoDraw(false);
   }
   
+  if (location2_practice.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    location2_practice.setImage(location2);
+  }
+  
   // *location3_practice* updates
   if (t >= 3.5 && location3_practice.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4635,6 +4647,10 @@ function practice_retrieval_after_encodingRoutineEachFrame() {
   frameRemains = 3.5 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
   if (location3_practice.status === PsychoJS.Status.STARTED && t >= frameRemains) {
     location3_practice.setAutoDraw(false);
+  }
+  
+  if (location3_practice.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    location3_practice.setImage(location3);
   }
   
   // *j_key_test_practice* updates
@@ -4689,6 +4705,10 @@ function practice_retrieval_after_encodingRoutineEachFrame() {
     image_11.setAutoDraw(false);
   }
   
+  if (image_11.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image_11.setImage(image_a);
+  }
+  
   // *image_12* updates
   if (t >= 6 && image_12.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -4700,6 +4720,10 @@ function practice_retrieval_after_encodingRoutineEachFrame() {
   frameRemains = 6 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
   if (image_12.status === PsychoJS.Status.STARTED && t >= frameRemains) {
     image_12.setAutoDraw(false);
+  }
+  
+  if (image_12.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image_12.setImage(correct_image);
   }
   
   // *text_7* updates
