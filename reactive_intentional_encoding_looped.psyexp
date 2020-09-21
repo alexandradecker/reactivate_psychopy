@@ -47,13 +47,13 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val=".05" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val=".05" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -72,68 +72,19 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.05" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val=".05" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
     </Routine>
     <Routine name="test">
-      <TextComponent name="instruct_text">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
-        <Param name="name" updates="None" val="instruct_text" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, .20)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="1" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Think of the image pair" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <ImageComponent name="a_image_retrieve">
-        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
-        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every frame" val="$ImageA" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="a_image_retrieve" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="1" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </ImageComponent>
       <TextComponent name="afc_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -147,10 +98,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -172,11 +123,11 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(-.5, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -197,11 +148,11 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -222,11 +173,11 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0.5, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -246,10 +197,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(-0.5, -0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -270,10 +221,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(0, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -294,10 +245,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.5, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -319,36 +270,11 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="6" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="3" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </ImageComponent>
-      <ImageComponent name="correct_image2">
-        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
-        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$correct_image" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="correct_image2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="startVal" updates="None" val="2.5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="3" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -368,10 +294,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="startVal" updates="None" val="2.5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="3" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -379,24 +305,49 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp_12">
+      <KeyboardComponent name="retrieval_resp">
         <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space', 'j', 'k', 'l'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_12" valType="code"/>
+        <Param name="name" updates="None" val="retrieval_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="store" updates="constant" val="first key" valType="str"/>
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+      <ImageComponent name="correctImage">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$ImageB" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="correctImage" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.2, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
     </Routine>
     <Routine name="feedback"/>
     <Routine name="Instruction_06">
@@ -531,7 +482,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="$(position_1x, position_1y)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.05" valType="code"/>
@@ -555,7 +506,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="$(position_2x, position_2y)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val=".05" valType="code"/>
@@ -574,7 +525,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="response" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val=".05" valType="code"/>
@@ -598,7 +549,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -623,7 +574,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(-.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -647,7 +598,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.2)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -671,7 +622,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(-0.2, -0.2)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -696,7 +647,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.09, 0.09)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -720,7 +671,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(-0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -744,7 +695,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -770,7 +721,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="$(position_1x, position_1y)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -794,7 +745,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="$(position_2x, position_2y)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -813,7 +764,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_2" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.3" valType="code"/>
@@ -837,7 +788,7 @@
         <Param name="opacity" updates="set every frame" val="1" valType="code"/>
         <Param name="ori" updates="set every frame" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -862,7 +813,7 @@
         <Param name="opacity" updates="set every frame" val="1" valType="code"/>
         <Param name="ori" updates="set every frame" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0.52, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -887,7 +838,7 @@
         <Param name="opacity" updates="set every frame" val="1" valType="code"/>
         <Param name="ori" updates="set every frame" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -912,7 +863,7 @@
         <Param name="opacity" updates="set every frame" val="1" valType="code"/>
         <Param name="ori" updates="set every frame" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(-.52, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -936,7 +887,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -960,7 +911,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0.5, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -984,7 +935,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(-0.5, -0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1010,7 +961,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="$(position_1x, position_1y)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1034,7 +985,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="$(position_2x, position_2y)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1059,7 +1010,7 @@
         <Param name="opacity" updates="set every frame" val="1" valType="code"/>
         <Param name="ori" updates="set every frame" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1078,7 +1029,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.05" valType="code"/>
@@ -1130,13 +1081,13 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1155,13 +1106,13 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1188,7 +1139,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Great job! Now that you have a sense of the game, press space to start the real thing!" valType="str"/>
+        <Param name="text" updates="constant" val="Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1226,7 +1177,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1250,7 +1201,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1274,8 +1225,8 @@
         <Param name="name" updates="None" val="location1_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-.5, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(-.4, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1300,7 +1251,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1324,8 +1275,8 @@
         <Param name="name" updates="None" val="location3_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.5, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1348,8 +1299,8 @@
         <Param name="name" updates="None" val="j_key_test_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.5, -0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(-0.4, -0.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1373,7 +1324,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1396,8 +1347,8 @@
         <Param name="name" updates="None" val="L_key_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.5, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(0.4, -.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1422,7 +1373,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1447,7 +1398,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1471,7 +1422,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .20)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="1" valType="code"/>
@@ -1495,7 +1446,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="6" valType="code"/>
@@ -1512,9 +1463,9 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_13" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1540,7 +1491,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1559,7 +1510,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_4" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1585,7 +1536,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.04" valType="code"/>
@@ -1604,7 +1555,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_6" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.25" valType="code"/>
@@ -1630,13 +1581,13 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1655,13 +1606,13 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(.25, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1681,7 +1632,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1700,7 +1651,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_7" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -1712,55 +1663,6 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="retrieval4">
-      <TextComponent name="instruct_text_2">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
-        <Param name="name" updates="None" val="instruct_text_2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, .20)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="1" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Think of the image pair" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <ImageComponent name="a_image_retrieve_2">
-        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
-        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every frame" val="$ImageA" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="a_image_retrieve_2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="1" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </ImageComponent>
       <TextComponent name="afc_text_2">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -1774,10 +1676,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1798,12 +1700,12 @@
         <Param name="name" updates="None" val="image_13" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every frame" val="(-.5, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="set every frame" val="(-.4, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1824,11 +1726,11 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every frame" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1848,12 +1750,12 @@
         <Param name="name" updates="None" val="image_15" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every frame" val="(0.5, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="set every frame" val="(0.4, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1872,11 +1774,11 @@
         <Param name="name" updates="None" val="j_key_test_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(-0.5, -0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="set every repeat" val="(-0.4, -0.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1896,11 +1798,11 @@
         <Param name="name" updates="None" val="L_key_test_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.5, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(0.4, -.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1921,10 +1823,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(0, -.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1946,11 +1848,11 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="startVal" updates="None" val="2.5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1964,18 +1866,18 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$correct_image" valType="str"/>
+        <Param name="image" updates="set every repeat" val="$ImageB" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="correct_image2_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="startVal" updates="None" val="2.5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -1995,10 +1897,10 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, .25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="startVal" updates="None" val="2.5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -2006,18 +1908,18 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp_11">
-        <Param name="allowedKeys" updates="set every repeat" val="'y','n','left','right','space', 'j', 'k', 'l'" valType="code"/>
+      <KeyboardComponent name="retrieval_test_resp">
+        <Param name="allowedKeys" updates="set every repeat" val="'y','n','left','right','space', 'j', 'k', 'l', 'J', 'K', 'L'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_11" valType="code"/>
+        <Param name="name" updates="None" val="retrieval_test_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="3.5" valType="code"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="store" updates="constant" val="first key" valType="str"/>
@@ -2039,7 +1941,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2058,7 +1960,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_8" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="" valType="code"/>
@@ -2111,7 +2013,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.09, 0.09)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2122,14 +2024,14 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_9">
-        <Param name="allowedKeys" updates="set every repeat" val="'j', 'f'" valType="code"/>
+      <KeyboardComponent name="arrows_resp">
+        <Param name="allowedKeys" updates="set every repeat" val="'j', 'f', 'J', 'F'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_9" valType="code"/>
+        <Param name="name" updates="None" val="arrows_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2153,7 +2055,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.3, -0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2177,7 +2079,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.3, -0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2201,7 +2103,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.3, -0.35)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2225,7 +2127,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.3, -0.35)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2251,14 +2153,14 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="text" updates="constant" val=" " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -2277,8 +2179,8 @@
         <Param name="name" updates="None" val="incidental_image1_" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.3, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(-0.2, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2289,15 +2191,15 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_10">
+      <KeyboardComponent name="incidental_encoding_resp">
         <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space', 'j', 'f'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_10" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="incidental_encoding_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2320,7 +2222,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2344,7 +2246,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2368,7 +2270,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2392,7 +2294,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, -0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2416,8 +2318,8 @@
         <Param name="name" updates="None" val="incidental_image2_" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.3, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(0.2, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2443,12 +2345,12 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2.5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="1.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Do the following images, together, weigh more than a small dog?" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -2469,7 +2371,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2488,7 +2390,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_14" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2514,7 +2416,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2539,7 +2441,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2551,12 +2453,12 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
       <KeyboardComponent name="key_resp_15">
-        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space', 'j', 'f', 'J', 'F'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_15" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -2581,7 +2483,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2605,7 +2507,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2629,7 +2531,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2653,7 +2555,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, -0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2680,7 +2582,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2704,7 +2606,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="set every repeat" val="(0, -0.4)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2723,7 +2625,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_16" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2747,7 +2649,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2771,7 +2673,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2795,7 +2697,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, -0.27)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2819,7 +2721,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.20, -0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2843,7 +2745,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2870,7 +2772,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2881,14 +2783,14 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_17">
-        <Param name="allowedKeys" updates="set every repeat" val="'y','n','left','right','space', 'j', 'f'" valType="code"/>
+      <KeyboardComponent name="primed_memory_resp">
+        <Param name="allowedKeys" updates="set every repeat" val="'y','n','left','right','space', 'j', 'f', 'J', 'F'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_17" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="primed_memory_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -2936,7 +2838,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.2, -0.2)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2960,7 +2862,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.20, -0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -2984,7 +2886,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.2, -0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3010,7 +2912,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3029,7 +2931,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_18" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3054,7 +2956,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3073,7 +2975,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="exit" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3098,7 +3000,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0.4)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3109,14 +3011,14 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp_19">
+      <KeyboardComponent name="questionairre_resp">
         <Param name="allowedKeys" updates="set every repeat" val="'y','n','left','right','space', 'j', 'k', 'l', '0','1','2','3','4','5','6','7','8','9', 'n', 'p', 't'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_19" valType="code"/>
+        <Param name="name" updates="None" val="questionairre_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3140,7 +3042,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, -0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3165,7 +3067,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.1, 0.13)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3190,7 +3092,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.1, 0.13)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3215,7 +3117,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.1, -0.1)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3240,7 +3142,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.1, -0.1)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3264,7 +3166,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.1, 0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3288,7 +3190,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.1, 0.25)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3312,7 +3214,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.1, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3336,7 +3238,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.1, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3363,7 +3265,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3387,7 +3289,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.35, -0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3411,7 +3313,7 @@
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0.35, -0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -3422,14 +3324,14 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp_20">
+      <KeyboardComponent name="questionairre_resp2">
         <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space', '1','2','3','4','5','6','7','8','9','10', 'return'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_20" valType="code"/>
+        <Param name="name" updates="None" val="questionairre_resp2" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3489,6 +3391,57 @@
         <Param name="name" updates="None" val="globalVars" valType="code"/>
       </CodeComponent>
     </Routine>
+    <Routine name="think_image_pair">
+      <TextComponent name="instruct_text_3">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="instruct_text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, .20)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val=".5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Think of the image pair" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <ImageComponent name="a_image_retrieve_3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every frame" val="$ImageA" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="a_image_retrieve_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val=".5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="expParam"/>
@@ -3517,6 +3470,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="trial"/>
+    <Routine name="fixation_2"/>
     <LoopTerminator name="practice_trials_intentional_encoding"/>
     <Routine name="intructions_post_practice_intentional_encoding"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
@@ -3524,13 +3478,14 @@
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="$intentional_encoding_path" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="real_intentional_encoding"/>
+    <Routine name="fixation_2"/>
     <LoopTerminator name="trials"/>
     <LoopInitiator loopType="TrialHandler" name="trials_4">
       <Param name="Selected rows" updates="None" val="8:11" valType="str"/>
@@ -3583,7 +3538,9 @@
       <Param name="name" updates="None" val="trials_3" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="test"/>
+    <Routine name="think_image_pair"/>
+    <Routine name="fixation_2"/>
+    <Routine name="retrieval4"/>
     <LoopTerminator name="trials_3"/>
     <Routine name="pre_intentional_encoding4"/>
     <LoopInitiator loopType="TrialHandler" name="trials_6">
@@ -3591,13 +3548,14 @@
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="$intentional_encoding_path" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials_6" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="intentional_encoding_4"/>
+    <Routine name="fixation_2"/>
     <LoopTerminator name="trials_6"/>
     <Routine name="instruct_retrieval4"/>
     <LoopInitiator loopType="TrialHandler" name="trials_7">
@@ -3611,6 +3569,8 @@
       <Param name="name" updates="None" val="trials_7" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="think_image_pair"/>
+    <Routine name="fixation_2"/>
     <Routine name="retrieval4"/>
     <LoopTerminator name="trials_7"/>
     <Routine name="pre_intentional_encoding4"/>
@@ -3619,13 +3579,14 @@
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="$intentional_encoding_path" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials_8" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="intentional_encoding_4"/>
+    <Routine name="fixation_2"/>
     <LoopTerminator name="trials_8"/>
     <Routine name="instruct_retrieval4"/>
     <LoopInitiator loopType="TrialHandler" name="trials_9">
@@ -3639,6 +3600,8 @@
       <Param name="name" updates="None" val="trials_9" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="think_image_pair"/>
+    <Routine name="fixation_2"/>
     <Routine name="retrieval4"/>
     <LoopTerminator name="trials_9"/>
     <Routine name="pre_intentional_encoding4"/>
@@ -3647,13 +3610,14 @@
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="$intentional_encoding_path" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials_10" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="intentional_encoding_4"/>
+    <Routine name="fixation_2"/>
     <LoopTerminator name="trials_10"/>
     <Routine name="instruct_retrieval4"/>
     <LoopInitiator loopType="TrialHandler" name="trials_11">
@@ -3667,6 +3631,8 @@
       <Param name="name" updates="None" val="trials_11" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="think_image_pair"/>
+    <Routine name="fixation_2"/>
     <Routine name="retrieval4"/>
     <LoopTerminator name="trials_11"/>
     <Routine name="final_ab_retrieval_test_instruct"/>
@@ -3681,10 +3647,12 @@
       <Param name="name" updates="None" val="trials_12" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="think_image_pair"/>
+    <Routine name="fixation_2"/>
     <Routine name="retrieval4"/>
     <LoopTerminator name="trials_12"/>
     <LoopInitiator loopType="TrialHandler" name="trials_13">
-      <Param name="Selected rows" updates="None" val="17:23" valType="str"/>
+      <Param name="Selected rows" updates="None" val="16:22" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('instructions1', 'Welcome to the memory game! In this game, you must learn which images go together.'), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'You will see two images on the left and right side of the screen, like this.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Your job is to remember that these images go together. '), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'You could link them through a story. For example, jessica alba likes books.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'After you see the images, we will test your memory.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Get ready to see the images! Each pair will only last on the screen for a few seconds, so pay attention.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;We'll first do a practice to get you familiar with the game.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;When you're ready to start the practice, press space!&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.0), ('position_2x', None), ('position_2y', None), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Great job! Now we will see how well you remember which images go together.'), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'You will first see one image, like below. Your job is to recall the image that it was paired with when you see this image.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Here, you should recall the book.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;Then, you will see 3 other images and your job is to select the correct image pair. Use the keys 'J', 'K', or 'L' to indicate your choice.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;Here, you should press 'L' because the woman, Jessica Alba, was paired with the book.&quot;), ('Instructions2', &quot;Press 'L' to continue!&quot;), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'This portion is timed. Respond quickly and think of your answer as soon as you see the first image. '), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;These keyboard options will remain on the screen under each image as a reminder throughout the task. If you don't know the answer, take a guess. After you select your answer, you will then be shown the correct image. Re-study the image pairs because you will be tested again at the end.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;First, we'll do a practice. Put your right hand on the keyboard and get ready to respond! When you're ready to start, press space.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Great job! In the next part, you will see an arrow on the screen on each trial, like below, and you will need to decide whether the arrow is pointing left or right. '), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', 'instruction_images/arrow.png'), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'left'), ('no_text', 'right')]), OrderedDict([('instructions1', &quot;You will press 'F' to indicate the arrow is pointing left and 'J' to indicate the arrow is pointing right.&quot;), ('Instructions2', &quot;Press 'J' to continue because the arrow is pointing right.&quot;), ('Image1', None), ('Image2', None), ('Image3', 'instruction_images/arrow.png'), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'left'), ('no_text', 'right')]), OrderedDict([('instructions1', 'Sometimes during the arrow task, you will be interupted and shown two images, like below. You will be asked whether together the images weigh more than a small dog.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', 'instruction_images/alpaca_fo.jpg'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'no'), ('no_text', 'yes')]), OrderedDict([('instructions1', &quot;In this case, the weight of the book plus the weight of the alpaca is definitely more than a small dog. So in this case, you should select 'J' to indicate that together they weigh more than a small dog.&quot;), ('Instructions2', 'Together do they weigh more than a small dog? Select the correct answer.'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', 'instruction_images/alpaca_fo.jpg'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'no'), ('no_text', 'yes')]), OrderedDict([('instructions1', 'The two images will only remain on the screen for a short time so you will need to press the correct answer quickly.'), ('Instructions2', 'Together do they weigh more than a small dog? Select the correct answer.'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', 'instruction_images/alpaca_fo.jpg'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'no '), ('no_text', 'yes')]), OrderedDict([('instructions1', &quot;When you're ready to start a practice, press the space bar.&quot;), ('Instructions2', None), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', None), ('position_2y', None), ('J_key', None), ('K_key', None), ('L_key', None), ('yes_text', None), ('no_text', None)]), OrderedDict([('instructions1', &quot;You're now almost finished the task! In the last part, you will do a final memory test. You will be shown an image, like below, on each trial, and you will be asked to indicate whether you have seen this image before (it is old) or you haven't not seen the image before (it is new)&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', &quot;Since the book is old, you should select 'old' because you have seen this image before.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', 'This test is timed. You have a limit of 2 seconds to respond. So try to respond as quickly as possible.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', 'First we will do a practice. When you’re ready to start the practice, press the space bar. '), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', None), ('Instructions2', None), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="trialorder/instructions.csv" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
@@ -3766,6 +3734,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="sustained_attention_arrows_practice"/>
+    <Routine name="fixation_2"/>
     <LoopTerminator name="trials_16"/>
     <LoopTerminator name="trials_17"/>
     <Routine name="fixation_2"/>
@@ -3774,7 +3743,7 @@
       <Param name="conditions" updates="None" val="[OrderedDict([('instructions1', 'Welcome to the memory game! In this game, you must learn which images go together.'), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'You will see two images on the left and right side of the screen, like this.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Your job is to remember that these images go together. '), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'You could link them through a story. For example, jessica alba likes books.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'After you see the images, we will test your memory.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Get ready to see the images! Each pair will only last on the screen for a few seconds, so pay attention.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;We'll first do a practice to get you familiar with the game.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;When you're ready to start the practice, press space!&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.0), ('position_2x', None), ('position_2y', None), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Great job! Now we will see how well you remember which images go together.'), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'You will first see one image, like below. Your job is to recall the image that it was paired with when you see this image.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Here, you should recall the book.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;Then, you will see 3 other images and your job is to select the correct image pair. Use the keys 'J', 'K', or 'L' to indicate your choice.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/jessica_alba.jpg'), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;Here, you should press 'L' because the woman, Jessica Alba, was paired with the book.&quot;), ('Instructions2', &quot;Press 'L' to continue!&quot;), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'This portion is timed. Respond quickly and think of your answer as soon as you see the first image. '), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;These keyboard options will remain on the screen under each image as a reminder throughout the task. If you don't know the answer, take a guess. After you select your answer, you will then be shown the correct image. Re-study the image pairs because you will be tested again at the end.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'K'), ('L_key', 'L'), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', &quot;First, we'll do a practice. Put your right hand on the keyboard and get ready to respond! When you're ready to start, press space.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', 'instruction_images/oldBook.png'), ('Image3', 'instruction_images/alpaca_fo.jpg'), ('Image_4', 'instruction_images/antlers.jpg'), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', ' '), ('K_key', ' '), ('L_key', ' '), ('yes_text', ' '), ('no_text', ' ')]), OrderedDict([('instructions1', 'Great job! In the next part, you will see an arrow on the screen on each trial, like below, and you will need to decide whether the arrow is pointing left or right. '), ('Instructions2', 'Press space to continue!'), ('Image1', None), ('Image2', None), ('Image3', 'instruction_images/arrow.png'), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'left'), ('no_text', 'right')]), OrderedDict([('instructions1', &quot;You will press 'F' to indicate the arrow is pointing left and 'J' to indicate the arrow is pointing right.&quot;), ('Instructions2', &quot;Press 'J' to continue because the arrow is pointing right.&quot;), ('Image1', None), ('Image2', None), ('Image3', 'instruction_images/arrow.png'), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'left'), ('no_text', 'right')]), OrderedDict([('instructions1', 'Sometimes during the arrow task, you will be interupted and shown two images, like below. You will be asked whether together the images weigh more than a small dog.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', 'instruction_images/alpaca_fo.jpg'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'no'), ('no_text', 'yes')]), OrderedDict([('instructions1', &quot;In this case, the weight of the book plus the weight of the alpaca is definitely more than a small dog. So in this case, you should select 'J' to indicate that together they weigh more than a small dog.&quot;), ('Instructions2', 'Together do they weigh more than a small dog? Select the correct answer.'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', 'instruction_images/alpaca_fo.jpg'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'no'), ('no_text', 'yes')]), OrderedDict([('instructions1', 'The two images will only remain on the screen for a short time so you will need to press the correct answer quickly.'), ('Instructions2', 'Together do they weigh more than a small dog? Select the correct answer.'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', 'instruction_images/alpaca_fo.jpg'), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', 0.0), ('position_2y', -0.4), ('J_key', 'J'), ('K_key', 'F'), ('L_key', ' '), ('yes_text', 'no '), ('no_text', 'yes')]), OrderedDict([('instructions1', &quot;When you're ready to start a practice, press the space bar.&quot;), ('Instructions2', None), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', 0.0), ('position_1y', 0.3), ('position_2x', None), ('position_2y', None), ('J_key', None), ('K_key', None), ('L_key', None), ('yes_text', None), ('no_text', None)]), OrderedDict([('instructions1', &quot;You're now almost finished the task! In the last part, you will do a final memory test. You will be shown an image, like below, on each trial, and you will be asked to indicate whether you have seen this image before (it is old) or you haven't not seen the image before (it is new)&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', &quot;Since the book is old, you should select 'old' because you have seen this image before.&quot;), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', 'This test is timed. You have a limit of 2 seconds to respond. So try to respond as quickly as possible.'), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', 'First we will do a practice. When you’re ready to start the practice, press the space bar. '), ('Instructions2', 'Press space to continue!'), ('Image1', 'instruction_images/oldBook.png'), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')]), OrderedDict([('instructions1', None), ('Instructions2', None), ('Image1', None), ('Image2', None), ('Image3', None), ('Image_4', None), ('position_1x', None), ('position_1y', None), ('position_2x', None), ('position_2y', None), ('J_key', 'J'), ('K_key', 'F'), ('L_key', None), ('yes_text', 'old'), ('no_text', 'new')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="trialorder/instructions.csv" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials_19" valType="code"/>
@@ -3787,7 +3756,7 @@
       <Param name="conditions" updates="None" val="[OrderedDict([('Image', 'images/giftbow01.png')]), OrderedDict([('Image', 'images/globe.png')]), OrderedDict([('Image', 'images/glassBall.jpg')]), OrderedDict([('Image', 'images/gazebo_wooden.png')]), OrderedDict([('Image', 'images/helicopter.jpg')]), OrderedDict([('Image', 'images/willie_nelson_b.jpg')]), OrderedDict([('Image', 'images/earrings_dangling.jpg')]), OrderedDict([('Image', 'images/westminster_abbey_a.jpg')]), OrderedDict([('Image', 'images/ray_romano.jpg')]), OrderedDict([('Image', 'images/bench_park.png')]), OrderedDict([('Image', 'images/electricoutlet.png')]), OrderedDict([('Image', 'images/wrigley_field_b.jpg')]), OrderedDict([('Image', 'images/beetle.png')]), OrderedDict([('Image', 'images/john_stamos.jpg')]), OrderedDict([('Image', 'images/bird_parrot.png')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="trialorder/final_acb_memory_test_practice.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="trials_20" valType="code"/>
