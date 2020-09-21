@@ -2448,10 +2448,10 @@ function experimentInit() {
     win: psychoJS.window,
     name: 'questioniarre',
     text: 'default text',
-    font: 'Helvetica',
+    font: 'Arial',
     units : undefined, 
-    pos: [0, 0.4], height: 0.025,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
@@ -2461,10 +2461,10 @@ function experimentInit() {
     win: psychoJS.window,
     name: 'text_29',
     text: 'default text',
-    font: 'Helvetica',
+    font: 'Arial',
     units : undefined, 
-    pos: [0, (- 0.3)], height: 0.025,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, (- 0.3)], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: -2.0 
   });
   
@@ -2472,7 +2472,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_18', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [(- 0.1), 0.13], size : [0.15, 0.15],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
@@ -2481,7 +2481,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_19', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0.1, 0.13], size : [0.15, 0.15],
+    ori : 1.0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -4.0 
@@ -2490,7 +2490,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_20', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [(- 0.1), (- 0.1)], size : [0.15, 0.15],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -5.0 
@@ -2499,7 +2499,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_21', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0.1, (- 0.1)], size : [0.15, 0.15],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -6.0 
@@ -2508,10 +2508,10 @@ function experimentInit() {
     win: psychoJS.window,
     name: 'A_txt1',
     text: 'default text',
-    font: 'Helvetica',
+    font: 'Arial',
     units : undefined, 
-    pos: [(- 0.1), 0.25], height: 0.02,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('blue'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: -7.0 
   });
   
@@ -2519,10 +2519,10 @@ function experimentInit() {
     win: psychoJS.window,
     name: 'B_text',
     text: 'default text',
-    font: 'Helvetica',
+    font: 'Arial',
     units : undefined, 
-    pos: [0.1, 0.25], height: 0.02,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('blue'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: -8.0 
   });
   
@@ -2530,10 +2530,10 @@ function experimentInit() {
     win: psychoJS.window,
     name: 'a_text2',
     text: 'default text',
-    font: 'Helvetica',
+    font: 'Arial',
     units : undefined, 
-    pos: [(- 0.1), 0], height: 0.02,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('blue'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: -9.0 
   });
   
@@ -2541,10 +2541,10 @@ function experimentInit() {
     win: psychoJS.window,
     name: 'C_text',
     text: 'default text',
-    font: 'Helvetica',
+    font: 'Arial',
     units : undefined, 
-    pos: [0.1, 0], height: 0.02,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('blue'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: -10.0 
   });
   
@@ -7134,18 +7134,50 @@ function questionairreRoutineBegin() {
   questionairreClock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  questioniarre.setColor(new util.Color('black'));
+  questioniarre.setPos([0, 0.4]);
   questioniarre.setText(instructions1);
+  questioniarre.setFont('Helvetica');
+  questioniarre.setHeight(0.025);
   questionairre_resp.keys = undefined;
   questionairre_resp.rt = undefined;
+  text_29.setColor(new util.Color('black'));
   text_29.setText(Instructions2);
+  text_29.setFont('Helvetica');
+  text_29.setHeight(0.025);
+  image_18.setPos([(- 0.1), 0.13]);
+  image_18.setSize([0.15, 0.15]);
   image_18.setImage(Image1);
+  image_19.setPos([0.1, 0.13]);
+  image_19.setSize([0.15, 0.15]);
+  image_19.setOri(0);
   image_19.setImage(Image2);
+  image_20.setPos([(- 0.1), (- 0.1)]);
+  image_20.setSize([0.15, 0.15]);
   image_20.setImage(Image3);
+  image_21.setPos([0.1, (- 0.1)]);
+  image_21.setSize([0.15, 0.15]);
   image_21.setImage(Image4);
+  A_txt1.setColor(new util.Color('blue'));
+  A_txt1.setPos([(- 0.1), 0.25]);
   A_txt1.setText(J_key);
+  A_txt1.setFont('Helvetica');
+  A_txt1.setHeight(0.02);
+  B_text.setColor(new util.Color('blue'));
+  B_text.setPos([0.1, 0.25]);
   B_text.setText(K_key);
+  B_text.setFont('Helvetica');
+  B_text.setHeight(0.02);
+  a_text2.setColor(new util.Color('blue'));
+  a_text2.setPos([(- 0.1), 0]);
   a_text2.setText(J_key);
+  a_text2.setFont('Helvetica');
+  a_text2.setHeight(0.02);
+  C_text.setColor(new util.Color('blue'));
+  C_text.setPos([0.1, 0]);
   C_text.setText(L_key);
+  C_text.setFont('Helvetica');
+  C_text.setHeight(0.02);
   // keep track of which components have finished
   questionairreComponents = [];
   questionairreComponents.push(questioniarre);
