@@ -2838,7 +2838,7 @@ function trials_2LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_2 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '11:16'),
     seed: undefined, name: 'trials_2'});
