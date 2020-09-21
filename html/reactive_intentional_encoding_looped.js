@@ -2730,9 +2730,9 @@ function practice_trials_intentional_encodingLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   practice_trials_intentional_encoding = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/test_practice.csv', '0:4'),
+    trialList: 'trialorder/test_practice.csv',
     seed: undefined, name: 'practice_trials_intentional_encoding'});
   psychoJS.experiment.addLoop(practice_trials_intentional_encoding); // add the loop to the experiment
   currentLoop = practice_trials_intentional_encoding;  // we're now the current loop

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Sun Sep 20 22:42:16 2020
+    on Sun Sep 20 23:01:41 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -2128,9 +2128,9 @@ for thisComponent in fixation_2Components:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-practice_trials_intentional_encoding = data.TrialHandler(nReps=1, method='sequential', 
+practice_trials_intentional_encoding = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('trialorder/test_practice.csv', selection='0:5'),
+    trialList=data.importConditions('trialorder/test_practice.csv'),
     seed=None, name='practice_trials_intentional_encoding')
 thisExp.addLoop(practice_trials_intentional_encoding)  # add the loop to the experiment
 thisPractice_trials_intentional_encoding = practice_trials_intentional_encoding.trialList[0]  # so we can initialise stimuli with some values
