@@ -473,7 +473,7 @@ function experimentInit() {
   text_9 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_9',
-    text: 'Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing!',
+    text: 'Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing! bleep bleep bloop',
     font: 'helvetica',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,

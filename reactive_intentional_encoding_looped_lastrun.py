@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Sun Sep 20 23:34:20 2020
+    on Mon Sep 21 10:22:40 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -118,7 +118,7 @@ image2_2 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -128,7 +128,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -153,19 +153,11 @@ image_pair2 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-image_pair2_3 = visual.ImageStim(
-    win=win,
-    name='image_pair2_3', 
-    image='sin', mask=None,
-    ori=0, pos=(.25, 0), size=(0.3, 0.3),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
 
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -205,7 +197,7 @@ image_pair2_2 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -232,8 +224,8 @@ image_3 = visual.ImageStim(
     win=win,
     name='image_3', 
     image='sin', mask=None,
-    ori=1.0, pos=[0,0], size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    ori=0, pos=(0, 0), size=(0.3, 0.3),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
 key_resp = keyboard.Keyboard()
@@ -259,32 +251,32 @@ image = visual.ImageStim(
     win=win,
     name='image', 
     image='sin', mask=None,
-    ori=1.0, pos=[0,0], size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    ori=0, pos=[0,0], size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
 image_2 = visual.ImageStim(
     win=win,
     name='image_2', 
     image='sin', mask=None,
-    ori=1.0, pos=[0,0], size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    ori=0, pos=(0.52, 0), size=(0.3, 0.3),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
 image_5 = visual.ImageStim(
     win=win,
     name='image_5', 
     image='sin', mask=None,
-    ori=1.0, pos=[0,0], size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    ori=0, pos=(0, 0), size=(0.3, 0.3),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-5.0)
 image_6 = visual.ImageStim(
     win=win,
     name='image_6', 
     image='sin', mask=None,
-    ori=1.0, pos=[0,0], size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    ori=0, pos=[0,0], size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-6.0)
 K = visual.TextStim(win=win, name='K',
@@ -358,24 +350,24 @@ j_key_test_practice = visual.TextStim(win=win, name='j_key_test_practice',
     languageStyle='LTR',
     depth=-5.0);
 K_key_practice = visual.TextStim(win=win, name='K_key_practice',
-    text='K',
-    font='Helvetica',
-    pos=(0, -.25), height=0.04, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-6.0);
 L_key_practice = visual.TextStim(win=win, name='L_key_practice',
-    text='L',
-    font='Helvetica',
-    pos=(0.4, -.25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-7.0);
 image_11 = visual.ImageStim(
     win=win,
     name='image_11', 
     image='sin', mask=None,
-    ori=0, pos=(-0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
@@ -383,22 +375,22 @@ image_12 = visual.ImageStim(
     win=win,
     name='image_12', 
     image='sin', mask=None,
-    ori=0, pos=(.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-9.0)
 text_7 = visual.TextStim(win=win, name='text_7',
-    text='Think of the image pair',
-    font='Helvetica',
-    pos=(0, .20), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-10.0);
 text_17 = visual.TextStim(win=win, name='text_17',
-    text='Re-study the correct pairs',
-    font='Helvetica',
-    pos=(0, .3), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-11.0);
 key_resp_13 = keyboard.Keyboard()
@@ -406,7 +398,7 @@ key_resp_13 = keyboard.Keyboard()
 # Initialize components for Routine "post_retrievalpractice_instructions"
 post_retrievalpractice_instructionsClock = core.Clock()
 post_retreival_practice_intructions = visual.TextStim(win=win, name='post_retreival_practice_intructions',
-    text="Great job! Now that you've finished the practice, we'll start the real thing. When you're ready to start the real thing, press space!",
+    text='Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the memory test, press space!',
     font='Helvetica',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -417,10 +409,10 @@ key_resp_4 = keyboard.Keyboard()
 # Initialize components for Routine "think_image_pair"
 think_image_pairClock = core.Clock()
 instruct_text_3 = visual.TextStim(win=win, name='instruct_text_3',
-    text='Think of the image pair',
+    text='default text',
     font='Arial',
-    pos=(0, .20), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 a_image_retrieve_3 = visual.ImageStim(
@@ -435,7 +427,7 @@ a_image_retrieve_3 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -445,7 +437,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "retrieval4"
 retrieval4Clock = core.Clock()
 afc_text_2 = visual.TextStim(win=win, name='afc_text_2',
-    text='Select the correct image',
+    text='default text',
     font='Helvetica',
     pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -455,7 +447,7 @@ image_13 = visual.ImageStim(
     win=win,
     name='image_13', 
     image='sin', mask=None,
-    ori=0, pos=[0,0], size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -483,10 +475,10 @@ j_key_test_2 = visual.TextStim(win=win, name='j_key_test_2',
     languageStyle='LTR',
     depth=-4.0);
 L_key_test_2 = visual.TextStim(win=win, name='L_key_test_2',
-    text='L',
-    font='Helvetica',
+    text='default text',
+    font='Arial',
     pos=(0.4, -.25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 K_key_test_2 = visual.TextStim(win=win, name='K_key_test_2',
@@ -500,7 +492,7 @@ correct_image__a = visual.ImageStim(
     win=win,
     name='correct_image__a', 
     image='sin', mask=None,
-    ori=0, pos=(-0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
@@ -508,15 +500,15 @@ correct_image2_2 = visual.ImageStim(
     win=win,
     name='correct_image2_2', 
     image='sin', mask=None,
-    ori=0, pos=(0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
 Feedback_2 = visual.TextStim(win=win, name='Feedback_2',
-    text='Re-study the correct pairs',
-    font='Helvetica',
-    pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=(0, .25), height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
 retrieval_test_resp = keyboard.Keyboard()
@@ -524,7 +516,7 @@ retrieval_test_resp = keyboard.Keyboard()
 # Initialize components for Routine "pre_intentional_encoding4"
 pre_intentional_encoding4Clock = core.Clock()
 text_12 = visual.TextStim(win=win, name='text_12',
-    text='Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar.',
+    text='Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar.',
     font='Helvetica',
     pos=(0, 0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -554,7 +546,7 @@ image_pair2_2 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -575,10 +567,10 @@ key_resp_7 = keyboard.Keyboard()
 # Initialize components for Routine "think_image_pair"
 think_image_pairClock = core.Clock()
 instruct_text_3 = visual.TextStim(win=win, name='instruct_text_3',
-    text='Think of the image pair',
+    text='default text',
     font='Arial',
-    pos=(0, .20), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 a_image_retrieve_3 = visual.ImageStim(
@@ -593,7 +585,7 @@ a_image_retrieve_3 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -603,7 +595,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "retrieval4"
 retrieval4Clock = core.Clock()
 afc_text_2 = visual.TextStim(win=win, name='afc_text_2',
-    text='Select the correct image',
+    text='default text',
     font='Helvetica',
     pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -613,7 +605,7 @@ image_13 = visual.ImageStim(
     win=win,
     name='image_13', 
     image='sin', mask=None,
-    ori=0, pos=[0,0], size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -641,10 +633,10 @@ j_key_test_2 = visual.TextStim(win=win, name='j_key_test_2',
     languageStyle='LTR',
     depth=-4.0);
 L_key_test_2 = visual.TextStim(win=win, name='L_key_test_2',
-    text='L',
-    font='Helvetica',
+    text='default text',
+    font='Arial',
     pos=(0.4, -.25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 K_key_test_2 = visual.TextStim(win=win, name='K_key_test_2',
@@ -658,7 +650,7 @@ correct_image__a = visual.ImageStim(
     win=win,
     name='correct_image__a', 
     image='sin', mask=None,
-    ori=0, pos=(-0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
@@ -666,15 +658,15 @@ correct_image2_2 = visual.ImageStim(
     win=win,
     name='correct_image2_2', 
     image='sin', mask=None,
-    ori=0, pos=(0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
 Feedback_2 = visual.TextStim(win=win, name='Feedback_2',
-    text='Re-study the correct pairs',
-    font='Helvetica',
-    pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=(0, .25), height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
 retrieval_test_resp = keyboard.Keyboard()
@@ -682,7 +674,7 @@ retrieval_test_resp = keyboard.Keyboard()
 # Initialize components for Routine "pre_intentional_encoding4"
 pre_intentional_encoding4Clock = core.Clock()
 text_12 = visual.TextStim(win=win, name='text_12',
-    text='Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar.',
+    text='Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar.',
     font='Helvetica',
     pos=(0, 0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -712,7 +704,7 @@ image_pair2_2 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -733,10 +725,10 @@ key_resp_7 = keyboard.Keyboard()
 # Initialize components for Routine "think_image_pair"
 think_image_pairClock = core.Clock()
 instruct_text_3 = visual.TextStim(win=win, name='instruct_text_3',
-    text='Think of the image pair',
+    text='default text',
     font='Arial',
-    pos=(0, .20), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 a_image_retrieve_3 = visual.ImageStim(
@@ -751,7 +743,7 @@ a_image_retrieve_3 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -761,7 +753,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "retrieval4"
 retrieval4Clock = core.Clock()
 afc_text_2 = visual.TextStim(win=win, name='afc_text_2',
-    text='Select the correct image',
+    text='default text',
     font='Helvetica',
     pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -771,7 +763,7 @@ image_13 = visual.ImageStim(
     win=win,
     name='image_13', 
     image='sin', mask=None,
-    ori=0, pos=[0,0], size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -799,10 +791,10 @@ j_key_test_2 = visual.TextStim(win=win, name='j_key_test_2',
     languageStyle='LTR',
     depth=-4.0);
 L_key_test_2 = visual.TextStim(win=win, name='L_key_test_2',
-    text='L',
-    font='Helvetica',
+    text='default text',
+    font='Arial',
     pos=(0.4, -.25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 K_key_test_2 = visual.TextStim(win=win, name='K_key_test_2',
@@ -816,7 +808,7 @@ correct_image__a = visual.ImageStim(
     win=win,
     name='correct_image__a', 
     image='sin', mask=None,
-    ori=0, pos=(-0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
@@ -824,15 +816,15 @@ correct_image2_2 = visual.ImageStim(
     win=win,
     name='correct_image2_2', 
     image='sin', mask=None,
-    ori=0, pos=(0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
 Feedback_2 = visual.TextStim(win=win, name='Feedback_2',
-    text='Re-study the correct pairs',
-    font='Helvetica',
-    pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=(0, .25), height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
 retrieval_test_resp = keyboard.Keyboard()
@@ -840,7 +832,7 @@ retrieval_test_resp = keyboard.Keyboard()
 # Initialize components for Routine "pre_intentional_encoding4"
 pre_intentional_encoding4Clock = core.Clock()
 text_12 = visual.TextStim(win=win, name='text_12',
-    text='Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar.',
+    text='Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar.',
     font='Helvetica',
     pos=(0, 0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -870,7 +862,7 @@ image_pair2_2 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -891,10 +883,10 @@ key_resp_7 = keyboard.Keyboard()
 # Initialize components for Routine "think_image_pair"
 think_image_pairClock = core.Clock()
 instruct_text_3 = visual.TextStim(win=win, name='instruct_text_3',
-    text='Think of the image pair',
+    text='default text',
     font='Arial',
-    pos=(0, .20), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 a_image_retrieve_3 = visual.ImageStim(
@@ -909,7 +901,7 @@ a_image_retrieve_3 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -919,7 +911,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "retrieval4"
 retrieval4Clock = core.Clock()
 afc_text_2 = visual.TextStim(win=win, name='afc_text_2',
-    text='Select the correct image',
+    text='default text',
     font='Helvetica',
     pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -929,7 +921,7 @@ image_13 = visual.ImageStim(
     win=win,
     name='image_13', 
     image='sin', mask=None,
-    ori=0, pos=[0,0], size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -957,10 +949,10 @@ j_key_test_2 = visual.TextStim(win=win, name='j_key_test_2',
     languageStyle='LTR',
     depth=-4.0);
 L_key_test_2 = visual.TextStim(win=win, name='L_key_test_2',
-    text='L',
-    font='Helvetica',
+    text='default text',
+    font='Arial',
     pos=(0.4, -.25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 K_key_test_2 = visual.TextStim(win=win, name='K_key_test_2',
@@ -974,7 +966,7 @@ correct_image__a = visual.ImageStim(
     win=win,
     name='correct_image__a', 
     image='sin', mask=None,
-    ori=0, pos=(-0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
@@ -982,15 +974,15 @@ correct_image2_2 = visual.ImageStim(
     win=win,
     name='correct_image2_2', 
     image='sin', mask=None,
-    ori=0, pos=(0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
 Feedback_2 = visual.TextStim(win=win, name='Feedback_2',
-    text='Re-study the correct pairs',
-    font='Helvetica',
-    pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=(0, .25), height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
 retrieval_test_resp = keyboard.Keyboard()
@@ -1009,10 +1001,10 @@ key_resp_8 = keyboard.Keyboard()
 # Initialize components for Routine "think_image_pair"
 think_image_pairClock = core.Clock()
 instruct_text_3 = visual.TextStim(win=win, name='instruct_text_3',
-    text='Think of the image pair',
+    text='default text',
     font='Arial',
-    pos=(0, .20), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 a_image_retrieve_3 = visual.ImageStim(
@@ -1027,7 +1019,7 @@ a_image_retrieve_3 = visual.ImageStim(
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1037,7 +1029,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "retrieval4"
 retrieval4Clock = core.Clock()
 afc_text_2 = visual.TextStim(win=win, name='afc_text_2',
-    text='Select the correct image',
+    text='default text',
     font='Helvetica',
     pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1047,7 +1039,7 @@ image_13 = visual.ImageStim(
     win=win,
     name='image_13', 
     image='sin', mask=None,
-    ori=0, pos=[0,0], size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
@@ -1075,10 +1067,10 @@ j_key_test_2 = visual.TextStim(win=win, name='j_key_test_2',
     languageStyle='LTR',
     depth=-4.0);
 L_key_test_2 = visual.TextStim(win=win, name='L_key_test_2',
-    text='L',
-    font='Helvetica',
+    text='default text',
+    font='Arial',
     pos=(0.4, -.25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 K_key_test_2 = visual.TextStim(win=win, name='K_key_test_2',
@@ -1092,7 +1084,7 @@ correct_image__a = visual.ImageStim(
     win=win,
     name='correct_image__a', 
     image='sin', mask=None,
-    ori=0, pos=(-0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
@@ -1100,15 +1092,15 @@ correct_image2_2 = visual.ImageStim(
     win=win,
     name='correct_image2_2', 
     image='sin', mask=None,
-    ori=0, pos=(0.2, 0), size=(0.3, 0.3),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
 Feedback_2 = visual.TextStim(win=win, name='Feedback_2',
-    text='Re-study the correct pairs',
-    font='Helvetica',
-    pos=(0, .25), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    text='default text',
+    font='Arial',
+    pos=(0, .25), height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
 retrieval_test_resp = keyboard.Keyboard()
@@ -1186,7 +1178,7 @@ no_press = visual.TextStim(win=win, name='no_press',
 # Initialize components for Routine "small_dog_question"
 small_dog_questionClock = core.Clock()
 text_22 = visual.TextStim(win=win, name='text_22',
-    text='Do the following images, together, weigh more than a small dog?',
+    text='default text',
     font='helvetica',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1196,7 +1188,7 @@ text_22 = visual.TextStim(win=win, name='text_22',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1263,28 +1255,28 @@ image_16 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 arrows_resp = keyboard.Keyboard()
 F_press = visual.TextStim(win=win, name='F_press',
-    text='F',
+    text='default text',
     font='Helvetica',
     pos=(-0.3, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 J_press = visual.TextStim(win=win, name='J_press',
-    text='J',
+    text='default text',
     font='Helvetica',
     pos=(0.3, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 left_press = visual.TextStim(win=win, name='left_press',
-    text='left',
+    text='default text',
     font='Helvetica',
     pos=(-0.3, -0.35), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 right_press = visual.TextStim(win=win, name='right_press',
-    text='right',
+    text='default text',
     font='Helvetica',
     pos=(0.3, -0.35), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1294,7 +1286,7 @@ right_press = visual.TextStim(win=win, name='right_press',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1324,28 +1316,28 @@ image_16 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 arrows_resp = keyboard.Keyboard()
 F_press = visual.TextStim(win=win, name='F_press',
-    text='F',
+    text='default text',
     font='Helvetica',
     pos=(-0.3, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 J_press = visual.TextStim(win=win, name='J_press',
-    text='J',
+    text='default text',
     font='Helvetica',
     pos=(0.3, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 left_press = visual.TextStim(win=win, name='left_press',
-    text='left',
+    text='default text',
     font='Helvetica',
     pos=(-0.3, -0.35), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 right_press = visual.TextStim(win=win, name='right_press',
-    text='right',
+    text='default text',
     font='Helvetica',
     pos=(0.3, -0.35), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1355,7 +1347,7 @@ right_press = visual.TextStim(win=win, name='right_press',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1365,7 +1357,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "small_dog_question"
 small_dog_questionClock = core.Clock()
 text_22 = visual.TextStim(win=win, name='text_22',
-    text='Do the following images, together, weigh more than a small dog?',
+    text='default text',
     font='helvetica',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1375,7 +1367,7 @@ text_22 = visual.TextStim(win=win, name='text_22',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1442,28 +1434,28 @@ image_16 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 arrows_resp = keyboard.Keyboard()
 F_press = visual.TextStim(win=win, name='F_press',
-    text='F',
+    text='default text',
     font='Helvetica',
     pos=(-0.3, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 J_press = visual.TextStim(win=win, name='J_press',
-    text='J',
+    text='default text',
     font='Helvetica',
     pos=(0.3, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 left_press = visual.TextStim(win=win, name='left_press',
-    text='left',
+    text='default text',
     font='Helvetica',
     pos=(-0.3, -0.35), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 right_press = visual.TextStim(win=win, name='right_press',
-    text='right',
+    text='default text',
     font='Helvetica',
     pos=(0.3, -0.35), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1473,7 +1465,7 @@ right_press = visual.TextStim(win=win, name='right_press',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1483,7 +1475,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1587,7 +1579,7 @@ newtext_2 = visual.TextStim(win=win, name='newtext_2',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1597,7 +1589,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1658,7 +1650,7 @@ newtext_2 = visual.TextStim(win=win, name='newtext_2',
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
 text_31 = visual.TextStim(win=win, name='text_31',
-    text=' ',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.2, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1841,7 +1833,7 @@ for thisComponent in expParamComponents:
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_24 = data.TrialHandler(nReps=1, method='sequential', 
+trials_24 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/instructions_first.csv'),
     seed=None, name='trials_24')
@@ -1873,6 +1865,12 @@ for thisTrial_24 in trials_24:
     instructions_text2_2.setHeight(0.03)
     response_2.keys = []
     response_2.rt = []
+    image1_2.setPos((0.25, 0))
+    image1_2.setSize((0.3, 0.3))
+    image1_2.setImage(Image1)
+    image2_2.setPos((-.25, 0))
+    image2_2.setSize((0.3, 0.3))
+    image2_2.setImage(Image2)
     # keep track of which components have finished
     instructions_firstComponents = [text_34, instructions_text2_2, response_2, image1_2, image2_2]
     for thisComponent in instructions_firstComponents:
@@ -1951,10 +1949,6 @@ for thisTrial_24 in trials_24:
             image1_2.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image1_2, 'tStartRefresh')  # time at next scr refresh
             image1_2.setAutoDraw(True)
-        if image1_2.status == STARTED:  # only update if drawing
-            image1_2.setPos((0.25, 0), log=False)
-            image1_2.setSize((0.3, 0.3), log=False)
-            image1_2.setImage(Image1, log=False)
         
         # *image2_2* updates
         if image2_2.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
@@ -1964,10 +1958,6 @@ for thisTrial_24 in trials_24:
             image2_2.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image2_2, 'tStartRefresh')  # time at next scr refresh
             image2_2.setAutoDraw(True)
-        if image2_2.status == STARTED:  # only update if drawing
-            image2_2.setPos((-.25, 0), log=False)
-            image2_2.setSize((0.3, 0.3), log=False)
-            image2_2.setImage(Image2, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2002,6 +1992,7 @@ for thisTrial_24 in trials_24:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -2065,12 +2056,13 @@ for thisTrial_24 in trials_24:
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'trials_24'
+# completed 0 repeats of 'trials_24'
 
 
 # ------Prepare to start Routine "fixation_2"-------
 routineTimer.add(0.500000)
 # update component parameters for each repeat
+text_31.setText('')
 # keep track of which components have finished
 fixation_2Components = [text_31]
 for thisComponent in fixation_2Components:
@@ -2136,7 +2128,7 @@ for thisComponent in fixation_2Components:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-practice_trials_intentional_encoding = data.TrialHandler(nReps=1, method='sequential', 
+practice_trials_intentional_encoding = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/test_practice.csv'),
     seed=None, name='practice_trials_intentional_encoding')
@@ -2157,8 +2149,10 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
     # ------Prepare to start Routine "real_intentional_encoding"-------
     routineTimer.add(3.500000)
     # update component parameters for each repeat
+    image_pair1.setImage(image_a)
+    image_pair2.setImage(correct_image)
     # keep track of which components have finished
-    real_intentional_encodingComponents = [image_pair1, image_pair2, image_pair2_3]
+    real_intentional_encodingComponents = [image_pair1, image_pair2]
     for thisComponent in real_intentional_encodingComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2198,8 +2192,6 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
                 image_pair1.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_pair1, 'tStopRefresh')  # time at next scr refresh
                 image_pair1.setAutoDraw(False)
-        if image_pair1.status == STARTED:  # only update if drawing
-            image_pair1.setImage(image_a, log=False)
         
         # *image_pair2* updates
         if image_pair2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -2217,27 +2209,6 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
                 image_pair2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_pair2, 'tStopRefresh')  # time at next scr refresh
                 image_pair2.setAutoDraw(False)
-        if image_pair2.status == STARTED:  # only update if drawing
-            image_pair2.setImage(correct_image, log=False)
-        
-        # *image_pair2_3* updates
-        if image_pair2_3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-            # keep track of start time/frame for later
-            image_pair2_3.frameNStart = frameN  # exact frame index
-            image_pair2_3.tStart = t  # local t and not account for scr refresh
-            image_pair2_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(image_pair2_3, 'tStartRefresh')  # time at next scr refresh
-            image_pair2_3.setAutoDraw(True)
-        if image_pair2_3.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image_pair2_3.tStartRefresh + 3.5-frameTolerance:
-                # keep track of stop time/frame for later
-                image_pair2_3.tStop = t  # not accounting for scr refresh
-                image_pair2_3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(image_pair2_3, 'tStopRefresh')  # time at next scr refresh
-                image_pair2_3.setAutoDraw(False)
-        if image_pair2_3.status == STARTED:  # only update if drawing
-            image_pair2_3.setImage(correct_image, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2264,6 +2235,7 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -2327,7 +2299,7 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'practice_trials_intentional_encoding'
+# completed 0 repeats of 'practice_trials_intentional_encoding'
 
 
 # ------Prepare to start Routine "intructions_post_practice_intentional_encoding"-------
@@ -2430,7 +2402,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1, method='sequential', 
+trials = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_path, selection='0:12'),
     seed=None, name='trials')
@@ -2537,6 +2509,7 @@ for thisTrial in trials:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -2600,11 +2573,11 @@ for thisTrial in trials:
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'trials'
+# completed 0 repeats of 'trials'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_4 = data.TrialHandler(nReps=1, method='sequential', 
+trials_4 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/instructions.csv', selection='8:11'),
     seed=None, name='trials_4')
@@ -2624,6 +2597,17 @@ for thisTrial_4 in trials_4:
     
     # ------Prepare to start Routine "instructions_retreival_testing1"-------
     # update component parameters for each repeat
+    text_3.setColor('black', colorSpace='rgb')
+    text_3.setPos((position_1x, position_1y))
+    text_3.setText(instructions1)
+    text_3.setFont('Helvetica')
+    text_3.setHeight(0.03)
+    text_4.setColor('black', colorSpace='rgb')
+    text_4.setPos((position_2x, position_2y))
+    text_4.setText(Instructions2)
+    text_4.setFont('Helvetica')
+    text_4.setHeight(0.03)
+    image_3.setImage(Image1)
     key_resp.keys = []
     key_resp.rt = []
     # keep track of which components have finished
@@ -2659,12 +2643,6 @@ for thisTrial_4 in trials_4:
             text_3.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
             text_3.setAutoDraw(True)
-        if text_3.status == STARTED:  # only update if drawing
-            text_3.setColor('black', colorSpace='rgb', log=False)
-            text_3.setPos((position_1x, position_1y), log=False)
-            text_3.setText(instructions1, log=False)
-            text_3.setFont('Helvetica', log=False)
-            text_3.setHeight(0.03, log=False)
         
         # *text_4* updates
         if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2674,12 +2652,6 @@ for thisTrial_4 in trials_4:
             text_4.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
             text_4.setAutoDraw(True)
-        if text_4.status == STARTED:  # only update if drawing
-            text_4.setColor('black', colorSpace='rgb', log=False)
-            text_4.setPos((position_2x, position_2y), log=False)
-            text_4.setText(Instructions2, log=False)
-            text_4.setFont('Helvetica', log=False)
-            text_4.setHeight(0.03, log=False)
         
         # *image_3* updates
         if image_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2689,12 +2661,6 @@ for thisTrial_4 in trials_4:
             image_3.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image_3, 'tStartRefresh')  # time at next scr refresh
             image_3.setAutoDraw(True)
-        if image_3.status == STARTED:  # only update if drawing
-            image_3.setOpacity(1, log=False)
-            image_3.setPos((0, 0), log=False)
-            image_3.setSize((0.3, 0.3), log=False)
-            image_3.setOri(0, log=False)
-            image_3.setImage(Image1, log=False)
         
         # *key_resp* updates
         waitOnFlip = False
@@ -2752,11 +2718,11 @@ for thisTrial_4 in trials_4:
         trials_4.addData('key_resp.rt', key_resp.rt)
     # the Routine "instructions_retreival_testing1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-# completed 1 repeats of 'trials_4'
+# completed 0 repeats of 'trials_4'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=1, method='sequential', 
+trials_2 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/instructions.csv', selection='11:16'),
     seed=None, name='trials_2')
@@ -2776,11 +2742,41 @@ for thisTrial_2 in trials_2:
     
     # ------Prepare to start Routine "instructions_retreival_testing"-------
     # update component parameters for each repeat
+    text_5.setColor('black', colorSpace='rgb')
+    text_5.setPos((position_1x, position_1y))
+    text_5.setText(instructions1)
+    text_5.setFont('Helvetica')
+    text_5.setHeight(0.03)
+    text_8.setColor('black', colorSpace='rgb')
+    text_8.setPos((position_2x, position_2y))
+    text_8.setText(Instructions2)
+    text_8.setFont('Helvetica')
+    text_8.setHeight(0.03)
     key_resp_2.keys = []
     key_resp_2.rt = []
+    image.setPos((0, 0))
+    image.setSize((0.3, 0.3))
+    image.setImage(Image1)
+    image_2.setImage(Image2)
+    image_5.setImage(Image3)
+    image_6.setPos((-.52, 0))
+    image_6.setSize((0.3, 0.3))
+    image_6.setImage(Image4)
+    K.setColor('black', colorSpace='rgb')
+    K.setPos((0, -.25))
     K.setText(K_key)
+    K.setFont('Arial')
+    K.setHeight(0.03)
+    L.setColor('black', colorSpace='rgb')
+    L.setPos((0.5, -.25))
     L.setText(L_key)
+    L.setFont('Helvetica')
+    L.setHeight(0.03)
+    J.setColor('black', colorSpace='rgb')
+    J.setPos((-0.5, -0.25))
     J.setText(J_key)
+    J.setFont('Helvetica')
+    J.setHeight(0.03)
     # keep track of which components have finished
     instructions_retreival_testingComponents = [text_5, text_8, key_resp_2, image, image_2, image_5, image_6, K, L, J]
     for thisComponent in instructions_retreival_testingComponents:
@@ -2814,12 +2810,6 @@ for thisTrial_2 in trials_2:
             text_5.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
             text_5.setAutoDraw(True)
-        if text_5.status == STARTED:  # only update if drawing
-            text_5.setColor('black', colorSpace='rgb', log=False)
-            text_5.setPos((position_1x, position_1y), log=False)
-            text_5.setText(instructions1, log=False)
-            text_5.setFont('Helvetica', log=False)
-            text_5.setHeight(0.03, log=False)
         
         # *text_8* updates
         if text_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2829,12 +2819,6 @@ for thisTrial_2 in trials_2:
             text_8.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
             text_8.setAutoDraw(True)
-        if text_8.status == STARTED:  # only update if drawing
-            text_8.setColor('black', colorSpace='rgb', log=False)
-            text_8.setPos((position_2x, position_2y), log=False)
-            text_8.setText(Instructions2, log=False)
-            text_8.setFont('Helvetica', log=False)
-            text_8.setHeight(0.03, log=False)
         
         # *key_resp_2* updates
         waitOnFlip = False
@@ -2871,12 +2855,6 @@ for thisTrial_2 in trials_2:
             image.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image, 'tStartRefresh')  # time at next scr refresh
             image.setAutoDraw(True)
-        if image.status == STARTED:  # only update if drawing
-            image.setOpacity(1, log=False)
-            image.setPos((0, 0), log=False)
-            image.setSize((0.3, 0.3), log=False)
-            image.setOri(0, log=False)
-            image.setImage(Image1, log=False)
         
         # *image_2* updates
         if image_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2886,12 +2864,6 @@ for thisTrial_2 in trials_2:
             image_2.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image_2, 'tStartRefresh')  # time at next scr refresh
             image_2.setAutoDraw(True)
-        if image_2.status == STARTED:  # only update if drawing
-            image_2.setOpacity(1, log=False)
-            image_2.setPos((0.52, 0), log=False)
-            image_2.setSize((0.3, 0.3), log=False)
-            image_2.setOri(0, log=False)
-            image_2.setImage(Image2, log=False)
         
         # *image_5* updates
         if image_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2901,12 +2873,6 @@ for thisTrial_2 in trials_2:
             image_5.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image_5, 'tStartRefresh')  # time at next scr refresh
             image_5.setAutoDraw(True)
-        if image_5.status == STARTED:  # only update if drawing
-            image_5.setOpacity(1, log=False)
-            image_5.setPos((0, 0), log=False)
-            image_5.setSize((0.3, 0.3), log=False)
-            image_5.setOri(0, log=False)
-            image_5.setImage(Image3, log=False)
         
         # *image_6* updates
         if image_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2916,12 +2882,6 @@ for thisTrial_2 in trials_2:
             image_6.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(image_6, 'tStartRefresh')  # time at next scr refresh
             image_6.setAutoDraw(True)
-        if image_6.status == STARTED:  # only update if drawing
-            image_6.setOpacity(1, log=False)
-            image_6.setPos((-.52, 0), log=False)
-            image_6.setSize((0.3, 0.3), log=False)
-            image_6.setOri(0, log=False)
-            image_6.setImage(Image4, log=False)
         
         # *K* updates
         if K.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2931,11 +2891,6 @@ for thisTrial_2 in trials_2:
             K.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(K, 'tStartRefresh')  # time at next scr refresh
             K.setAutoDraw(True)
-        if K.status == STARTED:  # only update if drawing
-            K.setColor('black', colorSpace='rgb', log=False)
-            K.setPos((0, -.25), log=False)
-            K.setFont('Arial', log=False)
-            K.setHeight(0.03, log=False)
         
         # *L* updates
         if L.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2945,11 +2900,6 @@ for thisTrial_2 in trials_2:
             L.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(L, 'tStartRefresh')  # time at next scr refresh
             L.setAutoDraw(True)
-        if L.status == STARTED:  # only update if drawing
-            L.setColor('black', colorSpace='rgb', log=False)
-            L.setPos((0.5, -.25), log=False)
-            L.setFont('Helvetica', log=False)
-            L.setHeight(0.03, log=False)
         
         # *J* updates
         if J.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -2959,11 +2909,6 @@ for thisTrial_2 in trials_2:
             J.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(J, 'tStartRefresh')  # time at next scr refresh
             J.setAutoDraw(True)
-        if J.status == STARTED:  # only update if drawing
-            J.setColor('black', colorSpace='rgb', log=False)
-            J.setPos((-0.5, -0.25), log=False)
-            J.setFont('Helvetica', log=False)
-            J.setHeight(0.03, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2994,11 +2939,11 @@ for thisTrial_2 in trials_2:
         trials_2.addData('key_resp_2.rt', key_resp_2.rt)
     # the Routine "instructions_retreival_testing" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-# completed 1 repeats of 'trials_2'
+# completed 0 repeats of 'trials_2'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_5 = data.TrialHandler(nReps=1, method='sequential', 
+trials_5 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/test_practice.csv', selection='0:3'),
     seed=None, name='trials_5')
@@ -3019,6 +2964,36 @@ for thisTrial_5 in trials_5:
     # ------Prepare to start Routine "practice_retrieval_after_encoding"-------
     routineTimer.add(9.000000)
     # update component parameters for each repeat
+    image_a_practice.setImage(image_a)
+    location1_practice.setImage(location1)
+    location2_practice.setImage(location2)
+    location3_practice.setImage(location3)
+    K_key_practice.setColor('black', colorSpace='rgb')
+    K_key_practice.setPos((0, -.25))
+    K_key_practice.setText('K')
+    K_key_practice.setFont('Helvetica')
+    K_key_practice.setHeight(0.04)
+    L_key_practice.setColor('black', colorSpace='rgb')
+    L_key_practice.setPos((0.4, -.25))
+    L_key_practice.setText('L')
+    L_key_practice.setFont('Helvetica')
+    L_key_practice.setHeight(0.03)
+    image_11.setPos((-0.2, 0))
+    image_11.setSize((0.3, 0.3))
+    image_11.setImage(image_a)
+    image_12.setPos((.2, 0))
+    image_12.setSize((0.3, 0.3))
+    image_12.setImage(correct_image)
+    text_7.setColor('black', colorSpace='rgb')
+    text_7.setPos((0, .20))
+    text_7.setText('Think of the image pair')
+    text_7.setFont('Helvetica')
+    text_7.setHeight(0.03)
+    text_17.setColor('black', colorSpace='rgb')
+    text_17.setPos((0, .3))
+    text_17.setText('Re-study the correct pairs')
+    text_17.setFont('Helvetica')
+    text_17.setHeight(0.03)
     key_resp_13.keys = []
     key_resp_13.rt = []
     # keep track of which components have finished
@@ -3062,8 +3037,6 @@ for thisTrial_5 in trials_5:
                 image_a_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_a_practice, 'tStopRefresh')  # time at next scr refresh
                 image_a_practice.setAutoDraw(False)
-        if image_a_practice.status == STARTED:  # only update if drawing
-            image_a_practice.setImage(image_a, log=False)
         
         # *afc_test_practice* updates
         if afc_test_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3098,8 +3071,6 @@ for thisTrial_5 in trials_5:
                 location1_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(location1_practice, 'tStopRefresh')  # time at next scr refresh
                 location1_practice.setAutoDraw(False)
-        if location1_practice.status == STARTED:  # only update if drawing
-            location1_practice.setImage(location1, log=False)
         
         # *location2_practice* updates
         if location2_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3117,8 +3088,6 @@ for thisTrial_5 in trials_5:
                 location2_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(location2_practice, 'tStopRefresh')  # time at next scr refresh
                 location2_practice.setAutoDraw(False)
-        if location2_practice.status == STARTED:  # only update if drawing
-            location2_practice.setImage(location2, log=False)
         
         # *location3_practice* updates
         if location3_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3136,8 +3105,6 @@ for thisTrial_5 in trials_5:
                 location3_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(location3_practice, 'tStopRefresh')  # time at next scr refresh
                 location3_practice.setAutoDraw(False)
-        if location3_practice.status == STARTED:  # only update if drawing
-            location3_practice.setImage(location3, log=False)
         
         # *j_key_test_practice* updates
         if j_key_test_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3206,8 +3173,6 @@ for thisTrial_5 in trials_5:
                 image_11.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_11, 'tStopRefresh')  # time at next scr refresh
                 image_11.setAutoDraw(False)
-        if image_11.status == STARTED:  # only update if drawing
-            image_11.setImage(image_a, log=False)
         
         # *image_12* updates
         if image_12.status == NOT_STARTED and tThisFlip >= 6-frameTolerance:
@@ -3225,8 +3190,6 @@ for thisTrial_5 in trials_5:
                 image_12.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_12, 'tStopRefresh')  # time at next scr refresh
                 image_12.setAutoDraw(False)
-        if image_12.status == STARTED:  # only update if drawing
-            image_12.setImage(correct_image, log=False)
         
         # *text_7* updates
         if text_7.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
@@ -3322,7 +3285,7 @@ for thisTrial_5 in trials_5:
     trials_5.addData('key_resp_13.keys',key_resp_13.keys)
     if key_resp_13.keys != None:  # we had a response
         trials_5.addData('key_resp_13.rt', key_resp_13.rt)
-# completed 1 repeats of 'trials_5'
+# completed 0 repeats of 'trials_5'
 
 
 # ------Prepare to start Routine "post_retrievalpractice_instructions"-------
@@ -3422,7 +3385,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_3 = data.TrialHandler(nReps=1, method='sequential', 
+trials_3 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_test_path, selection='0:12'),
     seed=None, name='trials_3')
@@ -3443,6 +3406,12 @@ for thisTrial_3 in trials_3:
     # ------Prepare to start Routine "think_image_pair"-------
     routineTimer.add(2.500000)
     # update component parameters for each repeat
+    instruct_text_3.setColor('black', colorSpace='rgb')
+    instruct_text_3.setPos((0, .20))
+    instruct_text_3.setText('Think of the image pair')
+    instruct_text_3.setFont('Arial')
+    instruct_text_3.setHeight(0.03)
+    a_image_retrieve_3.setImage(ImageA)
     # keep track of which components have finished
     think_image_pairComponents = [instruct_text_3, a_image_retrieve_3]
     for thisComponent in think_image_pairComponents:
@@ -3501,8 +3470,6 @@ for thisTrial_3 in trials_3:
                 a_image_retrieve_3.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(a_image_retrieve_3, 'tStopRefresh')  # time at next scr refresh
                 a_image_retrieve_3.setAutoDraw(False)
-        if a_image_retrieve_3.status == STARTED:  # only update if drawing
-            a_image_retrieve_3.setImage(ImageA, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3529,6 +3496,7 @@ for thisTrial_3 in trials_3:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -3596,17 +3564,37 @@ for thisTrial_3 in trials_3:
     # ------Prepare to start Routine "retrieval4"-------
     routineTimer.add(4.500000)
     # update component parameters for each repeat
+    afc_text_2.setText('Select the correct image')
+    image_13.setPos((-.4, 0))
+    image_13.setSize((0.3, 0.3))
+    image_13.setImage(location1)
+    image_14.setPos((0, 0))
+    image_14.setImage(location2)
+    image_15.setPos((0.4, 0))
+    image_15.setImage(location3)
     j_key_test_2.setColor('black', colorSpace='rgb')
     j_key_test_2.setPos((-0.4, -0.25))
+    j_key_test_2.setText('J')
     j_key_test_2.setFont('Helvetica')
     j_key_test_2.setHeight(0.03)
+    L_key_test_2.setColor('black', colorSpace='rgb')
+    L_key_test_2.setText('L')
+    L_key_test_2.setFont('Helvetica')
     K_key_test_2.setColor('black', colorSpace='rgb')
     K_key_test_2.setPos((0, -.25))
     K_key_test_2.setText('K')
     K_key_test_2.setFont('Helvetica')
     K_key_test_2.setHeight(0.03)
+    correct_image__a.setPos((-0.2, 0))
+    correct_image__a.setSize((0.3, 0.3))
     correct_image__a.setImage(ImageA)
+    correct_image2_2.setPos((0.2, 0))
+    correct_image2_2.setSize((0.3, 0.3))
     correct_image2_2.setImage(ImageB)
+    Feedback_2.setColor('black', colorSpace='rgb')
+    Feedback_2.setText('Re-study the correct pairs')
+    Feedback_2.setFont('Helvetica')
+    Feedback_2.setHeight(0.03)
     retrieval_test_resp.keys = []
     retrieval_test_resp.rt = []
     # keep track of which components have finished
@@ -3667,9 +3655,6 @@ for thisTrial_3 in trials_3:
                 image_13.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_13, 'tStopRefresh')  # time at next scr refresh
                 image_13.setAutoDraw(False)
-        if image_13.status == STARTED:  # only update if drawing
-            image_13.setPos((-.4, 0), log=False)
-            image_13.setImage(location1, log=False)
         
         # *image_14* updates
         if image_14.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -3687,9 +3672,6 @@ for thisTrial_3 in trials_3:
                 image_14.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_14, 'tStopRefresh')  # time at next scr refresh
                 image_14.setAutoDraw(False)
-        if image_14.status == STARTED:  # only update if drawing
-            image_14.setPos((0, 0), log=False)
-            image_14.setImage(location2, log=False)
         
         # *image_15* updates
         if image_15.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -3707,9 +3689,6 @@ for thisTrial_3 in trials_3:
                 image_15.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_15, 'tStopRefresh')  # time at next scr refresh
                 image_15.setAutoDraw(False)
-        if image_15.status == STARTED:  # only update if drawing
-            image_15.setPos((0.4, 0), log=False)
-            image_15.setImage(location3, log=False)
         
         # *j_key_test_2* updates
         if j_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -3727,8 +3706,6 @@ for thisTrial_3 in trials_3:
                 j_key_test_2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(j_key_test_2, 'tStopRefresh')  # time at next scr refresh
                 j_key_test_2.setAutoDraw(False)
-        if j_key_test_2.status == STARTED:  # only update if drawing
-            j_key_test_2.setText('J', log=False)
         
         # *L_key_test_2* updates
         if L_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -3879,7 +3856,7 @@ for thisTrial_3 in trials_3:
     trials_3.addData('retrieval_test_resp.stopped', retrieval_test_resp.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_3'
+# completed 0 repeats of 'trials_3'
 
 
 # ------Prepare to start Routine "pre_intentional_encoding4"-------
@@ -3979,7 +3956,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_6 = data.TrialHandler(nReps=1, method='sequential', 
+trials_6 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_path, selection='12:24'),
     seed=None, name='trials_6')
@@ -4086,6 +4063,7 @@ for thisTrial_6 in trials_6:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -4149,7 +4127,7 @@ for thisTrial_6 in trials_6:
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'trials_6'
+# completed 0 repeats of 'trials_6'
 
 
 # ------Prepare to start Routine "instruct_retrieval4"-------
@@ -4249,7 +4227,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_7 = data.TrialHandler(nReps=1, method='sequential', 
+trials_7 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_test_path, selection='12:24'),
     seed=None, name='trials_7')
@@ -4270,6 +4248,12 @@ for thisTrial_7 in trials_7:
     # ------Prepare to start Routine "think_image_pair"-------
     routineTimer.add(2.500000)
     # update component parameters for each repeat
+    instruct_text_3.setColor('black', colorSpace='rgb')
+    instruct_text_3.setPos((0, .20))
+    instruct_text_3.setText('Think of the image pair')
+    instruct_text_3.setFont('Arial')
+    instruct_text_3.setHeight(0.03)
+    a_image_retrieve_3.setImage(ImageA)
     # keep track of which components have finished
     think_image_pairComponents = [instruct_text_3, a_image_retrieve_3]
     for thisComponent in think_image_pairComponents:
@@ -4328,8 +4312,6 @@ for thisTrial_7 in trials_7:
                 a_image_retrieve_3.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(a_image_retrieve_3, 'tStopRefresh')  # time at next scr refresh
                 a_image_retrieve_3.setAutoDraw(False)
-        if a_image_retrieve_3.status == STARTED:  # only update if drawing
-            a_image_retrieve_3.setImage(ImageA, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4356,6 +4338,7 @@ for thisTrial_7 in trials_7:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -4423,17 +4406,37 @@ for thisTrial_7 in trials_7:
     # ------Prepare to start Routine "retrieval4"-------
     routineTimer.add(4.500000)
     # update component parameters for each repeat
+    afc_text_2.setText('Select the correct image')
+    image_13.setPos((-.4, 0))
+    image_13.setSize((0.3, 0.3))
+    image_13.setImage(location1)
+    image_14.setPos((0, 0))
+    image_14.setImage(location2)
+    image_15.setPos((0.4, 0))
+    image_15.setImage(location3)
     j_key_test_2.setColor('black', colorSpace='rgb')
     j_key_test_2.setPos((-0.4, -0.25))
+    j_key_test_2.setText('J')
     j_key_test_2.setFont('Helvetica')
     j_key_test_2.setHeight(0.03)
+    L_key_test_2.setColor('black', colorSpace='rgb')
+    L_key_test_2.setText('L')
+    L_key_test_2.setFont('Helvetica')
     K_key_test_2.setColor('black', colorSpace='rgb')
     K_key_test_2.setPos((0, -.25))
     K_key_test_2.setText('K')
     K_key_test_2.setFont('Helvetica')
     K_key_test_2.setHeight(0.03)
+    correct_image__a.setPos((-0.2, 0))
+    correct_image__a.setSize((0.3, 0.3))
     correct_image__a.setImage(ImageA)
+    correct_image2_2.setPos((0.2, 0))
+    correct_image2_2.setSize((0.3, 0.3))
     correct_image2_2.setImage(ImageB)
+    Feedback_2.setColor('black', colorSpace='rgb')
+    Feedback_2.setText('Re-study the correct pairs')
+    Feedback_2.setFont('Helvetica')
+    Feedback_2.setHeight(0.03)
     retrieval_test_resp.keys = []
     retrieval_test_resp.rt = []
     # keep track of which components have finished
@@ -4494,9 +4497,6 @@ for thisTrial_7 in trials_7:
                 image_13.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_13, 'tStopRefresh')  # time at next scr refresh
                 image_13.setAutoDraw(False)
-        if image_13.status == STARTED:  # only update if drawing
-            image_13.setPos((-.4, 0), log=False)
-            image_13.setImage(location1, log=False)
         
         # *image_14* updates
         if image_14.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -4514,9 +4514,6 @@ for thisTrial_7 in trials_7:
                 image_14.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_14, 'tStopRefresh')  # time at next scr refresh
                 image_14.setAutoDraw(False)
-        if image_14.status == STARTED:  # only update if drawing
-            image_14.setPos((0, 0), log=False)
-            image_14.setImage(location2, log=False)
         
         # *image_15* updates
         if image_15.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -4534,9 +4531,6 @@ for thisTrial_7 in trials_7:
                 image_15.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_15, 'tStopRefresh')  # time at next scr refresh
                 image_15.setAutoDraw(False)
-        if image_15.status == STARTED:  # only update if drawing
-            image_15.setPos((0.4, 0), log=False)
-            image_15.setImage(location3, log=False)
         
         # *j_key_test_2* updates
         if j_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -4554,8 +4548,6 @@ for thisTrial_7 in trials_7:
                 j_key_test_2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(j_key_test_2, 'tStopRefresh')  # time at next scr refresh
                 j_key_test_2.setAutoDraw(False)
-        if j_key_test_2.status == STARTED:  # only update if drawing
-            j_key_test_2.setText('J', log=False)
         
         # *L_key_test_2* updates
         if L_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -4706,7 +4698,7 @@ for thisTrial_7 in trials_7:
     trials_7.addData('retrieval_test_resp.stopped', retrieval_test_resp.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_7'
+# completed 0 repeats of 'trials_7'
 
 
 # ------Prepare to start Routine "pre_intentional_encoding4"-------
@@ -4806,7 +4798,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_8 = data.TrialHandler(nReps=1, method='sequential', 
+trials_8 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_path, selection='24:36'),
     seed=None, name='trials_8')
@@ -4913,6 +4905,7 @@ for thisTrial_8 in trials_8:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -4976,7 +4969,7 @@ for thisTrial_8 in trials_8:
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'trials_8'
+# completed 0 repeats of 'trials_8'
 
 
 # ------Prepare to start Routine "instruct_retrieval4"-------
@@ -5076,7 +5069,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_9 = data.TrialHandler(nReps=1, method='sequential', 
+trials_9 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_test_path, selection='24:36'),
     seed=None, name='trials_9')
@@ -5097,6 +5090,12 @@ for thisTrial_9 in trials_9:
     # ------Prepare to start Routine "think_image_pair"-------
     routineTimer.add(2.500000)
     # update component parameters for each repeat
+    instruct_text_3.setColor('black', colorSpace='rgb')
+    instruct_text_3.setPos((0, .20))
+    instruct_text_3.setText('Think of the image pair')
+    instruct_text_3.setFont('Arial')
+    instruct_text_3.setHeight(0.03)
+    a_image_retrieve_3.setImage(ImageA)
     # keep track of which components have finished
     think_image_pairComponents = [instruct_text_3, a_image_retrieve_3]
     for thisComponent in think_image_pairComponents:
@@ -5155,8 +5154,6 @@ for thisTrial_9 in trials_9:
                 a_image_retrieve_3.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(a_image_retrieve_3, 'tStopRefresh')  # time at next scr refresh
                 a_image_retrieve_3.setAutoDraw(False)
-        if a_image_retrieve_3.status == STARTED:  # only update if drawing
-            a_image_retrieve_3.setImage(ImageA, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -5183,6 +5180,7 @@ for thisTrial_9 in trials_9:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -5250,17 +5248,37 @@ for thisTrial_9 in trials_9:
     # ------Prepare to start Routine "retrieval4"-------
     routineTimer.add(4.500000)
     # update component parameters for each repeat
+    afc_text_2.setText('Select the correct image')
+    image_13.setPos((-.4, 0))
+    image_13.setSize((0.3, 0.3))
+    image_13.setImage(location1)
+    image_14.setPos((0, 0))
+    image_14.setImage(location2)
+    image_15.setPos((0.4, 0))
+    image_15.setImage(location3)
     j_key_test_2.setColor('black', colorSpace='rgb')
     j_key_test_2.setPos((-0.4, -0.25))
+    j_key_test_2.setText('J')
     j_key_test_2.setFont('Helvetica')
     j_key_test_2.setHeight(0.03)
+    L_key_test_2.setColor('black', colorSpace='rgb')
+    L_key_test_2.setText('L')
+    L_key_test_2.setFont('Helvetica')
     K_key_test_2.setColor('black', colorSpace='rgb')
     K_key_test_2.setPos((0, -.25))
     K_key_test_2.setText('K')
     K_key_test_2.setFont('Helvetica')
     K_key_test_2.setHeight(0.03)
+    correct_image__a.setPos((-0.2, 0))
+    correct_image__a.setSize((0.3, 0.3))
     correct_image__a.setImage(ImageA)
+    correct_image2_2.setPos((0.2, 0))
+    correct_image2_2.setSize((0.3, 0.3))
     correct_image2_2.setImage(ImageB)
+    Feedback_2.setColor('black', colorSpace='rgb')
+    Feedback_2.setText('Re-study the correct pairs')
+    Feedback_2.setFont('Helvetica')
+    Feedback_2.setHeight(0.03)
     retrieval_test_resp.keys = []
     retrieval_test_resp.rt = []
     # keep track of which components have finished
@@ -5321,9 +5339,6 @@ for thisTrial_9 in trials_9:
                 image_13.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_13, 'tStopRefresh')  # time at next scr refresh
                 image_13.setAutoDraw(False)
-        if image_13.status == STARTED:  # only update if drawing
-            image_13.setPos((-.4, 0), log=False)
-            image_13.setImage(location1, log=False)
         
         # *image_14* updates
         if image_14.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -5341,9 +5356,6 @@ for thisTrial_9 in trials_9:
                 image_14.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_14, 'tStopRefresh')  # time at next scr refresh
                 image_14.setAutoDraw(False)
-        if image_14.status == STARTED:  # only update if drawing
-            image_14.setPos((0, 0), log=False)
-            image_14.setImage(location2, log=False)
         
         # *image_15* updates
         if image_15.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -5361,9 +5373,6 @@ for thisTrial_9 in trials_9:
                 image_15.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_15, 'tStopRefresh')  # time at next scr refresh
                 image_15.setAutoDraw(False)
-        if image_15.status == STARTED:  # only update if drawing
-            image_15.setPos((0.4, 0), log=False)
-            image_15.setImage(location3, log=False)
         
         # *j_key_test_2* updates
         if j_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -5381,8 +5390,6 @@ for thisTrial_9 in trials_9:
                 j_key_test_2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(j_key_test_2, 'tStopRefresh')  # time at next scr refresh
                 j_key_test_2.setAutoDraw(False)
-        if j_key_test_2.status == STARTED:  # only update if drawing
-            j_key_test_2.setText('J', log=False)
         
         # *L_key_test_2* updates
         if L_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -5533,7 +5540,7 @@ for thisTrial_9 in trials_9:
     trials_9.addData('retrieval_test_resp.stopped', retrieval_test_resp.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_9'
+# completed 0 repeats of 'trials_9'
 
 
 # ------Prepare to start Routine "pre_intentional_encoding4"-------
@@ -5633,7 +5640,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_10 = data.TrialHandler(nReps=1, method='sequential', 
+trials_10 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_path, selection='36:48'),
     seed=None, name='trials_10')
@@ -5740,6 +5747,7 @@ for thisTrial_10 in trials_10:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -5803,7 +5811,7 @@ for thisTrial_10 in trials_10:
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'trials_10'
+# completed 0 repeats of 'trials_10'
 
 
 # ------Prepare to start Routine "instruct_retrieval4"-------
@@ -5903,7 +5911,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_11 = data.TrialHandler(nReps=1, method='sequential', 
+trials_11 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_test_path, selection='36:48'),
     seed=None, name='trials_11')
@@ -5924,6 +5932,12 @@ for thisTrial_11 in trials_11:
     # ------Prepare to start Routine "think_image_pair"-------
     routineTimer.add(2.500000)
     # update component parameters for each repeat
+    instruct_text_3.setColor('black', colorSpace='rgb')
+    instruct_text_3.setPos((0, .20))
+    instruct_text_3.setText('Think of the image pair')
+    instruct_text_3.setFont('Arial')
+    instruct_text_3.setHeight(0.03)
+    a_image_retrieve_3.setImage(ImageA)
     # keep track of which components have finished
     think_image_pairComponents = [instruct_text_3, a_image_retrieve_3]
     for thisComponent in think_image_pairComponents:
@@ -5982,8 +5996,6 @@ for thisTrial_11 in trials_11:
                 a_image_retrieve_3.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(a_image_retrieve_3, 'tStopRefresh')  # time at next scr refresh
                 a_image_retrieve_3.setAutoDraw(False)
-        if a_image_retrieve_3.status == STARTED:  # only update if drawing
-            a_image_retrieve_3.setImage(ImageA, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -6010,6 +6022,7 @@ for thisTrial_11 in trials_11:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -6077,17 +6090,37 @@ for thisTrial_11 in trials_11:
     # ------Prepare to start Routine "retrieval4"-------
     routineTimer.add(4.500000)
     # update component parameters for each repeat
+    afc_text_2.setText('Select the correct image')
+    image_13.setPos((-.4, 0))
+    image_13.setSize((0.3, 0.3))
+    image_13.setImage(location1)
+    image_14.setPos((0, 0))
+    image_14.setImage(location2)
+    image_15.setPos((0.4, 0))
+    image_15.setImage(location3)
     j_key_test_2.setColor('black', colorSpace='rgb')
     j_key_test_2.setPos((-0.4, -0.25))
+    j_key_test_2.setText('J')
     j_key_test_2.setFont('Helvetica')
     j_key_test_2.setHeight(0.03)
+    L_key_test_2.setColor('black', colorSpace='rgb')
+    L_key_test_2.setText('L')
+    L_key_test_2.setFont('Helvetica')
     K_key_test_2.setColor('black', colorSpace='rgb')
     K_key_test_2.setPos((0, -.25))
     K_key_test_2.setText('K')
     K_key_test_2.setFont('Helvetica')
     K_key_test_2.setHeight(0.03)
+    correct_image__a.setPos((-0.2, 0))
+    correct_image__a.setSize((0.3, 0.3))
     correct_image__a.setImage(ImageA)
+    correct_image2_2.setPos((0.2, 0))
+    correct_image2_2.setSize((0.3, 0.3))
     correct_image2_2.setImage(ImageB)
+    Feedback_2.setColor('black', colorSpace='rgb')
+    Feedback_2.setText('Re-study the correct pairs')
+    Feedback_2.setFont('Helvetica')
+    Feedback_2.setHeight(0.03)
     retrieval_test_resp.keys = []
     retrieval_test_resp.rt = []
     # keep track of which components have finished
@@ -6148,9 +6181,6 @@ for thisTrial_11 in trials_11:
                 image_13.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_13, 'tStopRefresh')  # time at next scr refresh
                 image_13.setAutoDraw(False)
-        if image_13.status == STARTED:  # only update if drawing
-            image_13.setPos((-.4, 0), log=False)
-            image_13.setImage(location1, log=False)
         
         # *image_14* updates
         if image_14.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6168,9 +6198,6 @@ for thisTrial_11 in trials_11:
                 image_14.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_14, 'tStopRefresh')  # time at next scr refresh
                 image_14.setAutoDraw(False)
-        if image_14.status == STARTED:  # only update if drawing
-            image_14.setPos((0, 0), log=False)
-            image_14.setImage(location2, log=False)
         
         # *image_15* updates
         if image_15.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6188,9 +6215,6 @@ for thisTrial_11 in trials_11:
                 image_15.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_15, 'tStopRefresh')  # time at next scr refresh
                 image_15.setAutoDraw(False)
-        if image_15.status == STARTED:  # only update if drawing
-            image_15.setPos((0.4, 0), log=False)
-            image_15.setImage(location3, log=False)
         
         # *j_key_test_2* updates
         if j_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6208,8 +6232,6 @@ for thisTrial_11 in trials_11:
                 j_key_test_2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(j_key_test_2, 'tStopRefresh')  # time at next scr refresh
                 j_key_test_2.setAutoDraw(False)
-        if j_key_test_2.status == STARTED:  # only update if drawing
-            j_key_test_2.setText('J', log=False)
         
         # *L_key_test_2* updates
         if L_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6360,7 +6382,7 @@ for thisTrial_11 in trials_11:
     trials_11.addData('retrieval_test_resp.stopped', retrieval_test_resp.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_11'
+# completed 0 repeats of 'trials_11'
 
 
 # ------Prepare to start Routine "final_ab_retrieval_test_instruct"-------
@@ -6481,6 +6503,12 @@ for thisTrial_12 in trials_12:
     # ------Prepare to start Routine "think_image_pair"-------
     routineTimer.add(2.500000)
     # update component parameters for each repeat
+    instruct_text_3.setColor('black', colorSpace='rgb')
+    instruct_text_3.setPos((0, .20))
+    instruct_text_3.setText('Think of the image pair')
+    instruct_text_3.setFont('Arial')
+    instruct_text_3.setHeight(0.03)
+    a_image_retrieve_3.setImage(ImageA)
     # keep track of which components have finished
     think_image_pairComponents = [instruct_text_3, a_image_retrieve_3]
     for thisComponent in think_image_pairComponents:
@@ -6539,8 +6567,6 @@ for thisTrial_12 in trials_12:
                 a_image_retrieve_3.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(a_image_retrieve_3, 'tStopRefresh')  # time at next scr refresh
                 a_image_retrieve_3.setAutoDraw(False)
-        if a_image_retrieve_3.status == STARTED:  # only update if drawing
-            a_image_retrieve_3.setImage(ImageA, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -6567,6 +6593,7 @@ for thisTrial_12 in trials_12:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -6634,17 +6661,37 @@ for thisTrial_12 in trials_12:
     # ------Prepare to start Routine "retrieval4"-------
     routineTimer.add(4.500000)
     # update component parameters for each repeat
+    afc_text_2.setText('Select the correct image')
+    image_13.setPos((-.4, 0))
+    image_13.setSize((0.3, 0.3))
+    image_13.setImage(location1)
+    image_14.setPos((0, 0))
+    image_14.setImage(location2)
+    image_15.setPos((0.4, 0))
+    image_15.setImage(location3)
     j_key_test_2.setColor('black', colorSpace='rgb')
     j_key_test_2.setPos((-0.4, -0.25))
+    j_key_test_2.setText('J')
     j_key_test_2.setFont('Helvetica')
     j_key_test_2.setHeight(0.03)
+    L_key_test_2.setColor('black', colorSpace='rgb')
+    L_key_test_2.setText('L')
+    L_key_test_2.setFont('Helvetica')
     K_key_test_2.setColor('black', colorSpace='rgb')
     K_key_test_2.setPos((0, -.25))
     K_key_test_2.setText('K')
     K_key_test_2.setFont('Helvetica')
     K_key_test_2.setHeight(0.03)
+    correct_image__a.setPos((-0.2, 0))
+    correct_image__a.setSize((0.3, 0.3))
     correct_image__a.setImage(ImageA)
+    correct_image2_2.setPos((0.2, 0))
+    correct_image2_2.setSize((0.3, 0.3))
     correct_image2_2.setImage(ImageB)
+    Feedback_2.setColor('black', colorSpace='rgb')
+    Feedback_2.setText('Re-study the correct pairs')
+    Feedback_2.setFont('Helvetica')
+    Feedback_2.setHeight(0.03)
     retrieval_test_resp.keys = []
     retrieval_test_resp.rt = []
     # keep track of which components have finished
@@ -6705,9 +6752,6 @@ for thisTrial_12 in trials_12:
                 image_13.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_13, 'tStopRefresh')  # time at next scr refresh
                 image_13.setAutoDraw(False)
-        if image_13.status == STARTED:  # only update if drawing
-            image_13.setPos((-.4, 0), log=False)
-            image_13.setImage(location1, log=False)
         
         # *image_14* updates
         if image_14.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6725,9 +6769,6 @@ for thisTrial_12 in trials_12:
                 image_14.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_14, 'tStopRefresh')  # time at next scr refresh
                 image_14.setAutoDraw(False)
-        if image_14.status == STARTED:  # only update if drawing
-            image_14.setPos((0, 0), log=False)
-            image_14.setImage(location2, log=False)
         
         # *image_15* updates
         if image_15.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6745,9 +6786,6 @@ for thisTrial_12 in trials_12:
                 image_15.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_15, 'tStopRefresh')  # time at next scr refresh
                 image_15.setAutoDraw(False)
-        if image_15.status == STARTED:  # only update if drawing
-            image_15.setPos((0.4, 0), log=False)
-            image_15.setImage(location3, log=False)
         
         # *j_key_test_2* updates
         if j_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -6765,8 +6803,6 @@ for thisTrial_12 in trials_12:
                 j_key_test_2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(j_key_test_2, 'tStopRefresh')  # time at next scr refresh
                 j_key_test_2.setAutoDraw(False)
-        if j_key_test_2.status == STARTED:  # only update if drawing
-            j_key_test_2.setText('J', log=False)
         
         # *L_key_test_2* updates
         if L_key_test_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -7156,6 +7192,7 @@ for thisTrial_15 in trials_15:
     # ------Prepare to start Routine "small_dog_question"-------
     routineTimer.add(1.500000)
     # update component parameters for each repeat
+    text_22.setText('Do the following images, together, weigh more than a small dog?')
     # keep track of which components have finished
     small_dog_questionComponents = [text_22]
     for thisComponent in small_dog_questionComponents:
@@ -7223,6 +7260,7 @@ for thisTrial_15 in trials_15:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -7506,6 +7544,10 @@ for thisTrial_15 in trials_15:
         image_16.setImage(Arrow_direction)
         arrows_resp.keys = []
         arrows_resp.rt = []
+        F_press.setText('F')
+        J_press.setText('J')
+        left_press.setText('left')
+        right_press.setText('right')
         # keep track of which components have finished
         sustained_attention_arrows_practiceComponents = [image_16, arrows_resp, F_press, J_press, left_press, right_press]
         for thisComponent in sustained_attention_arrows_practiceComponents:
@@ -7638,6 +7680,7 @@ for thisTrial_15 in trials_15:
         # ------Prepare to start Routine "fixation_2"-------
         routineTimer.add(0.500000)
         # update component parameters for each repeat
+        text_31.setText('')
         # keep track of which components have finished
         fixation_2Components = [text_31]
         for thisComponent in fixation_2Components:
@@ -7826,6 +7869,10 @@ for thisTrial_18 in trials_18:
     image_16.setImage(Arrow_direction)
     arrows_resp.keys = []
     arrows_resp.rt = []
+    F_press.setText('F')
+    J_press.setText('J')
+    left_press.setText('left')
+    right_press.setText('right')
     # keep track of which components have finished
     sustained_attention_arrows_practiceComponents = [image_16, arrows_resp, F_press, J_press, left_press, right_press]
     for thisComponent in sustained_attention_arrows_practiceComponents:
@@ -7958,6 +8005,7 @@ for thisTrial_18 in trials_18:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -8048,6 +8096,7 @@ for thisTrial_17 in trials_17:
     # ------Prepare to start Routine "small_dog_question"-------
     routineTimer.add(1.500000)
     # update component parameters for each repeat
+    text_22.setText('Do the following images, together, weigh more than a small dog?')
     # keep track of which components have finished
     small_dog_questionComponents = [text_22]
     for thisComponent in small_dog_questionComponents:
@@ -8115,6 +8164,7 @@ for thisTrial_17 in trials_17:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -8400,6 +8450,10 @@ for thisTrial_17 in trials_17:
         image_16.setImage(Arrow_direction)
         arrows_resp.keys = []
         arrows_resp.rt = []
+        F_press.setText('F')
+        J_press.setText('J')
+        left_press.setText('left')
+        right_press.setText('right')
         # keep track of which components have finished
         sustained_attention_arrows_practiceComponents = [image_16, arrows_resp, F_press, J_press, left_press, right_press]
         for thisComponent in sustained_attention_arrows_practiceComponents:
@@ -8532,6 +8586,7 @@ for thisTrial_17 in trials_17:
         # ------Prepare to start Routine "fixation_2"-------
         routineTimer.add(0.500000)
         # update component parameters for each repeat
+        text_31.setText('')
         # keep track of which components have finished
         fixation_2Components = [text_31]
         for thisComponent in fixation_2Components:
@@ -8607,6 +8662,7 @@ for thisTrial_17 in trials_17:
 # ------Prepare to start Routine "fixation_2"-------
 routineTimer.add(0.500000)
 # update component parameters for each repeat
+text_31.setText('')
 # keep track of which components have finished
 fixation_2Components = [text_31]
 for thisComponent in fixation_2Components:
@@ -9057,6 +9113,7 @@ for thisTrial_20 in trials_20:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
@@ -9126,6 +9183,7 @@ for thisTrial_20 in trials_20:
 # ------Prepare to start Routine "fixation_2"-------
 routineTimer.add(0.500000)
 # update component parameters for each repeat
+text_31.setText('')
 # keep track of which components have finished
 fixation_2Components = [text_31]
 for thisComponent in fixation_2Components:
@@ -9493,6 +9551,7 @@ for thisTrial_21 in trials_21:
     # ------Prepare to start Routine "fixation_2"-------
     routineTimer.add(0.500000)
     # update component parameters for each repeat
+    text_31.setText('')
     # keep track of which components have finished
     fixation_2Components = [text_31]
     for thisComponent in fixation_2Components:
