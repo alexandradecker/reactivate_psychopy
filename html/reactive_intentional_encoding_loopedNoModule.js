@@ -35,10 +35,10 @@ flowScheduler.add(experimentInit);
 flowScheduler.add(expParamRoutineBegin);
 flowScheduler.add(expParamRoutineEachFrame);
 flowScheduler.add(expParamRoutineEnd);
-const instruction_intentional_encodingLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(instruction_intentional_encodingLoopBegin, instruction_intentional_encodingLoopScheduler);
-flowScheduler.add(instruction_intentional_encodingLoopScheduler);
-flowScheduler.add(instruction_intentional_encodingLoopEnd);
+const trials_24LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(trials_24LoopBegin, trials_24LoopScheduler);
+flowScheduler.add(trials_24LoopScheduler);
+flowScheduler.add(trials_24LoopEnd);
 const practice_trials_intentional_encodingLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(practice_trials_intentional_encodingLoopBegin, practice_trials_intentional_encodingLoopScheduler);
 flowScheduler.add(practice_trials_intentional_encodingLoopScheduler);
@@ -197,17 +197,12 @@ function updateInfo() {
 }
 
 var expParamClock;
-var instructions_intentional_encodingClock;
-var text;
-var instructions_text2;
-var response;
-var image1;
-var image2;
-var J_press_instructions;
-var F_key_instruct;
-var arrow;
-var yes_press;
-var no_press;
+var instructions_firstClock;
+var text_34;
+var instructions_text2_2;
+var response_2;
+var image1_2;
+var image2_2;
 var trialClock;
 var imageA;
 var b_image;
@@ -279,6 +274,17 @@ var key_resp_7;
 var final_ab_retrieval_test_instructClock;
 var text_15;
 var key_resp_8;
+var instructions_intentional_encodingClock;
+var text;
+var instructions_text2;
+var response;
+var image1;
+var image2;
+var J_press_instructions;
+var F_key_instruct;
+var arrow;
+var yes_press;
+var no_press;
 var small_dog_questionClock;
 var text_22;
 var practice_incidental_encodingClock;
@@ -351,11 +357,11 @@ var routineTimer;
 function experimentInit() {
   // Initialize components for Routine "expParam"
   expParamClock = new util.Clock();
-  // Initialize components for Routine "instructions_intentional_encoding"
-  instructions_intentional_encodingClock = new util.Clock();
-  text = new visual.TextStim({
+  // Initialize components for Routine "instructions_first"
+  instructions_firstClock = new util.Clock();
+  text_34 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'text',
+    name: 'text_34',
     text: 'default text',
     font: 'Arial',
     units : undefined, 
@@ -364,9 +370,9 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  instructions_text2 = new visual.TextStim({
+  instructions_text2_2 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'instructions_text2',
+    name: 'instructions_text2_2',
     text: 'default text',
     font: 'Arial',
     units : undefined, 
@@ -375,79 +381,26 @@ function experimentInit() {
     depth: -1.0 
   });
   
-  response = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
+  response_2 = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  image1 = new visual.ImageStim({
+  image1_2 = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'image1', units : undefined, 
+    name : 'image1_2', units : undefined, 
     image : undefined, mask : undefined,
     ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
   });
-  image2 = new visual.ImageStim({
+  image2_2 = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'image2', units : undefined, 
+    name : 'image2_2', units : undefined, 
     image : undefined, mask : undefined,
     ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -4.0 
   });
-  J_press_instructions = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'J_press_instructions',
-    text: 'default text',
-    font: 'Helvetica',
-    units : undefined, 
-    pos: [0.2, (- 0.2)], height: 0.04,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
-    depth: -5.0 
-  });
-  
-  F_key_instruct = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'F_key_instruct',
-    text: 'default text',
-    font: 'Helvetica',
-    units : undefined, 
-    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
-    depth: -6.0 
-  });
-  
-  arrow = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'arrow', units : undefined, 
-    image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [0.09, 0.09],
-    color : new util.Color([1, 1, 1]), opacity : 1,
-    flipHoriz : false, flipVert : false,
-    texRes : 128, interpolate : true, depth : -7.0 
-  });
-  yes_press = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'yes_press',
-    text: 'default text',
-    font: 'Helvetica',
-    units : undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
-    depth: -8.0 
-  });
-  
-  no_press = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'no_press',
-    text: 'default text',
-    font: 'Helvetica',
-    units : undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
-    depth: -9.0 
-  });
-  
   // Initialize components for Routine "trial"
   trialClock = new util.Clock();
   imageA = new visual.ImageStim({
@@ -2699,31 +2652,31 @@ function expParamRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var instruction_intentional_encoding;
+var trials_24;
 var currentLoop;
 var trialIterator;
-function instruction_intentional_encodingLoopBegin(thisScheduler) {
+function trials_24LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
-  instruction_intentional_encoding = new TrialHandler({
+  trials_24 = new TrialHandler({
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '0:8'),
-    seed: undefined, name: 'instruction_intentional_encoding'});
-  psychoJS.experiment.addLoop(instruction_intentional_encoding); // add the loop to the experiment
-  currentLoop = instruction_intentional_encoding;  // we're now the current loop
+    trialList: 'trialorder/instructions_first.csv',
+    seed: undefined, name: 'trials_24'});
+  psychoJS.experiment.addLoop(trials_24); // add the loop to the experiment
+  currentLoop = trials_24;  // we're now the current loop
 
   // Schedule all the trials in the trialList:
-  trialIterator = instruction_intentional_encoding[Symbol.iterator]();
+  trialIterator = trials_24[Symbol.iterator]();
   while(true) {
     let result = trialIterator.next();
     if (result.done);
       break;
-    let thisInstruction_intentional_encoding = result.value;
-    thisScheduler.add(importConditions(instruction_intentional_encoding));
-    thisScheduler.add(instructions_intentional_encodingRoutineBegin);
-    thisScheduler.add(instructions_intentional_encodingRoutineEachFrame);
-    thisScheduler.add(instructions_intentional_encodingRoutineEnd);
+    let thisTrial_24 = result.value;
+    thisScheduler.add(importConditions(trials_24));
+    thisScheduler.add(instructions_firstRoutineBegin);
+    thisScheduler.add(instructions_firstRoutineEachFrame);
+    thisScheduler.add(instructions_firstRoutineEnd);
     thisScheduler.add(endLoopIteration({thisScheduler, isTrials : false}));
   }
 
@@ -2731,8 +2684,8 @@ function instruction_intentional_encodingLoopBegin(thisScheduler) {
 }
 
 
-function instruction_intentional_encodingLoopEnd() {
-  psychoJS.experiment.removeLoop(instruction_intentional_encoding);
+function trials_24LoopEnd() {
+  psychoJS.experiment.removeLoop(trials_24);
 
   return Scheduler.Event.NEXT;
 }
@@ -3681,47 +3634,34 @@ function trials_23LoopEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var instructions_intentional_encodingComponents;
-function instructions_intentional_encodingRoutineBegin() {
-  //------Prepare to start Routine 'instructions_intentional_encoding'-------
+var instructions_firstComponents;
+function instructions_firstRoutineBegin() {
+  //------Prepare to start Routine 'instructions_first'-------
   t = 0;
-  instructions_intentional_encodingClock.reset(); // clock
+  instructions_firstClock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
-  text.setColor(new util.Color('black'));
-  text.setPos([position_1x, position_1y]);
-  text.setText(instructions1);
-  text.setFont('Helvetica');
-  text.setHeight(0.03);
-  instructions_text2.setColor(new util.Color('black'));
-  instructions_text2.setPos([position_2x, position_2y]);
-  instructions_text2.setText(Instructions2);
-  instructions_text2.setFont('Helvetica');
-  instructions_text2.setHeight(0.03);
-  response.keys = undefined;
-  response.rt = undefined;
-  J_press_instructions.setText(J_key);
-  F_key_instruct.setPos([(- 0.2), (- 0.2)]);
-  F_key_instruct.setText(K_key);
-  arrow.setImage(Image3);
-  yes_press.setPos([(- 0.2), (- 0.27)]);
-  yes_press.setText(yes_text);
-  no_press.setPos([0.2, (- 0.27)]);
-  no_press.setText(no_text);
+  text_34.setColor(new util.Color('black'));
+  text_34.setPos([position_1x, position_1y]);
+  text_34.setText(instructions1);
+  text_34.setFont('Helvetica');
+  text_34.setHeight(0.03);
+  instructions_text2_2.setColor(new util.Color('black'));
+  instructions_text2_2.setPos([position_2x, position_2y]);
+  instructions_text2_2.setText(Instructions2);
+  instructions_text2_2.setFont('Helvetica');
+  instructions_text2_2.setHeight(0.03);
+  response_2.keys = undefined;
+  response_2.rt = undefined;
   // keep track of which components have finished
-  instructions_intentional_encodingComponents = [];
-  instructions_intentional_encodingComponents.push(text);
-  instructions_intentional_encodingComponents.push(instructions_text2);
-  instructions_intentional_encodingComponents.push(response);
-  instructions_intentional_encodingComponents.push(image1);
-  instructions_intentional_encodingComponents.push(image2);
-  instructions_intentional_encodingComponents.push(J_press_instructions);
-  instructions_intentional_encodingComponents.push(F_key_instruct);
-  instructions_intentional_encodingComponents.push(arrow);
-  instructions_intentional_encodingComponents.push(yes_press);
-  instructions_intentional_encodingComponents.push(no_press);
+  instructions_firstComponents = [];
+  instructions_firstComponents.push(text_34);
+  instructions_firstComponents.push(instructions_text2_2);
+  instructions_firstComponents.push(response_2);
+  instructions_firstComponents.push(image1_2);
+  instructions_firstComponents.push(image2_2);
   
-  instructions_intentional_encodingComponents.forEach( function(thisComponent) {
+  instructions_firstComponents.forEach( function(thisComponent) {
     if ('status' in thisComponent)
       thisComponent.status = PsychoJS.Status.NOT_STARTED;
      });
@@ -3730,45 +3670,45 @@ function instructions_intentional_encodingRoutineBegin() {
 }
 
 
-function instructions_intentional_encodingRoutineEachFrame() {
-  //------Loop for each frame of Routine 'instructions_intentional_encoding'-------
+function instructions_firstRoutineEachFrame() {
+  //------Loop for each frame of Routine 'instructions_first'-------
   let continueRoutine = true; // until we're told otherwise
   // get current time
-  t = instructions_intentional_encodingClock.getTime();
+  t = instructions_firstClock.getTime();
   frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
   // update/draw components on each frame
   
-  // *text* updates
-  if (t >= 0.05 && text.status === PsychoJS.Status.NOT_STARTED) {
+  // *text_34* updates
+  if (t >= 0.05 && text_34.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
-    text.tStart = t;  // (not accounting for frame time here)
-    text.frameNStart = frameN;  // exact frame index
-    text.setAutoDraw(true);
+    text_34.tStart = t;  // (not accounting for frame time here)
+    text_34.frameNStart = frameN;  // exact frame index
+    text_34.setAutoDraw(true);
   }
 
   
-  // *instructions_text2* updates
-  if (t >= 0.05 && instructions_text2.status === PsychoJS.Status.NOT_STARTED) {
+  // *instructions_text2_2* updates
+  if (t >= 0.05 && instructions_text2_2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
-    instructions_text2.tStart = t;  // (not accounting for frame time here)
-    instructions_text2.frameNStart = frameN;  // exact frame index
-    instructions_text2.setAutoDraw(true);
+    instructions_text2_2.tStart = t;  // (not accounting for frame time here)
+    instructions_text2_2.frameNStart = frameN;  // exact frame index
+    instructions_text2_2.setAutoDraw(true);
   }
 
   
-  // *response* updates
-  if (t >= 0.05 && response.status === PsychoJS.Status.NOT_STARTED) {
+  // *response_2* updates
+  if (t >= 0.05 && response_2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
-    response.tStart = t;  // (not accounting for frame time here)
-    response.frameNStart = frameN;  // exact frame index
+    response_2.tStart = t;  // (not accounting for frame time here)
+    response_2.frameNStart = frameN;  // exact frame index
     // keyboard checking is just starting
-    psychoJS.window.callOnFlip(function() { response.clock.reset(); });  // t=0 on next screen flip
-    psychoJS.window.callOnFlip(function() { response.start(); }); // start on screen flip
-    psychoJS.window.callOnFlip(function() { response.clearEvents(); });
+    psychoJS.window.callOnFlip(function() { response_2.clock.reset(); });  // t=0 on next screen flip
+    psychoJS.window.callOnFlip(function() { response_2.start(); }); // start on screen flip
+    psychoJS.window.callOnFlip(function() { response_2.clearEvents(); });
   }
 
-  if (response.status === PsychoJS.Status.STARTED) {
-    let theseKeys = response.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', 'j', 'f'], waitRelease: false});
+  if (response_2.status === PsychoJS.Status.STARTED) {
+    let theseKeys = response_2.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', 'j', 'f'], waitRelease: false});
     
     // check for quit:
     if (theseKeys.length > 0 && theseKeys[0].name === 'escape') {
@@ -3776,9 +3716,9 @@ function instructions_intentional_encodingRoutineEachFrame() {
     }
     
     if (theseKeys.length > 0) {  // at least one key was pressed
-      if (response.keys === undefined) {  // then this was the first keypress
-        response.keys = theseKeys[0].name;  // just the first key pressed
-        response.rt = theseKeys[0].rt;
+      if (response_2.keys === undefined) {  // then this was the first keypress
+        response_2.keys = theseKeys[0].name;  // just the first key pressed
+        response_2.rt = theseKeys[0].rt;
         // a response ends the routine
         continueRoutine = false;
       }
@@ -3786,80 +3726,35 @@ function instructions_intentional_encodingRoutineEachFrame() {
   }
   
   
-  // *image1* updates
-  if (t >= 0.05 && image1.status === PsychoJS.Status.NOT_STARTED) {
+  // *image1_2* updates
+  if (t >= 0.05 && image1_2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
-    image1.tStart = t;  // (not accounting for frame time here)
-    image1.frameNStart = frameN;  // exact frame index
-    image1.setAutoDraw(true);
+    image1_2.tStart = t;  // (not accounting for frame time here)
+    image1_2.frameNStart = frameN;  // exact frame index
+    image1_2.setAutoDraw(true);
   }
 
   
-  if (image1.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image1.setPos([0.25, 0]);
-    image1.setSize([0.3, 0.3]);
-    image1.setImage(Image1);
+  if (image1_2.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image1_2.setPos([0.25, 0]);
+    image1_2.setSize([0.3, 0.3]);
+    image1_2.setImage(Image1);
   }
   
-  // *image2* updates
-  if (t >= 0.05 && image2.status === PsychoJS.Status.NOT_STARTED) {
+  // *image2_2* updates
+  if (t >= 0.05 && image2_2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
-    image2.tStart = t;  // (not accounting for frame time here)
-    image2.frameNStart = frameN;  // exact frame index
-    image2.setAutoDraw(true);
+    image2_2.tStart = t;  // (not accounting for frame time here)
+    image2_2.frameNStart = frameN;  // exact frame index
+    image2_2.setAutoDraw(true);
   }
 
   
-  if (image2.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image2.setPos([(- 0.25), 0]);
-    image2.setSize([0.3, 0.3]);
-    image2.setImage(Image2);
+  if (image2_2.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image2_2.setPos([(- 0.25), 0]);
+    image2_2.setSize([0.3, 0.3]);
+    image2_2.setImage(Image2);
   }
-  
-  // *J_press_instructions* updates
-  if (t >= 0.0 && J_press_instructions.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    J_press_instructions.tStart = t;  // (not accounting for frame time here)
-    J_press_instructions.frameNStart = frameN;  // exact frame index
-    J_press_instructions.setAutoDraw(true);
-  }
-
-  
-  // *F_key_instruct* updates
-  if (t >= 0.0 && F_key_instruct.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    F_key_instruct.tStart = t;  // (not accounting for frame time here)
-    F_key_instruct.frameNStart = frameN;  // exact frame index
-    F_key_instruct.setAutoDraw(true);
-  }
-
-  
-  // *arrow* updates
-  if (t >= 0.0 && arrow.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    arrow.tStart = t;  // (not accounting for frame time here)
-    arrow.frameNStart = frameN;  // exact frame index
-    arrow.setAutoDraw(true);
-  }
-
-  
-  // *yes_press* updates
-  if (t >= 0.0 && yes_press.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    yes_press.tStart = t;  // (not accounting for frame time here)
-    yes_press.frameNStart = frameN;  // exact frame index
-    yes_press.setAutoDraw(true);
-  }
-
-  
-  // *no_press* updates
-  if (t >= 0.0 && no_press.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    no_press.tStart = t;  // (not accounting for frame time here)
-    no_press.frameNStart = frameN;  // exact frame index
-    no_press.setAutoDraw(true);
-  }
-
   // check for quit (typically the Esc key)
   if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
     return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
@@ -3871,7 +3766,7 @@ function instructions_intentional_encodingRoutineEachFrame() {
   }
   
   continueRoutine = false;  // reverts to True if at least one component still running
-  instructions_intentional_encodingComponents.forEach( function(thisComponent) {
+  instructions_firstComponents.forEach( function(thisComponent) {
     if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
       continueRoutine = true;
     }});
@@ -3886,20 +3781,20 @@ function instructions_intentional_encodingRoutineEachFrame() {
 }
 
 
-function instructions_intentional_encodingRoutineEnd() {
-  //------Ending Routine 'instructions_intentional_encoding'-------
-  instructions_intentional_encodingComponents.forEach( function(thisComponent) {
+function instructions_firstRoutineEnd() {
+  //------Ending Routine 'instructions_first'-------
+  instructions_firstComponents.forEach( function(thisComponent) {
     if (typeof thisComponent.setAutoDraw === 'function') {
       thisComponent.setAutoDraw(false);
     }});
-  psychoJS.experiment.addData('response.keys', response.keys);
-  if (typeof response.keys !== undefined) {  // we had a response
-      psychoJS.experiment.addData('response.rt', response.rt);
+  psychoJS.experiment.addData('response_2.keys', response_2.keys);
+  if (typeof response_2.keys !== undefined) {  // we had a response
+      psychoJS.experiment.addData('response_2.rt', response_2.rt);
       routineTimer.reset();
       }
   
-  response.stop();
-  // the Routine "instructions_intentional_encoding" was not non-slip safe, so reset the non-slip timer
+  response_2.stop();
+  // the Routine "instructions_first" was not non-slip safe, so reset the non-slip timer
   routineTimer.reset();
   
   return Scheduler.Event.NEXT;
@@ -5893,6 +5788,230 @@ function final_ab_retrieval_test_instructRoutineEnd() {
   
   key_resp_8.stop();
   // the Routine "final_ab_retrieval_test_instruct" was not non-slip safe, so reset the non-slip timer
+  routineTimer.reset();
+  
+  return Scheduler.Event.NEXT;
+}
+
+var instructions_intentional_encodingComponents;
+function instructions_intentional_encodingRoutineBegin() {
+  //------Prepare to start Routine 'instructions_intentional_encoding'-------
+  t = 0;
+  instructions_intentional_encodingClock.reset(); // clock
+  frameN = -1;
+  // update component parameters for each repeat
+  text.setColor(new util.Color('black'));
+  text.setPos([position_1x, position_1y]);
+  text.setText(instructions1);
+  text.setFont('Helvetica');
+  text.setHeight(0.03);
+  instructions_text2.setColor(new util.Color('black'));
+  instructions_text2.setPos([position_2x, position_2y]);
+  instructions_text2.setText(Instructions2);
+  instructions_text2.setFont('Helvetica');
+  instructions_text2.setHeight(0.03);
+  response.keys = undefined;
+  response.rt = undefined;
+  J_press_instructions.setText(J_key);
+  F_key_instruct.setPos([(- 0.2), (- 0.2)]);
+  F_key_instruct.setText(K_key);
+  arrow.setImage(Image3);
+  yes_press.setPos([(- 0.2), (- 0.27)]);
+  yes_press.setText(yes_text);
+  no_press.setPos([0.2, (- 0.27)]);
+  no_press.setText(no_text);
+  // keep track of which components have finished
+  instructions_intentional_encodingComponents = [];
+  instructions_intentional_encodingComponents.push(text);
+  instructions_intentional_encodingComponents.push(instructions_text2);
+  instructions_intentional_encodingComponents.push(response);
+  instructions_intentional_encodingComponents.push(image1);
+  instructions_intentional_encodingComponents.push(image2);
+  instructions_intentional_encodingComponents.push(J_press_instructions);
+  instructions_intentional_encodingComponents.push(F_key_instruct);
+  instructions_intentional_encodingComponents.push(arrow);
+  instructions_intentional_encodingComponents.push(yes_press);
+  instructions_intentional_encodingComponents.push(no_press);
+  
+  instructions_intentional_encodingComponents.forEach( function(thisComponent) {
+    if ('status' in thisComponent)
+      thisComponent.status = PsychoJS.Status.NOT_STARTED;
+     });
+  
+  return Scheduler.Event.NEXT;
+}
+
+
+function instructions_intentional_encodingRoutineEachFrame() {
+  //------Loop for each frame of Routine 'instructions_intentional_encoding'-------
+  let continueRoutine = true; // until we're told otherwise
+  // get current time
+  t = instructions_intentional_encodingClock.getTime();
+  frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+  // update/draw components on each frame
+  
+  // *text* updates
+  if (t >= 0.05 && text.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    text.tStart = t;  // (not accounting for frame time here)
+    text.frameNStart = frameN;  // exact frame index
+    text.setAutoDraw(true);
+  }
+
+  
+  // *instructions_text2* updates
+  if (t >= 0.05 && instructions_text2.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    instructions_text2.tStart = t;  // (not accounting for frame time here)
+    instructions_text2.frameNStart = frameN;  // exact frame index
+    instructions_text2.setAutoDraw(true);
+  }
+
+  
+  // *response* updates
+  if (t >= 0.05 && response.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    response.tStart = t;  // (not accounting for frame time here)
+    response.frameNStart = frameN;  // exact frame index
+    // keyboard checking is just starting
+    psychoJS.window.callOnFlip(function() { response.clock.reset(); });  // t=0 on next screen flip
+    psychoJS.window.callOnFlip(function() { response.start(); }); // start on screen flip
+    psychoJS.window.callOnFlip(function() { response.clearEvents(); });
+  }
+
+  if (response.status === PsychoJS.Status.STARTED) {
+    let theseKeys = response.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', 'j', 'f'], waitRelease: false});
+    
+    // check for quit:
+    if (theseKeys.length > 0 && theseKeys[0].name === 'escape') {
+      psychoJS.experiment.experimentEnded = true;
+    }
+    
+    if (theseKeys.length > 0) {  // at least one key was pressed
+      if (response.keys === undefined) {  // then this was the first keypress
+        response.keys = theseKeys[0].name;  // just the first key pressed
+        response.rt = theseKeys[0].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+  }
+  
+  
+  // *image1* updates
+  if (t >= 0.05 && image1.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    image1.tStart = t;  // (not accounting for frame time here)
+    image1.frameNStart = frameN;  // exact frame index
+    image1.setAutoDraw(true);
+  }
+
+  
+  if (image1.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image1.setPos([0.25, 0]);
+    image1.setSize([0.3, 0.3]);
+    image1.setImage(Image1);
+  }
+  
+  // *image2* updates
+  if (t >= 0.05 && image2.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    image2.tStart = t;  // (not accounting for frame time here)
+    image2.frameNStart = frameN;  // exact frame index
+    image2.setAutoDraw(true);
+  }
+
+  
+  if (image2.status === PsychoJS.Status.STARTED){ // only update if being drawn
+    image2.setPos([(- 0.25), 0]);
+    image2.setSize([0.3, 0.3]);
+    image2.setImage(Image2);
+  }
+  
+  // *J_press_instructions* updates
+  if (t >= 0.0 && J_press_instructions.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    J_press_instructions.tStart = t;  // (not accounting for frame time here)
+    J_press_instructions.frameNStart = frameN;  // exact frame index
+    J_press_instructions.setAutoDraw(true);
+  }
+
+  
+  // *F_key_instruct* updates
+  if (t >= 0.0 && F_key_instruct.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    F_key_instruct.tStart = t;  // (not accounting for frame time here)
+    F_key_instruct.frameNStart = frameN;  // exact frame index
+    F_key_instruct.setAutoDraw(true);
+  }
+
+  
+  // *arrow* updates
+  if (t >= 0.0 && arrow.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    arrow.tStart = t;  // (not accounting for frame time here)
+    arrow.frameNStart = frameN;  // exact frame index
+    arrow.setAutoDraw(true);
+  }
+
+  
+  // *yes_press* updates
+  if (t >= 0.0 && yes_press.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    yes_press.tStart = t;  // (not accounting for frame time here)
+    yes_press.frameNStart = frameN;  // exact frame index
+    yes_press.setAutoDraw(true);
+  }
+
+  
+  // *no_press* updates
+  if (t >= 0.0 && no_press.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    no_press.tStart = t;  // (not accounting for frame time here)
+    no_press.frameNStart = frameN;  // exact frame index
+    no_press.setAutoDraw(true);
+  }
+
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
+  }
+  
+  // check if the Routine should terminate
+  if (!continueRoutine) {  // a component has requested a forced-end of Routine
+    return Scheduler.Event.NEXT;
+  }
+  
+  continueRoutine = false;  // reverts to True if at least one component still running
+  instructions_intentional_encodingComponents.forEach( function(thisComponent) {
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+      continueRoutine = true;
+    }});
+  
+  // refresh the screen if continuing
+  if (continueRoutine) {
+    return Scheduler.Event.FLIP_REPEAT;
+  }
+  else {
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function instructions_intentional_encodingRoutineEnd() {
+  //------Ending Routine 'instructions_intentional_encoding'-------
+  instructions_intentional_encodingComponents.forEach( function(thisComponent) {
+    if (typeof thisComponent.setAutoDraw === 'function') {
+      thisComponent.setAutoDraw(false);
+    }});
+  psychoJS.experiment.addData('response.keys', response.keys);
+  if (typeof response.keys !== undefined) {  // we had a response
+      psychoJS.experiment.addData('response.rt', response.rt);
+      routineTimer.reset();
+      }
+  
+  response.stop();
+  // the Routine "instructions_intentional_encoding" was not non-slip safe, so reset the non-slip timer
   routineTimer.reset();
   
   return Scheduler.Event.NEXT;

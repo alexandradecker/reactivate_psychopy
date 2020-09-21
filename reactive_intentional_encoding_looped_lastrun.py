@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Sun Sep 20 22:02:16 2020
+    on Sun Sep 20 22:24:17 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,75 +81,39 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "expParam"
 expParamClock = core.Clock()
 
-# Initialize components for Routine "instructions_intentional_encoding"
-instructions_intentional_encodingClock = core.Clock()
-text = visual.TextStim(win=win, name='text',
+# Initialize components for Routine "instructions_first"
+instructions_firstClock = core.Clock()
+text_34 = visual.TextStim(win=win, name='text_34',
     text='default text',
     font='Arial',
     pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-instructions_text2 = visual.TextStim(win=win, name='instructions_text2',
+instructions_text2_2 = visual.TextStim(win=win, name='instructions_text2_2',
     text='default text',
     font='Arial',
     pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-response = keyboard.Keyboard()
-image1 = visual.ImageStim(
+response_2 = keyboard.Keyboard()
+image1_2 = visual.ImageStim(
     win=win,
-    name='image1', 
+    name='image1_2', 
     image='sin', mask=None,
     ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-image2 = visual.ImageStim(
+image2_2 = visual.ImageStim(
     win=win,
-    name='image2', 
+    name='image2_2', 
     image='sin', mask=None,
     ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
-J_press_instructions = visual.TextStim(win=win, name='J_press_instructions',
-    text='default text',
-    font='Helvetica',
-    pos=(0.2, -0.2), height=0.04, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-5.0);
-F_key_instruct = visual.TextStim(win=win, name='F_key_instruct',
-    text='default text',
-    font='Helvetica',
-    pos=[0,0], height=0.04, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-6.0);
-arrow = visual.ImageStim(
-    win=win,
-    name='arrow', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.09, 0.09),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-7.0)
-yes_press = visual.TextStim(win=win, name='yes_press',
-    text='default text',
-    font='Helvetica',
-    pos=[0,0], height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-8.0);
-no_press = visual.TextStim(win=win, name='no_press',
-    text='default text',
-    font='Helvetica',
-    pos=[0,0], height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-9.0);
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -1849,49 +1813,41 @@ for thisComponent in expParamComponents:
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-instruction_intentional_encoding = data.TrialHandler(nReps=1, method='sequential', 
+trials_24 = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('trialorder/instructions.csv', selection='0:8'),
-    seed=None, name='instruction_intentional_encoding')
-thisExp.addLoop(instruction_intentional_encoding)  # add the loop to the experiment
-thisInstruction_intentional_encoding = instruction_intentional_encoding.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisInstruction_intentional_encoding.rgb)
-if thisInstruction_intentional_encoding != None:
-    for paramName in thisInstruction_intentional_encoding:
-        exec('{} = thisInstruction_intentional_encoding[paramName]'.format(paramName))
+    trialList=data.importConditions('trialorder/instructions_first.csv'),
+    seed=None, name='trials_24')
+thisExp.addLoop(trials_24)  # add the loop to the experiment
+thisTrial_24 = trials_24.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_24.rgb)
+if thisTrial_24 != None:
+    for paramName in thisTrial_24:
+        exec('{} = thisTrial_24[paramName]'.format(paramName))
 
-for thisInstruction_intentional_encoding in instruction_intentional_encoding:
-    currentLoop = instruction_intentional_encoding
-    # abbreviate parameter names if possible (e.g. rgb = thisInstruction_intentional_encoding.rgb)
-    if thisInstruction_intentional_encoding != None:
-        for paramName in thisInstruction_intentional_encoding:
-            exec('{} = thisInstruction_intentional_encoding[paramName]'.format(paramName))
+for thisTrial_24 in trials_24:
+    currentLoop = trials_24
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_24.rgb)
+    if thisTrial_24 != None:
+        for paramName in thisTrial_24:
+            exec('{} = thisTrial_24[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "instructions_intentional_encoding"-------
+    # ------Prepare to start Routine "instructions_first"-------
     # update component parameters for each repeat
-    text.setColor('black', colorSpace='rgb')
-    text.setPos((position_1x, position_1y))
-    text.setText(instructions1)
-    text.setFont('Helvetica')
-    text.setHeight(0.03)
-    instructions_text2.setColor('black', colorSpace='rgb')
-    instructions_text2.setPos((position_2x, position_2y))
-    instructions_text2.setText(Instructions2)
-    instructions_text2.setFont('Helvetica')
-    instructions_text2.setHeight(0.03)
-    response.keys = []
-    response.rt = []
-    J_press_instructions.setText(J_key)
-    F_key_instruct.setPos((-0.2, -0.2))
-    F_key_instruct.setText(K_key)
-    arrow.setImage(Image3)
-    yes_press.setPos((-0.2, -0.27))
-    yes_press.setText(yes_text)
-    no_press.setPos((0.2, -0.27))
-    no_press.setText(no_text)
+    text_34.setColor('black', colorSpace='rgb')
+    text_34.setPos((position_1x, position_1y))
+    text_34.setText(instructions1)
+    text_34.setFont('Helvetica')
+    text_34.setHeight(0.03)
+    instructions_text2_2.setColor('black', colorSpace='rgb')
+    instructions_text2_2.setPos((position_2x, position_2y))
+    instructions_text2_2.setText(Instructions2)
+    instructions_text2_2.setFont('Helvetica')
+    instructions_text2_2.setHeight(0.03)
+    response_2.keys = []
+    response_2.rt = []
     # keep track of which components have finished
-    instructions_intentional_encodingComponents = [text, instructions_text2, response, image1, image2, J_press_instructions, F_key_instruct, arrow, yes_press, no_press]
-    for thisComponent in instructions_intentional_encodingComponents:
+    instructions_firstComponents = [text_34, instructions_text2_2, response_2, image1_2, image2_2]
+    for thisComponent in instructions_firstComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1901,134 +1857,89 @@ for thisInstruction_intentional_encoding in instruction_intentional_encoding:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    instructions_intentional_encodingClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    instructions_firstClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     continueRoutine = True
     
-    # -------Run Routine "instructions_intentional_encoding"-------
+    # -------Run Routine "instructions_first"-------
     while continueRoutine:
         # get current time
-        t = instructions_intentional_encodingClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=instructions_intentional_encodingClock)
+        t = instructions_firstClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=instructions_firstClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text* updates
-        if text.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+        # *text_34* updates
+        if text_34.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
             # keep track of start time/frame for later
-            text.frameNStart = frameN  # exact frame index
-            text.tStart = t  # local t and not account for scr refresh
-            text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-            text.setAutoDraw(True)
+            text_34.frameNStart = frameN  # exact frame index
+            text_34.tStart = t  # local t and not account for scr refresh
+            text_34.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_34, 'tStartRefresh')  # time at next scr refresh
+            text_34.setAutoDraw(True)
         
-        # *instructions_text2* updates
-        if instructions_text2.status == NOT_STARTED and tThisFlip >= .05-frameTolerance:
+        # *instructions_text2_2* updates
+        if instructions_text2_2.status == NOT_STARTED and tThisFlip >= .05-frameTolerance:
             # keep track of start time/frame for later
-            instructions_text2.frameNStart = frameN  # exact frame index
-            instructions_text2.tStart = t  # local t and not account for scr refresh
-            instructions_text2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(instructions_text2, 'tStartRefresh')  # time at next scr refresh
-            instructions_text2.setAutoDraw(True)
+            instructions_text2_2.frameNStart = frameN  # exact frame index
+            instructions_text2_2.tStart = t  # local t and not account for scr refresh
+            instructions_text2_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instructions_text2_2, 'tStartRefresh')  # time at next scr refresh
+            instructions_text2_2.setAutoDraw(True)
         
-        # *response* updates
+        # *response_2* updates
         waitOnFlip = False
-        if response.status == NOT_STARTED and tThisFlip >= .05-frameTolerance:
+        if response_2.status == NOT_STARTED and tThisFlip >= .05-frameTolerance:
             # keep track of start time/frame for later
-            response.frameNStart = frameN  # exact frame index
-            response.tStart = t  # local t and not account for scr refresh
-            response.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(response, 'tStartRefresh')  # time at next scr refresh
-            response.status = STARTED
+            response_2.frameNStart = frameN  # exact frame index
+            response_2.tStart = t  # local t and not account for scr refresh
+            response_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(response_2, 'tStartRefresh')  # time at next scr refresh
+            response_2.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(response.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if response.status == STARTED and not waitOnFlip:
-            theseKeys = response.getKeys(keyList=['y', 'n', 'left', 'right', 'space', 'j', 'f'], waitRelease=False)
+            win.callOnFlip(response_2.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(response_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if response_2.status == STARTED and not waitOnFlip:
+            theseKeys = response_2.getKeys(keyList=['y', 'n', 'left', 'right', 'space', 'j', 'f'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
                 # check for quit:
                 if "escape" == theseKeys:
                     endExpNow = True
-                if response.keys == []:  # then this was the first keypress
-                    response.keys = theseKeys.name  # just the first key pressed
-                    response.rt = theseKeys.rt
+                if response_2.keys == []:  # then this was the first keypress
+                    response_2.keys = theseKeys.name  # just the first key pressed
+                    response_2.rt = theseKeys.rt
                     # a response ends the routine
                     continueRoutine = False
         
-        # *image1* updates
-        if image1.status == NOT_STARTED and tThisFlip >= .05-frameTolerance:
+        # *image1_2* updates
+        if image1_2.status == NOT_STARTED and tThisFlip >= .05-frameTolerance:
             # keep track of start time/frame for later
-            image1.frameNStart = frameN  # exact frame index
-            image1.tStart = t  # local t and not account for scr refresh
-            image1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(image1, 'tStartRefresh')  # time at next scr refresh
-            image1.setAutoDraw(True)
-        if image1.status == STARTED:  # only update if drawing
-            image1.setPos((0.25, 0), log=False)
-            image1.setSize((0.3, 0.3), log=False)
-            image1.setImage(Image1, log=False)
+            image1_2.frameNStart = frameN  # exact frame index
+            image1_2.tStart = t  # local t and not account for scr refresh
+            image1_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image1_2, 'tStartRefresh')  # time at next scr refresh
+            image1_2.setAutoDraw(True)
+        if image1_2.status == STARTED:  # only update if drawing
+            image1_2.setPos((0.25, 0), log=False)
+            image1_2.setSize((0.3, 0.3), log=False)
+            image1_2.setImage(Image1, log=False)
         
-        # *image2* updates
-        if image2.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+        # *image2_2* updates
+        if image2_2.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
             # keep track of start time/frame for later
-            image2.frameNStart = frameN  # exact frame index
-            image2.tStart = t  # local t and not account for scr refresh
-            image2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(image2, 'tStartRefresh')  # time at next scr refresh
-            image2.setAutoDraw(True)
-        if image2.status == STARTED:  # only update if drawing
-            image2.setPos((-.25, 0), log=False)
-            image2.setSize((0.3, 0.3), log=False)
-            image2.setImage(Image2, log=False)
-        
-        # *J_press_instructions* updates
-        if J_press_instructions.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            J_press_instructions.frameNStart = frameN  # exact frame index
-            J_press_instructions.tStart = t  # local t and not account for scr refresh
-            J_press_instructions.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(J_press_instructions, 'tStartRefresh')  # time at next scr refresh
-            J_press_instructions.setAutoDraw(True)
-        
-        # *F_key_instruct* updates
-        if F_key_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            F_key_instruct.frameNStart = frameN  # exact frame index
-            F_key_instruct.tStart = t  # local t and not account for scr refresh
-            F_key_instruct.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(F_key_instruct, 'tStartRefresh')  # time at next scr refresh
-            F_key_instruct.setAutoDraw(True)
-        
-        # *arrow* updates
-        if arrow.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            arrow.frameNStart = frameN  # exact frame index
-            arrow.tStart = t  # local t and not account for scr refresh
-            arrow.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(arrow, 'tStartRefresh')  # time at next scr refresh
-            arrow.setAutoDraw(True)
-        
-        # *yes_press* updates
-        if yes_press.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            yes_press.frameNStart = frameN  # exact frame index
-            yes_press.tStart = t  # local t and not account for scr refresh
-            yes_press.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(yes_press, 'tStartRefresh')  # time at next scr refresh
-            yes_press.setAutoDraw(True)
-        
-        # *no_press* updates
-        if no_press.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            no_press.frameNStart = frameN  # exact frame index
-            no_press.tStart = t  # local t and not account for scr refresh
-            no_press.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(no_press, 'tStartRefresh')  # time at next scr refresh
-            no_press.setAutoDraw(True)
+            image2_2.frameNStart = frameN  # exact frame index
+            image2_2.tStart = t  # local t and not account for scr refresh
+            image2_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image2_2, 'tStartRefresh')  # time at next scr refresh
+            image2_2.setAutoDraw(True)
+        if image2_2.status == STARTED:  # only update if drawing
+            image2_2.setPos((-.25, 0), log=False)
+            image2_2.setSize((0.3, 0.3), log=False)
+            image2_2.setImage(Image2, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2038,7 +1949,7 @@ for thisInstruction_intentional_encoding in instruction_intentional_encoding:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in instructions_intentional_encodingComponents:
+        for thisComponent in instructions_firstComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -2047,19 +1958,20 @@ for thisInstruction_intentional_encoding in instruction_intentional_encoding:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "instructions_intentional_encoding"-------
-    for thisComponent in instructions_intentional_encodingComponents:
+    # -------Ending Routine "instructions_first"-------
+    for thisComponent in instructions_firstComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # check responses
-    if response.keys in ['', [], None]:  # No response was made
-        response.keys = None
-    instruction_intentional_encoding.addData('response.keys',response.keys)
-    if response.keys != None:  # we had a response
-        instruction_intentional_encoding.addData('response.rt', response.rt)
-    # the Routine "instructions_intentional_encoding" was not non-slip safe, so reset the non-slip timer
+    if response_2.keys in ['', [], None]:  # No response was made
+        response_2.keys = None
+    thisExp.addData('response_2.keys',response_2.keys)
+    if response_2.keys != None:  # we had a response
+        thisExp.addData('response_2.rt', response_2.rt)
+    thisExp.nextEntry()
+    # the Routine "instructions_first" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-# completed 1 repeats of 'instruction_intentional_encoding'
+# completed 1 repeats of 'trials_24'
 
 
 # set up handler to look after randomisation of conditions etc

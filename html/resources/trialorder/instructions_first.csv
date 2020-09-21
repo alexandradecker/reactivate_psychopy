@@ -1,0 +1,9 @@
+﻿instructions1,Instructions2,Image1,Image2,position_1x,position_1y,position_2x,position_2y
+"Welcome to the memory game! In this game, you must learn which images go together.",Press space to continue!,,,0,0.3,0,-0.4
+"You will see two images on the left and right side of the screen, like this.",Press space to continue!,instruction_images/jessica_alba.jpg,instruction_images/oldBook.png,0,0.3,0,-0.4
+Your job is to remember that these images go together. ,Press space to continue!,instruction_images/jessica_alba.jpg,instruction_images/oldBook.png,0,0.3,0,-0.4
+"To help memory, you can link the images through a story. For example, jessica alba likes this old book.",Press space to continue!,instruction_images/jessica_alba.jpg,instruction_images/oldBook.png,0,0.3,0,-0.4
+"After you see the images, we will test your memory.",Press space to continue!,instruction_images/jessica_alba.jpg,instruction_images/oldBook.png,0,0.3,0,-0.4
+"Get ready to see the images! Each pair will only last on the screen for a few seconds, so pay attention.",Press space to continue!,instruction_images/jessica_alba.jpg,instruction_images/oldBook.png,0,0.3,0,-0.4
+We'll first do a practice to get you familiar with the game.,Press space to continue!,instruction_images/jessica_alba.jpg,instruction_images/oldBook.png,0,0.3,0,-0.4
+"When you're ready to start the practice, press space!",Press space to continue!,,,0,0,,
