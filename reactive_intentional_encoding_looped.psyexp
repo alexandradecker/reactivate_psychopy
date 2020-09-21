@@ -3288,7 +3288,7 @@
         <Param name="name" updates="None" val="text_32" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.35, -0.3)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.3)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -3300,37 +3300,13 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <TextComponent name="text_33">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Helvetica" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
-        <Param name="name" updates="None" val="text_33" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.35, -0.3)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$text2" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
       <KeyboardComponent name="questionairre_resp2">
-        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space', '1','2','3','4','5','6','7','8','9','10', 'return'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space', '1','2','3','4','5','6','7','8','9','0', 'return'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="questionairre_resp2" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -3342,37 +3318,6 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
-      <RatingScaleComponent name="rating">
-        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
-        <Param name="customize_everything" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="disappear" updates="constant" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="high" updates="constant" val="10" valType="code"/>
-        <Param name="labels" updates="constant" val="" valType="str"/>
-        <Param name="low" updates="constant" val="1" valType="code"/>
-        <Param name="marker" updates="constant" val="triangle" valType="str"/>
-        <Param name="markerStart" updates="constant" val="5" valType="str"/>
-        <Param name="name" updates="None" val="rating" valType="code"/>
-        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
-        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
-        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
-        <Param name="size" updates="constant" val="1.0" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
-        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
-        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
-        <Param name="tickHeight" updates="constant" val="" valType="str"/>
-        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
-      </RatingScaleComponent>
     </Routine>
     <Routine name="expParam">
       <CodeComponent name="globalVars">
@@ -3953,7 +3898,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_22" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3961,7 +3906,7 @@
     <LoopTerminator name="trials_22"/>
     <LoopInitiator loopType="TrialHandler" name="trials_23">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('instructions1', 'What proportion of the arrow task were you thinking about the earlier image pairs after seeing the new image pair on a scale of 1 to 10. '), ('text1', 'Never'), ('text2', 'The entire time')]), OrderedDict([('instructions1', 'How bored were you during the arrow task? '), ('text1', 'Not bored at all'), ('text2', 'extremely bored')]), OrderedDict([('instructions1', 'How interested were you in the task? '), ('text1', 'not interested at all'), ('text2', 'very interested')]), OrderedDict([('instructions1', 'How often did your mind drift away during the arrow task to your other daily concerns or daydreams? '), ('text1', 'Never'), ('text2', 'The entire time')]), OrderedDict([('instructions1', 'How motivated were you to do well on the memory task? '), ('text1', 'Not motivated at all'), ('text2', 'Very motivated')]), OrderedDict([('instructions1', 'How much stress did you experience this week? '), ('text1', 'Not stress'), ('text2', 'Extremely stressed')]), OrderedDict([('instructions1', 'How often did you think about your stressful experiences during the arrow task? '), ('text1', 'Not at all'), ('text2', 'The entire time')]), OrderedDict([('instructions1', 'How many hours per day you spend on social media rounded to the nearest hour.'), ('text1', '1 or less than 1'), ('text2', '10 or more than 10')]), OrderedDict([('instructions1', 'How many hours per day do you spend either on facebook, checking your phone, or on instagram or other social and social media applications? Using the numeric keys to respond.'), ('text1', '1 or less than 1'), ('text2', '10 or more than 10')]), OrderedDict([('instructions1', 'Thank you for completing this task! You are now finished.'), ('text1', None), ('text2', None)])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('instructions1', 'If you were thinking about the earlier image pair during the arrow task, how much of the arrow task were you thinking about it? Press 0, 1,  2, 3, 4 or 5.'), ('text1', '0 = 0% to 9% of the time; 2 = 10 to 29%  of the time; 3 = 30 to 49%  of the time; 4 = 50 to 69%  of the time; 5 =  70 to 89%  of the time; 6 = 90 - 100% of the time. '), ('text2', None)]), OrderedDict([('instructions1', &quot;During the small dog task, you weren't asked to memorize the images. But, were intentionally trying to memorize the two images anyway?&quot;), ('text1', None), ('text2', None)]), OrderedDict([('instructions1', 'How bored were you during the arrow task? 0 = not bored at all; 1 = kind of bored; 2 = a little bored;  3 = very bored'), ('text1', None), ('text2', None)]), OrderedDict([('instructions1', 'How often did your mind drift away during the arrow task to your other daily concerns or daydreams? 0 = not at all. I was fully concentrated on the task; 1 = a little bit; 2 = half of the time;  3 = a lot of the time.'), ('text1', None), ('text2', None)]), OrderedDict([('instructions1', 'How many hours per day do you spend either on facebook, checking your phone, or on instagram or other social and social media applications? 0 = no time at all; 1 = less than 2 hours; 3 =  between 2 and 4 hours; 3 = between 4 and 6 hours; 5 = between 6 and 8 hours; 6 = between 8 and 10 hours; 6 = 11 or more hours.'), ('text1', None), ('text2', None)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="trialorder/questionairre2.csv" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>

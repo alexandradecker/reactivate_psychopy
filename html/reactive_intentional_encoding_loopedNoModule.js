@@ -353,7 +353,6 @@ var C_text;
 var questionairre2Clock;
 var text_30;
 var text_32;
-var text_33;
 var questionairre_resp2;
 var endClock;
 var text_28;
@@ -2588,20 +2587,9 @@ function experimentInit() {
     text: 'default text',
     font: 'Helvetica',
     units : undefined, 
-    pos: [(- 0.35), (- 0.3)], height: 0.03,  wrapWidth: undefined, ori: 0,
+    pos: [0, (- 0.3)], height: 0.03,  wrapWidth: undefined, ori: 0,
     color: new util.Color('black'),  opacity: 1,
     depth: -1.0 
-  });
-  
-  text_33 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_33',
-    text: 'default text',
-    font: 'Helvetica',
-    units : undefined, 
-    pos: [0.35, (- 0.3)], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
-    depth: -2.0 
   });
   
   questionairre_resp2 = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -3617,7 +3605,7 @@ function trials_22LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_22 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '27:30'),
     seed: undefined, name: 'trials_22'});
@@ -7515,14 +7503,12 @@ function questionairre2RoutineBegin() {
   // update component parameters for each repeat
   text_30.setText(instructions1);
   text_32.setText(text1);
-  text_33.setText(text2);
   questionairre_resp2.keys = undefined;
   questionairre_resp2.rt = undefined;
   // keep track of which components have finished
   questionairre2Components = [];
   questionairre2Components.push(text_30);
   questionairre2Components.push(text_32);
-  questionairre2Components.push(text_33);
   questionairre2Components.push(questionairre_resp2);
   
   questionairre2Components.forEach( function(thisComponent) {
@@ -7560,15 +7546,6 @@ function questionairre2RoutineEachFrame() {
   }
 
   
-  // *text_33* updates
-  if (t >= 0.0 && text_33.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    text_33.tStart = t;  // (not accounting for frame time here)
-    text_33.frameNStart = frameN;  // exact frame index
-    text_33.setAutoDraw(true);
-  }
-
-  
   // *questionairre_resp2* updates
   if (t >= 0.0 && questionairre_resp2.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
@@ -7581,7 +7558,7 @@ function questionairre2RoutineEachFrame() {
   }
 
   if (questionairre_resp2.status === PsychoJS.Status.STARTED) {
-    let theseKeys = questionairre_resp2.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'return'], waitRelease: false});
+    let theseKeys = questionairre_resp2.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'return'], waitRelease: false});
     
     // check for quit:
     if (theseKeys.length > 0 && theseKeys[0].name === 'escape') {
@@ -7591,6 +7568,8 @@ function questionairre2RoutineEachFrame() {
     if (theseKeys.length > 0) {  // at least one key was pressed
       questionairre_resp2.keys = [].concat(questionairre_resp2.keys, theseKeys[0].name).filter((i) => i !== undefined);  // storing all keys
       questionairre_resp2.rt = [].concat(questionairre_resp2.rt, theseKeys[0].rt).filter((i) => i !== undefined);
+      // a response ends the routine
+      continueRoutine = false;
     }
   }
   
@@ -7629,6 +7608,7 @@ function questionairre2RoutineEnd() {
   psychoJS.experiment.addData('questionairre_resp2.keys', questionairre_resp2.keys);
   if (typeof questionairre_resp2.keys !== undefined) {  // we had a response
       psychoJS.experiment.addData('questionairre_resp2.rt', questionairre_resp2.rt);
+      routineTimer.reset();
       }
   
   questionairre_resp2.stop();

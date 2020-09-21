@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Mon Sep 21 10:22:40 2020
+    on Mon Sep 21 17:22:19 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -64,7 +64,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 # Setup the Window
 win = visual.Window(
     size=[1440, 900], fullscr=True, screen=0, 
-    winType='pyglet', allowGUI=True, allowStencil=False,
+    winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0.992,0.992,0.992], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
@@ -167,7 +167,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "intructions_post_practice_intentional_encoding"
 intructions_post_practice_intentional_encodingClock = core.Clock()
 text_9 = visual.TextStim(win=win, name='text_9',
-    text='Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing!',
+    text='Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing! ',
     font='helvetica',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1599,7 +1599,7 @@ text_31 = visual.TextStim(win=win, name='text_31',
 # Initialize components for Routine "pre_instruction_real_abc_final_memory"
 pre_instruction_real_abc_final_memoryClock = core.Clock()
 text_27 = visual.TextStim(win=win, name='text_27',
-    text='Great job! You are now finished the practice. When you are ready to start the real thing, press space!',
+    text='boop Great job! You are now finished the practice. When you are ready to start the real thing, press space!',
     font='Helvetica',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -1657,28 +1657,39 @@ text_31 = visual.TextStim(win=win, name='text_31',
     languageStyle='LTR',
     depth=0.0);
 
+# Initialize components for Routine "pre_questionairre_slide"
+pre_questionairre_slideClock = core.Clock()
+text_35 = visual.TextStim(win=win, name='text_35',
+    text='Great job! There are now only a few more questions left! Press space to continue.',
+    font='Arial',
+    pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
+    color='black', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_9 = keyboard.Keyboard()
+
 # Initialize components for Routine "questionairre"
 questionairreClock = core.Clock()
 questioniarre = visual.TextStim(win=win, name='questioniarre',
     text='default text',
-    font='Helvetica',
-    pos=(0, 0.4), height=.025, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 questionairre_resp = keyboard.Keyboard()
 text_29 = visual.TextStim(win=win, name='text_29',
     text='default text',
-    font='Helvetica',
-    pos=(0, -0.3), height=0.025, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
+    font='Arial',
+    pos=(0, -0.3), height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 image_18 = visual.ImageStim(
     win=win,
     name='image_18', 
     image='sin', mask=None,
-    ori=0, pos=(-0.1, 0.13), size=(0.15, 0.15),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
@@ -1686,7 +1697,7 @@ image_19 = visual.ImageStim(
     win=win,
     name='image_19', 
     image='sin', mask=None,
-    ori=0, pos=(0.1, 0.13), size=(0.15, 0.15),
+    ori=1.0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
@@ -1694,7 +1705,7 @@ image_20 = visual.ImageStim(
     win=win,
     name='image_20', 
     image='sin', mask=None,
-    ori=0, pos=(-0.1, -0.1), size=(0.15, 0.15),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-5.0)
@@ -1702,36 +1713,36 @@ image_21 = visual.ImageStim(
     win=win,
     name='image_21', 
     image='sin', mask=None,
-    ori=0, pos=(0.1, -0.1), size=(0.15, 0.15),
+    ori=0, pos=[0,0], size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-6.0)
 A_txt1 = visual.TextStim(win=win, name='A_txt1',
     text='default text',
-    font='Helvetica',
-    pos=(-0.1, 0.25), height=0.02, wrapWidth=None, ori=0, 
-    color='blue', colorSpace='rgb', opacity=1, 
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-7.0);
 B_text = visual.TextStim(win=win, name='B_text',
     text='default text',
-    font='Helvetica',
-    pos=(0.1, 0.25), height=0.02, wrapWidth=None, ori=0, 
-    color='blue', colorSpace='rgb', opacity=1, 
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-8.0);
 a_text2 = visual.TextStim(win=win, name='a_text2',
     text='default text',
-    font='Helvetica',
-    pos=(-0.1, 0), height=0.02, wrapWidth=None, ori=0, 
-    color='blue', colorSpace='rgb', opacity=1, 
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
 C_text = visual.TextStim(win=win, name='C_text',
     text='default text',
-    font='Helvetica',
-    pos=(0.1, 0), height=0.02, wrapWidth=None, ori=0, 
-    color='blue', colorSpace='rgb', opacity=1, 
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-10.0);
 
@@ -1747,19 +1758,11 @@ text_30 = visual.TextStim(win=win, name='text_30',
 text_32 = visual.TextStim(win=win, name='text_32',
     text='default text',
     font='Helvetica',
-    pos=(-0.35, -0.3), height=0.03, wrapWidth=None, ori=0, 
+    pos=(0, -0.3), height=0.03, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-text_33 = visual.TextStim(win=win, name='text_33',
-    text='default text',
-    font='Helvetica',
-    pos=(0.35, -0.3), height=0.03, wrapWidth=None, ori=0, 
-    color='black', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
 questionairre_resp2 = keyboard.Keyboard()
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.0, pos=[0.0, -0.4], low=1, high=10, labels=[''], scale='', markerStart='5')
 
 # Initialize components for Routine "end"
 endClock = core.Clock()
@@ -6482,7 +6485,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_12 = data.TrialHandler(nReps=1, method='random', 
+trials_12 = data.TrialHandler(nReps=0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_test_final_path),
     seed=None, name='trials_12')
@@ -6953,11 +6956,11 @@ for thisTrial_12 in trials_12:
     trials_12.addData('retrieval_test_resp.stopped', retrieval_test_resp.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_12'
+# completed 0 repeats of 'trials_12'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_13 = data.TrialHandler(nReps=1, method='sequential', 
+trials_13 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/instructions.csv', selection='16:22'),
     seed=None, name='trials_13')
@@ -7167,11 +7170,11 @@ for thisTrial_13 in trials_13:
         trials_13.addData('response.rt', response.rt)
     # the Routine "instructions_intentional_encoding" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-# completed 1 repeats of 'trials_13'
+# completed 0 repeats of 'trials_13'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_15 = data.TrialHandler(nReps=1, method='sequential', 
+trials_15 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/phase2_practice.xlsx'),
     seed=None, name='trials_15')
@@ -7746,7 +7749,7 @@ for thisTrial_15 in trials_15:
                 thisComponent.setAutoDraw(False)
     # completed 1 repeats of 'trials_14'
     
-# completed 1 repeats of 'trials_15'
+# completed 0 repeats of 'trials_15'
 
 
 # ------Prepare to start Routine "pre_instruct_sustainedAttention"-------
@@ -7846,7 +7849,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_18 = data.TrialHandler(nReps=1, method='random', 
+trials_18 = data.TrialHandler(nReps=0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/phase2_practice.xlsx'),
     seed=None, name='trials_18')
@@ -8071,11 +8074,11 @@ for thisTrial_18 in trials_18:
             thisComponent.setAutoDraw(False)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_18'
+# completed 0 repeats of 'trials_18'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_17 = data.TrialHandler(nReps=1, method='sequential', 
+trials_17 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(intentional_encoding_test_path),
     seed=None, name='trials_17')
@@ -8656,7 +8659,7 @@ for thisTrial_17 in trials_17:
     
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_17'
+# completed 0 repeats of 'trials_17'
 
 
 # ------Prepare to start Routine "fixation_2"-------
@@ -8728,7 +8731,7 @@ for thisComponent in fixation_2Components:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-trials_19 = data.TrialHandler(nReps=1, method='sequential', 
+trials_19 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/instructions.csv', selection='22:26'),
     seed=None, name='trials_19')
@@ -8903,11 +8906,11 @@ for thisTrial_19 in trials_19:
         trials_19.addData('key_resp_16.rt', key_resp_16.rt)
     # the Routine "pre_instruct_final_memory" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-# completed 1 repeats of 'trials_19'
+# completed 0 repeats of 'trials_19'
 
 
 # set up handler to look after randomisation of conditions etc
-trials_20 = data.TrialHandler(nReps=1, method='sequential', 
+trials_20 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/final_acb_memory_test_practice.xlsx'),
     seed=None, name='trials_20')
@@ -9177,7 +9180,7 @@ for thisTrial_20 in trials_20:
     for thisComponent in fixation_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-# completed 1 repeats of 'trials_20'
+# completed 0 repeats of 'trials_20'
 
 
 # ------Prepare to start Routine "fixation_2"-------
@@ -9345,7 +9348,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_21 = data.TrialHandler(nReps=1, method='sequential', 
+trials_21 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions(priming_recognition_path),
     seed=None, name='trials_21')
@@ -9617,13 +9620,110 @@ for thisTrial_21 in trials_21:
             thisComponent.setAutoDraw(False)
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_21'
+# completed 0 repeats of 'trials_21'
 
+
+# ------Prepare to start Routine "pre_questionairre_slide"-------
+# update component parameters for each repeat
+key_resp_9.keys = []
+key_resp_9.rt = []
+# keep track of which components have finished
+pre_questionairre_slideComponents = [text_35, key_resp_9]
+for thisComponent in pre_questionairre_slideComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+pre_questionairre_slideClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "pre_questionairre_slide"-------
+while continueRoutine:
+    # get current time
+    t = pre_questionairre_slideClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=pre_questionairre_slideClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_35* updates
+    if text_35.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_35.frameNStart = frameN  # exact frame index
+        text_35.tStart = t  # local t and not account for scr refresh
+        text_35.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_35, 'tStartRefresh')  # time at next scr refresh
+        text_35.setAutoDraw(True)
+    
+    # *key_resp_9* updates
+    waitOnFlip = False
+    if key_resp_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_9.frameNStart = frameN  # exact frame index
+        key_resp_9.tStart = t  # local t and not account for scr refresh
+        key_resp_9.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_9, 'tStartRefresh')  # time at next scr refresh
+        key_resp_9.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_9.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_9.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_9.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_9.getKeys(keyList=['y', 'n', 'left', 'right', 'space'], waitRelease=False)
+        if len(theseKeys):
+            theseKeys = theseKeys[0]  # at least one key was pressed
+            
+            # check for quit:
+            if "escape" == theseKeys:
+                endExpNow = True
+            key_resp_9.keys = theseKeys.name  # just the last key pressed
+            key_resp_9.rt = theseKeys.rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in pre_questionairre_slideComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "pre_questionairre_slide"-------
+for thisComponent in pre_questionairre_slideComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_9.keys in ['', [], None]:  # No response was made
+    key_resp_9.keys = None
+thisExp.addData('key_resp_9.keys',key_resp_9.keys)
+if key_resp_9.keys != None:  # we had a response
+    thisExp.addData('key_resp_9.rt', key_resp_9.rt)
+thisExp.addData('key_resp_9.started', key_resp_9.tStartRefresh)
+thisExp.addData('key_resp_9.stopped', key_resp_9.tStopRefresh)
+thisExp.nextEntry()
+# the Routine "pre_questionairre_slide" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_22 = data.TrialHandler(nReps=1, method='sequential', 
+trials_22 = data.TrialHandler(nReps=0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('trialorder/instructions.csv', selection='26:30'),
+    trialList=data.importConditions('trialorder/instructions.csv', selection='27:30'),
     seed=None, name='trials_22')
 thisExp.addLoop(trials_22)  # add the loop to the experiment
 thisTrial_22 = trials_22.trialList[0]  # so we can initialise stimuli with some values
@@ -9641,18 +9741,50 @@ for thisTrial_22 in trials_22:
     
     # ------Prepare to start Routine "questionairre"-------
     # update component parameters for each repeat
+    questioniarre.setColor('black', colorSpace='rgb')
+    questioniarre.setPos((0, 0.4))
     questioniarre.setText(instructions1)
+    questioniarre.setFont('Helvetica')
+    questioniarre.setHeight(.025)
     questionairre_resp.keys = []
     questionairre_resp.rt = []
+    text_29.setColor('black', colorSpace='rgb')
     text_29.setText(Instructions2)
+    text_29.setFont('Helvetica')
+    text_29.setHeight(0.025)
+    image_18.setPos((-0.1, 0.13))
+    image_18.setSize((0.15, 0.15))
     image_18.setImage(Image1)
+    image_19.setPos((0.1, 0.13))
+    image_19.setSize((0.15, 0.15))
+    image_19.setOri(0)
     image_19.setImage(Image2)
+    image_20.setPos((-0.1, -0.1))
+    image_20.setSize((0.15, 0.15))
     image_20.setImage(Image3)
+    image_21.setPos((0.1, -0.1))
+    image_21.setSize((0.15, 0.15))
     image_21.setImage(Image4)
+    A_txt1.setColor('blue', colorSpace='rgb')
+    A_txt1.setPos((-0.1, 0.25))
     A_txt1.setText(J_key)
+    A_txt1.setFont('Helvetica')
+    A_txt1.setHeight(0.02)
+    B_text.setColor('blue', colorSpace='rgb')
+    B_text.setPos((0.1, 0.25))
     B_text.setText(K_key)
+    B_text.setFont('Helvetica')
+    B_text.setHeight(0.02)
+    a_text2.setColor('blue', colorSpace='rgb')
+    a_text2.setPos((-0.1, 0))
     a_text2.setText(J_key)
+    a_text2.setFont('Helvetica')
+    a_text2.setHeight(0.02)
+    C_text.setColor('blue', colorSpace='rgb')
+    C_text.setPos((0.1, 0))
     C_text.setText(L_key)
+    C_text.setFont('Helvetica')
+    C_text.setHeight(0.02)
     # keep track of which components have finished
     questionairreComponents = [questioniarre, questionairre_resp, text_29, image_18, image_19, image_20, image_21, A_txt1, B_text, a_text2, C_text]
     for thisComponent in questionairreComponents:
@@ -9828,7 +9960,7 @@ for thisTrial_22 in trials_22:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_22'
+# completed 0 repeats of 'trials_22'
 
 
 # set up handler to look after randomisation of conditions etc
@@ -9854,12 +9986,10 @@ for thisTrial_23 in trials_23:
     # update component parameters for each repeat
     text_30.setText(instructions1)
     text_32.setText(text1)
-    text_33.setText(text2)
     questionairre_resp2.keys = []
     questionairre_resp2.rt = []
-    rating.reset()
     # keep track of which components have finished
-    questionairre2Components = [text_30, text_32, text_33, questionairre_resp2, rating]
+    questionairre2Components = [text_30, text_32, questionairre_resp2]
     for thisComponent in questionairre2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -9901,15 +10031,6 @@ for thisTrial_23 in trials_23:
             win.timeOnFlip(text_32, 'tStartRefresh')  # time at next scr refresh
             text_32.setAutoDraw(True)
         
-        # *text_33* updates
-        if text_33.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_33.frameNStart = frameN  # exact frame index
-            text_33.tStart = t  # local t and not account for scr refresh
-            text_33.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_33, 'tStartRefresh')  # time at next scr refresh
-            text_33.setAutoDraw(True)
-        
         # *questionairre_resp2* updates
         waitOnFlip = False
         if questionairre_resp2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -9924,7 +10045,7 @@ for thisTrial_23 in trials_23:
             win.callOnFlip(questionairre_resp2.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(questionairre_resp2.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if questionairre_resp2.status == STARTED and not waitOnFlip:
-            theseKeys = questionairre_resp2.getKeys(keyList=['y', 'n', 'left', 'right', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'return'], waitRelease=False)
+            theseKeys = questionairre_resp2.getKeys(keyList=['y', 'n', 'left', 'right', 'space', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'return'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
                 
@@ -9933,15 +10054,8 @@ for thisTrial_23 in trials_23:
                     endExpNow = True
                 questionairre_resp2.keys.append(theseKeys.name)  # storing all keys
                 questionairre_resp2.rt.append(theseKeys.rt)
-        # *rating* updates
-        if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            rating.frameNStart = frameN  # exact frame index
-            rating.tStart = t  # local t and not account for scr refresh
-            rating.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-            rating.setAutoDraw(True)
-        continueRoutine &= rating.noResponse  # a response ends the trial
+                # a response ends the routine
+                continueRoutine = False
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -9972,11 +10086,6 @@ for thisTrial_23 in trials_23:
         trials_23.addData('questionairre_resp2.rt', questionairre_resp2.rt)
     trials_23.addData('questionairre_resp2.started', questionairre_resp2.tStartRefresh)
     trials_23.addData('questionairre_resp2.stopped', questionairre_resp2.tStopRefresh)
-    # store data for trials_23 (TrialHandler)
-    trials_23.addData('rating.response', rating.getRating())
-    trials_23.addData('rating.rt', rating.getRT())
-    trials_23.addData('rating.started', rating.tStart)
-    trials_23.addData('rating.stopped', rating.tStop)
     # the Routine "questionairre2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
