@@ -2694,7 +2694,7 @@ function trials_24LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_24 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/instructions_first.csv',
     seed: undefined, name: 'trials_24'});
@@ -2733,7 +2733,7 @@ function practice_trials_intentional_encodingLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   practice_trials_intentional_encoding = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/test_practice.csv',
     seed: undefined, name: 'practice_trials_intentional_encoding'});
@@ -2772,7 +2772,7 @@ function trialsLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '0:12'),
     seed: undefined, name: 'trials'});
@@ -2811,7 +2811,7 @@ function trials_4LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_4 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '8:11'),
     seed: undefined, name: 'trials_4'});
@@ -2847,7 +2847,7 @@ function trials_2LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_2 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '11:16'),
     seed: undefined, name: 'trials_2'});
@@ -2883,7 +2883,7 @@ function trials_5LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_5 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/test_practice.csv', '0:3'),
     seed: undefined, name: 'trials_5'});
@@ -2919,7 +2919,7 @@ function trials_3LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_3 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '0:12'),
     seed: undefined, name: 'trials_3'});
@@ -2961,7 +2961,7 @@ function trials_6LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_6 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '12:24'),
     seed: undefined, name: 'trials_6'});
@@ -3000,7 +3000,7 @@ function trials_7LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_7 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '12:24'),
     seed: undefined, name: 'trials_7'});
@@ -3042,7 +3042,7 @@ function trials_8LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_8 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '24:36'),
     seed: undefined, name: 'trials_8'});
@@ -3081,7 +3081,7 @@ function trials_9LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_9 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '24:36'),
     seed: undefined, name: 'trials_9'});
@@ -3123,7 +3123,7 @@ function trials_10LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_10 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '36:48'),
     seed: undefined, name: 'trials_10'});
@@ -3162,7 +3162,7 @@ function trials_11LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_11 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '36:48'),
     seed: undefined, name: 'trials_11'});
@@ -3204,7 +3204,7 @@ function trials_12LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_12 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.RANDOM,
+    nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: intentional_encoding_test_final_path,
     seed: undefined, name: 'trials_12'});
@@ -3246,7 +3246,7 @@ function trials_13LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_13 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '16:22'),
     seed: undefined, name: 'trials_13'});
@@ -3282,7 +3282,7 @@ function trials_15LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_15 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/phase2_practice.xlsx',
     seed: undefined, name: 'trials_15'});
@@ -3367,7 +3367,7 @@ function trials_18LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_18 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.RANDOM,
+    nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/phase2_practice.xlsx',
     seed: undefined, name: 'trials_18'});
@@ -3406,7 +3406,7 @@ function trials_17LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_17 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: intentional_encoding_test_path,
     seed: undefined, name: 'trials_17'});
@@ -3491,7 +3491,7 @@ function trials_19LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_19 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '22:26'),
     seed: undefined, name: 'trials_19'});
@@ -3527,7 +3527,7 @@ function trials_20LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_20 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/final_acb_memory_test_practice.xlsx',
     seed: undefined, name: 'trials_20'});
@@ -3566,7 +3566,7 @@ function trials_21LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_21 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: priming_recognition_path,
     seed: undefined, name: 'trials_21'});
@@ -3605,7 +3605,7 @@ function trials_22LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_22 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '27:30'),
     seed: undefined, name: 'trials_22'});
