@@ -1498,7 +1498,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the real thing, press space!" valType="str"/>
+        <Param name="text" updates="constant" val="Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the memory test, press space!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1543,7 +1543,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar." valType="str"/>
+        <Param name="text" updates="constant" val="Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -3654,7 +3654,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_3" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3670,7 +3670,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_6" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3685,7 +3685,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_7" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3701,7 +3701,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_8" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3716,7 +3716,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_9" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3732,7 +3732,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_10" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -3747,7 +3747,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="0" valType="code"/>
       <Param name="name" updates="None" val="trials_11" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>

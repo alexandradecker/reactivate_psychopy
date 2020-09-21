@@ -767,7 +767,7 @@ function experimentInit() {
   post_retreival_practice_intructions = new visual.TextStim({
     win: psychoJS.window,
     name: 'post_retreival_practice_intructions',
-    text: 'Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the real thing, press space!',
+    text: 'Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the memory test, press space!',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -921,7 +921,7 @@ function experimentInit() {
   text_12 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_12',
-    text: 'Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar.',
+    text: 'Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar.',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.3], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -1123,7 +1123,7 @@ function experimentInit() {
   text_12 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_12',
-    text: 'Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar.',
+    text: 'Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar.',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.3], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -1325,7 +1325,7 @@ function experimentInit() {
   text_12 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_12',
-    text: 'Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready, press the space bar.',
+    text: 'Great job. Keep those image pairs in mind because you will be tested again at the end the experiment. For now, you will learn more image pairs. When you are ready to learn more pairs, press the space bar.',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.3], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -2910,7 +2910,7 @@ function trials_3LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_3 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '0:12'),
     seed: undefined, name: 'trials_3'});
@@ -2952,7 +2952,7 @@ function trials_6LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_6 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '12:24'),
     seed: undefined, name: 'trials_6'});
@@ -2991,7 +2991,7 @@ function trials_7LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_7 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '12:24'),
     seed: undefined, name: 'trials_7'});
@@ -3033,7 +3033,7 @@ function trials_8LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_8 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '24:36'),
     seed: undefined, name: 'trials_8'});
@@ -3072,7 +3072,7 @@ function trials_9LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_9 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '24:36'),
     seed: undefined, name: 'trials_9'});
@@ -3114,7 +3114,7 @@ function trials_10LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_10 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_path, '36:48'),
     seed: undefined, name: 'trials_10'});
@@ -3153,7 +3153,7 @@ function trials_11LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_11 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, intentional_encoding_test_path, '36:48'),
     seed: undefined, name: 'trials_11'});
