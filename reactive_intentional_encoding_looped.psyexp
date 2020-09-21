@@ -3516,15 +3516,15 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every frame" val="$Image1" valType="str"/>
+        <Param name="image" updates="set every repeat" val="$Image1" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="image1_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every frame" val="(0.25, 0)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0.25, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
+        <Param name="size" updates="set every repeat" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val=".05" valType="code"/>
@@ -3541,15 +3541,15 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every frame" val="$Image2" valType="str"/>
+        <Param name="image" updates="set every repeat" val="$Image2" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="image2_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every frame" val="(-.25, 0)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(-.25, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="size" updates="set every frame" val="(0.3, 0.3)" valType="code"/>
+        <Param name="size" updates="set every repeat" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.05" valType="code"/>
@@ -3604,7 +3604,7 @@
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="real_intentional_encoding"/>
+    <Routine name="intentional_encoding_4"/>
     <Routine name="fixation_2"/>
     <LoopTerminator name="trials"/>
     <LoopInitiator loopType="TrialHandler" name="trials_4">
