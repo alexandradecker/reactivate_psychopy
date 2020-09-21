@@ -644,7 +644,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_a_practice', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : 1.0,
+    ori : 0, pos : [0, 0], size : [0.3, 0.3],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : 0.0 
@@ -664,7 +664,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'location1_practice', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : 1.0,
+    ori : 0, pos : [(- 0.4), 0], size : [0.3, 0.3],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
@@ -673,7 +673,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'location2_practice', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : 1.0,
+    ori : 0, pos : [0, 0], size : [0.3, 0.3],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
@@ -682,7 +682,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'location3_practice', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : 1.0,
+    ori : 0, pos : [0.4, 0], size : [0.3, 0.3],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -4.0 
@@ -690,11 +690,11 @@ function experimentInit() {
   j_key_test_practice = new visual.TextStim({
     win: psychoJS.window,
     name: 'j_key_test_practice',
-    text: 'default text',
-    font: 'Arial',
+    text: 'J',
+    font: 'helvetica',
     units : undefined, 
-    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
+    pos: [(- 0.4), (- 0.25)], height: 0.03,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('black'),  opacity: 1,
     depth: -5.0 
   });
   
@@ -767,7 +767,7 @@ function experimentInit() {
   post_retreival_practice_intructions = new visual.TextStim({
     win: psychoJS.window,
     name: 'post_retreival_practice_intructions',
-    text: "Great job! Now that you've finished the practice, we'll start the real thing. When you're ready to start the real thing, press space!",
+    text: 'Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the real thing, press space!',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -785,8 +785,8 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0.2], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
@@ -987,8 +987,8 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0.2], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
@@ -1189,8 +1189,8 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0.2], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
@@ -1391,8 +1391,8 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0.2], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
@@ -1545,8 +1545,8 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0.2], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('black'),  opacity: 1,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
@@ -4576,23 +4576,10 @@ function practice_retrieval_after_encodingRoutineBegin() {
   frameN = -1;
   routineTimer.add(9.000000);
   // update component parameters for each repeat
-  image_a_practice.setPos([0, 0]);
-  image_a_practice.setSize([0.3, 0.3]);
   image_a_practice.setImage(image_a);
-  location1_practice.setPos([(- 0.4), 0]);
-  location1_practice.setSize([0.3, 0.3]);
   location1_practice.setImage(location1);
-  location2_practice.setPos([0, 0]);
-  location2_practice.setSize([0.3, 0.3]);
   location2_practice.setImage(location2);
-  location3_practice.setPos([0.4, 0]);
-  location3_practice.setSize([0.3, 0.3]);
   location3_practice.setImage(location3);
-  j_key_test_practice.setColor(new util.Color('black'));
-  j_key_test_practice.setPos([(- 0.4), (- 0.25)]);
-  j_key_test_practice.setText('J');
-  j_key_test_practice.setFont('helvetica');
-  j_key_test_practice.setHeight(0.03);
   K_key_practice.setColor(new util.Color('black'));
   K_key_practice.setPos([0, (- 0.25)]);
   K_key_practice.setText('K');
@@ -5005,7 +4992,11 @@ function think_image_pairRoutineBegin() {
   frameN = -1;
   routineTimer.add(2.500000);
   // update component parameters for each repeat
+  instruct_text_3.setColor(new util.Color('black'));
+  instruct_text_3.setPos([0, 0.2]);
   instruct_text_3.setText('Think of the image pair');
+  instruct_text_3.setFont('Arial');
+  instruct_text_3.setHeight(0.03);
   a_image_retrieve_3.setImage(ImageA);
   // keep track of which components have finished
   think_image_pairComponents = [];

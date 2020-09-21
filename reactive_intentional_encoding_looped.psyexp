@@ -1176,9 +1176,9 @@
         <Param name="name" updates="None" val="image_a_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="size" updates="set every repeat" val="(0.3, 0.3)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="1" valType="code"/>
@@ -1225,9 +1225,9 @@
         <Param name="name" updates="None" val="location1_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(-.4, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="size" updates="set every repeat" val="(0.3, 0.3)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1250,9 +1250,9 @@
         <Param name="name" updates="None" val="location2_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="size" updates="set every repeat" val="(0.3, 0.3)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1275,9 +1275,9 @@
         <Param name="name" updates="None" val="location3_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(0.4, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="size" updates="set every repeat" val="(0.3, 0.3)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="3.5" valType="code"/>
@@ -1288,18 +1288,18 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
       <TextComponent name="j_key_test_practice">
-        <Param name="color" updates="set every repeat" val="black" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="set every repeat" val="helvetica" valType="str"/>
+        <Param name="font" updates="constant" val="helvetica" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="set every repeat" val="0.03" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
         <Param name="name" updates="None" val="j_key_test_practice" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(-0.4, -0.25)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.4, -0.25)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1307,7 +1307,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="J" valType="str"/>
+        <Param name="text" updates="constant" val="J" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1498,7 +1498,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Great job! Now that you've finished the practice, we'll start the real thing. When you're ready to start the real thing, press space!" valType="str"/>
+        <Param name="text" updates="constant" val="Great job! Now that you have finished the practice, we will start the real thing. When you are ready to start the real thing, press space!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -3393,18 +3393,18 @@
     </Routine>
     <Routine name="think_image_pair">
       <TextComponent name="instruct_text_3">
-        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="color" updates="set every repeat" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.03" valType="code"/>
         <Param name="name" updates="None" val="instruct_text_3" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, .20)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, .20)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
