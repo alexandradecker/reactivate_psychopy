@@ -406,7 +406,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -419,7 +419,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -452,7 +452,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -500,7 +500,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -804,7 +804,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -817,7 +817,7 @@ function experimentInit() {
   afc_text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'afc_text_2',
-    text: 'Select the correct image',
+    text: 'default text',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.25], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -829,7 +829,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_13', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -1.0 
@@ -956,7 +956,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1006,7 +1006,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1019,7 +1019,7 @@ function experimentInit() {
   afc_text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'afc_text_2',
-    text: 'Select the correct image',
+    text: 'default text',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.25], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -1031,7 +1031,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_13', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -1.0 
@@ -1158,7 +1158,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1208,7 +1208,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1221,7 +1221,7 @@ function experimentInit() {
   afc_text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'afc_text_2',
-    text: 'Select the correct image',
+    text: 'default text',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.25], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -1233,7 +1233,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_13', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -1.0 
@@ -1360,7 +1360,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1410,7 +1410,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1423,7 +1423,7 @@ function experimentInit() {
   afc_text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'afc_text_2',
-    text: 'Select the correct image',
+    text: 'default text',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.25], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -1435,7 +1435,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_13', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -1.0 
@@ -1564,7 +1564,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1577,7 +1577,7 @@ function experimentInit() {
   afc_text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'afc_text_2',
-    text: 'Select the correct image',
+    text: 'default text',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0.25], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -1589,7 +1589,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'image_13', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [0.3, 0.3],
+    ori : 0, pos : [0, 0], size : 1.0,
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -1.0 
@@ -1791,7 +1791,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -1927,7 +1927,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2012,7 +2012,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2038,7 +2038,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2174,7 +2174,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2187,7 +2187,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2336,7 +2336,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2349,7 +2349,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2434,7 +2434,7 @@ function experimentInit() {
   text_31 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_31',
-    text: 'default text',
+    text: '',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.2,  wrapWidth: undefined, ori: 0,
@@ -2874,7 +2874,7 @@ function trials_5LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_5 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: 0, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/test_practice.csv', '0:3'),
     seed: undefined, name: 'trials_5'});
@@ -3831,7 +3831,7 @@ function fixation_2RoutineBegin() {
   frameN = -1;
   routineTimer.add(0.500000);
   // update component parameters for each repeat
-  text_31.setText(' ');
+  text_31.setText('');
   // keep track of which components have finished
   fixation_2Components = [];
   fixation_2Components.push(text_31);
@@ -5088,7 +5088,9 @@ function retrieval4RoutineBegin() {
   frameN = -1;
   routineTimer.add(4.500000);
   // update component parameters for each repeat
+  afc_text_2.setText('Select the correct image');
   image_13.setPos([(- 0.4), 0]);
+  image_13.setSize([0.3, 0.3]);
   image_13.setImage(location1);
   image_14.setPos([0, 0]);
   image_14.setImage(location2);
@@ -5096,6 +5098,7 @@ function retrieval4RoutineBegin() {
   image_15.setImage(location3);
   j_key_test_2.setColor(new util.Color('black'));
   j_key_test_2.setPos([(- 0.4), (- 0.25)]);
+  j_key_test_2.setText('J');
   j_key_test_2.setFont('Helvetica');
   j_key_test_2.setHeight(0.03);
   L_key_test_2.setColor(new util.Color('black'));
@@ -5212,10 +5215,6 @@ function retrieval4RoutineEachFrame() {
   frameRemains = 0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
   if (j_key_test_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
     j_key_test_2.setAutoDraw(false);
-  }
-  
-  if (j_key_test_2.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    j_key_test_2.setText('J');
   }
   
   // *L_key_test_2* updates
