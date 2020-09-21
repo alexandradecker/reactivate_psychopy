@@ -311,7 +311,7 @@ var key_resp_14;
 var incidental_encoding_realClock;
 var image_A;
 var image_c;
-var key_resp_15;
+var incidental_enc_resp;
 var text_23;
 var text_24;
 var text_25;
@@ -2071,7 +2071,7 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -1.0 
   });
-  key_resp_15 = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
+  incidental_enc_resp = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
   
   text_23 = new visual.TextStim({
     win: psychoJS.window,
@@ -3367,7 +3367,7 @@ function trials_18LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_18 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.RANDOM,
+    nReps: 5, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/phase2_practice.xlsx',
     seed: undefined, name: 'trials_18'});
@@ -3445,7 +3445,7 @@ function trials_16LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_16 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.RANDOM,
+    nReps: 5, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'trialorder/phase2_practice.xlsx',
     seed: undefined, name: 'trials_16'});
@@ -6480,13 +6480,13 @@ function incidental_encoding_realRoutineBegin() {
   // update component parameters for each repeat
   image_A.setImage(ImageA);
   image_c.setImage(ImageC);
-  key_resp_15.keys = undefined;
-  key_resp_15.rt = undefined;
+  incidental_enc_resp.keys = undefined;
+  incidental_enc_resp.rt = undefined;
   // keep track of which components have finished
   incidental_encoding_realComponents = [];
   incidental_encoding_realComponents.push(image_A);
   incidental_encoding_realComponents.push(image_c);
-  incidental_encoding_realComponents.push(key_resp_15);
+  incidental_encoding_realComponents.push(incidental_enc_resp);
   incidental_encoding_realComponents.push(text_23);
   incidental_encoding_realComponents.push(text_24);
   incidental_encoding_realComponents.push(text_25);
@@ -6535,24 +6535,24 @@ function incidental_encoding_realRoutineEachFrame() {
     image_c.setAutoDraw(false);
   }
   
-  // *key_resp_15* updates
-  if (t >= 0.0 && key_resp_15.status === PsychoJS.Status.NOT_STARTED) {
+  // *incidental_enc_resp* updates
+  if (t >= 0.0 && incidental_enc_resp.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
-    key_resp_15.tStart = t;  // (not accounting for frame time here)
-    key_resp_15.frameNStart = frameN;  // exact frame index
+    incidental_enc_resp.tStart = t;  // (not accounting for frame time here)
+    incidental_enc_resp.frameNStart = frameN;  // exact frame index
     // keyboard checking is just starting
-    psychoJS.window.callOnFlip(function() { key_resp_15.clock.reset(); });  // t=0 on next screen flip
-    psychoJS.window.callOnFlip(function() { key_resp_15.start(); }); // start on screen flip
-    psychoJS.window.callOnFlip(function() { key_resp_15.clearEvents(); });
+    psychoJS.window.callOnFlip(function() { incidental_enc_resp.clock.reset(); });  // t=0 on next screen flip
+    psychoJS.window.callOnFlip(function() { incidental_enc_resp.start(); }); // start on screen flip
+    psychoJS.window.callOnFlip(function() { incidental_enc_resp.clearEvents(); });
   }
 
   frameRemains = 0.0 + 3.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-  if (key_resp_15.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-    key_resp_15.status = PsychoJS.Status.FINISHED;
+  if (incidental_enc_resp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+    incidental_enc_resp.status = PsychoJS.Status.FINISHED;
   }
 
-  if (key_resp_15.status === PsychoJS.Status.STARTED) {
-    let theseKeys = key_resp_15.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', 'j', 'f', 'J', 'F'], waitRelease: false});
+  if (incidental_enc_resp.status === PsychoJS.Status.STARTED) {
+    let theseKeys = incidental_enc_resp.getKeys({keyList: ['y', 'n', 'left', 'right', 'space', 'j', 'f', 'J', 'F'], waitRelease: false});
     
     // check for quit:
     if (theseKeys.length > 0 && theseKeys[0].name === 'escape') {
@@ -6560,9 +6560,9 @@ function incidental_encoding_realRoutineEachFrame() {
     }
     
     if (theseKeys.length > 0) {  // at least one key was pressed
-      if (key_resp_15.keys === undefined) {  // then this was the first keypress
-        key_resp_15.keys = theseKeys[0].name;  // just the first key pressed
-        key_resp_15.rt = theseKeys[0].rt;
+      if (incidental_enc_resp.keys === undefined) {  // then this was the first keypress
+        incidental_enc_resp.keys = theseKeys[0].name;  // just the first key pressed
+        incidental_enc_resp.rt = theseKeys[0].rt;
       }
     }
   }
@@ -6651,12 +6651,12 @@ function incidental_encoding_realRoutineEnd() {
     if (typeof thisComponent.setAutoDraw === 'function') {
       thisComponent.setAutoDraw(false);
     }});
-  psychoJS.experiment.addData('key_resp_15.keys', key_resp_15.keys);
-  if (typeof key_resp_15.keys !== undefined) {  // we had a response
-      psychoJS.experiment.addData('key_resp_15.rt', key_resp_15.rt);
+  psychoJS.experiment.addData('incidental_enc_resp.keys', incidental_enc_resp.keys);
+  if (typeof incidental_enc_resp.keys !== undefined) {  // we had a response
+      psychoJS.experiment.addData('incidental_enc_resp.rt', incidental_enc_resp.rt);
       }
   
-  key_resp_15.stop();
+  incidental_enc_resp.stop();
   return Scheduler.Event.NEXT;
 }
 
