@@ -1,5 +1,5 @@
 ﻿trial_in_list,image_a,location1,correct_category_pair,location2,location3,correct_image,List,trial_num,block
-1,images/giftbow01.png,images/willie_nelson_b.jpg,object-face,images/electricoutlet.png,images/chick.jpg,images/willie_nelson_b.jpg,0,0,practice
-3,images/glassBall.jpg,images/epcot_center_a.jpg,object-scene,images/beetle.png,images/statue_of_liberty.jpg,images/epcot_center_a.jpg,0,0,practice
-4,images/gazebo_wooden.png,images/ray_romano.jpg,object-face,images/john_stamos.jpg,images/natalie_portman.jpg,images/natalie_portman.jpg,0,0,practice
-5,images/helicopter.jpg,images/bench_park.png,object-face,images/bird_parrot.png,images/julia_louis_dreyfus.jpg,images/julia_louis_dreyfus.jpg,0,0,practice
+1,images/glassBall.jpg,images/epcot_center_a.jpg,object-scene,images/beetle.png,images/statue_of_liberty.jpg,images/epcot_center_a.jpg,0,0,practice
+2,images/giftbow01.png,images/willie_nelson_b.jpg,object-face,images/electricoutlet.png,images/chick.jpg,images/willie_nelson_b.jpg,0,0,practice
+3,images/gazebo_wooden.png,images/ray_romano.jpg,object-face,images/john_stamos.jpg,images/natalie_portman.jpg,images/natalie_portman.jpg,0,0,practice
+4,images/helicopter.jpg,images/bench_park.png,object-face,images/bird_parrot.png,images/julia_louis_dreyfus.jpg,images/julia_louis_dreyfus.jpg,0,0,practice
