@@ -2597,7 +2597,7 @@ function experimentInit() {
     font: 'Helvetica',
     units : undefined, 
     pos: [(- 0.35), (- 0.3)], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('grey'),  opacity: 1,
+    color: new util.Color('black'),  opacity: 1,
     depth: -1.0 
   });
   
@@ -2608,7 +2608,7 @@ function experimentInit() {
     font: 'Helvetica',
     units : undefined, 
     pos: [0.35, (- 0.3)], height: 0.03,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('grey'),  opacity: 1,
+    color: new util.Color('black'),  opacity: 1,
     depth: -2.0 
   });
   
