@@ -2370,7 +2370,7 @@ function experimentInit() {
   text_27 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_27',
-    text: 'beep! Great job! You are now finished the practice. When you are ready to start the real thing, press space!',
+    text: 'Great job! You are now finished the practice. When you are ready to start the real thing, press space!',
     font: 'Helvetica',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -3491,7 +3491,7 @@ function trials_22LoopBegin(thisScheduler) {
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '26:30'),
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'trialorder/instructions.csv', '27:30'),
     seed: undefined, name: 'trials_22'});
   psychoJS.experiment.addLoop(trials_22); // add the loop to the experiment
   currentLoop = trials_22;  // we're now the current loop
