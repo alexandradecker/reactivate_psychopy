@@ -473,7 +473,7 @@ function experimentInit() {
   text_9 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_9',
-    text: 'Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing! bleep bleep bloop',
+    text: 'Great job! Now that you have had practice, you can start the real game. Remember to memorize that the two images go together. It is important you remember because your memory will be tested later. Press space to start the real thing! ',
     font: 'helvetica',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -3138,7 +3138,7 @@ function trials_12LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_12 = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: 1, method: TrialHandler.Method.RANDOM,
+    nReps: 0, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: intentional_encoding_test_final_path,
     seed: undefined, name: 'trials_12'});
