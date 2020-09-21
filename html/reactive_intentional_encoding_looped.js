@@ -3833,7 +3833,7 @@ function real_intentional_encodingRoutineEachFrame() {
   }
   
   if (image_pair1.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image_pair1.setImage(ImageA);
+    image_pair1.setImage(image_a);
   }
   
   // *image_pair2* updates
@@ -3850,7 +3850,7 @@ function real_intentional_encodingRoutineEachFrame() {
   }
   
   if (image_pair2.status === PsychoJS.Status.STARTED){ // only update if being drawn
-    image_pair2.setImage(ImageB);
+    image_pair2.setImage(correct_image);
   }
   // check for quit (typically the Esc key)
   if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {

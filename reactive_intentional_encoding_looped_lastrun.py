@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Sun Sep 20 23:01:41 2020
+    on Sun Sep 20 23:21:32 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -135,19 +135,19 @@ text_31 = visual.TextStim(win=win, name='text_31',
     languageStyle='LTR',
     depth=0.0);
 
-# Initialize components for Routine "trial"
-trialClock = core.Clock()
-imageA = visual.ImageStim(
+# Initialize components for Routine "real_intentional_encoding"
+real_intentional_encodingClock = core.Clock()
+image_pair1 = visual.ImageStim(
     win=win,
-    name='imageA', 
+    name='image_pair1', 
     image='sin', mask=None,
     ori=0, pos=(-0.25, 0), size=(0.3, 0.3),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
-b_image = visual.ImageStim(
+image_pair2 = visual.ImageStim(
     win=win,
-    name='b_image', 
+    name='image_pair2', 
     image='sin', mask=None,
     ori=0, pos=(.25, 0), size=(0.3, 0.3),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -2128,7 +2128,7 @@ for thisComponent in fixation_2Components:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-practice_trials_intentional_encoding = data.TrialHandler(nReps=1, method='random', 
+practice_trials_intentional_encoding = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trialorder/test_practice.csv'),
     seed=None, name='practice_trials_intentional_encoding')
@@ -2146,13 +2146,12 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
         for paramName in thisPractice_trials_intentional_encoding:
             exec('{} = thisPractice_trials_intentional_encoding[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "trial"-------
+    # ------Prepare to start Routine "real_intentional_encoding"-------
     routineTimer.add(3.500000)
     # update component parameters for each repeat
-    b_image.setImage(correct_image)
     # keep track of which components have finished
-    trialComponents = [imageA, b_image]
-    for thisComponent in trialComponents:
+    real_intentional_encodingComponents = [image_pair1, image_pair2]
+    for thisComponent in real_intentional_encodingComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -2162,54 +2161,56 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    real_intentional_encodingClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     continueRoutine = True
     
-    # -------Run Routine "trial"-------
+    # -------Run Routine "real_intentional_encoding"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = trialClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=trialClock)
+        t = real_intentional_encodingClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=real_intentional_encodingClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *imageA* updates
-        if imageA.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+        # *image_pair1* updates
+        if image_pair1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
-            imageA.frameNStart = frameN  # exact frame index
-            imageA.tStart = t  # local t and not account for scr refresh
-            imageA.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(imageA, 'tStartRefresh')  # time at next scr refresh
-            imageA.setAutoDraw(True)
-        if imageA.status == STARTED:
+            image_pair1.frameNStart = frameN  # exact frame index
+            image_pair1.tStart = t  # local t and not account for scr refresh
+            image_pair1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_pair1, 'tStartRefresh')  # time at next scr refresh
+            image_pair1.setAutoDraw(True)
+        if image_pair1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > imageA.tStartRefresh + 3.5-frameTolerance:
+            if tThisFlipGlobal > image_pair1.tStartRefresh + 3.5-frameTolerance:
                 # keep track of stop time/frame for later
-                imageA.tStop = t  # not accounting for scr refresh
-                imageA.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(imageA, 'tStopRefresh')  # time at next scr refresh
-                imageA.setAutoDraw(False)
-        if imageA.status == STARTED:  # only update if drawing
-            imageA.setImage(image_a, log=False)
+                image_pair1.tStop = t  # not accounting for scr refresh
+                image_pair1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(image_pair1, 'tStopRefresh')  # time at next scr refresh
+                image_pair1.setAutoDraw(False)
+        if image_pair1.status == STARTED:  # only update if drawing
+            image_pair1.setImage(image_a, log=False)
         
-        # *b_image* updates
-        if b_image.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+        # *image_pair2* updates
+        if image_pair2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
-            b_image.frameNStart = frameN  # exact frame index
-            b_image.tStart = t  # local t and not account for scr refresh
-            b_image.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(b_image, 'tStartRefresh')  # time at next scr refresh
-            b_image.setAutoDraw(True)
-        if b_image.status == STARTED:
+            image_pair2.frameNStart = frameN  # exact frame index
+            image_pair2.tStart = t  # local t and not account for scr refresh
+            image_pair2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_pair2, 'tStartRefresh')  # time at next scr refresh
+            image_pair2.setAutoDraw(True)
+        if image_pair2.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > b_image.tStartRefresh + 3.5-frameTolerance:
+            if tThisFlipGlobal > image_pair2.tStartRefresh + 3.5-frameTolerance:
                 # keep track of stop time/frame for later
-                b_image.tStop = t  # not accounting for scr refresh
-                b_image.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(b_image, 'tStopRefresh')  # time at next scr refresh
-                b_image.setAutoDraw(False)
+                image_pair2.tStop = t  # not accounting for scr refresh
+                image_pair2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(image_pair2, 'tStopRefresh')  # time at next scr refresh
+                image_pair2.setAutoDraw(False)
+        if image_pair2.status == STARTED:  # only update if drawing
+            image_pair2.setImage(correct_image, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2219,7 +2220,7 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in trialComponents:
+        for thisComponent in real_intentional_encodingComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -2228,8 +2229,8 @@ for thisPractice_trials_intentional_encoding in practice_trials_intentional_enco
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "trial"-------
-    for thisComponent in trialComponents:
+    # -------Ending Routine "real_intentional_encoding"-------
+    for thisComponent in real_intentional_encodingComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     
@@ -2423,8 +2424,6 @@ for thisTrial in trials:
     # ------Prepare to start Routine "real_intentional_encoding"-------
     routineTimer.add(3.500000)
     # update component parameters for each repeat
-    image_pair1.setImage(ImageA)
-    image_pair2.setImage(ImageB)
     # keep track of which components have finished
     real_intentional_encodingComponents = [image_pair1, image_pair2]
     for thisComponent in real_intentional_encodingComponents:
@@ -2466,6 +2465,8 @@ for thisTrial in trials:
                 image_pair1.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_pair1, 'tStopRefresh')  # time at next scr refresh
                 image_pair1.setAutoDraw(False)
+        if image_pair1.status == STARTED:  # only update if drawing
+            image_pair1.setImage(image_a, log=False)
         
         # *image_pair2* updates
         if image_pair2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
@@ -2483,6 +2484,8 @@ for thisTrial in trials:
                 image_pair2.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_pair2, 'tStopRefresh')  # time at next scr refresh
                 image_pair2.setAutoDraw(False)
+        if image_pair2.status == STARTED:  # only update if drawing
+            image_pair2.setImage(correct_image, log=False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2991,12 +2994,6 @@ for thisTrial_5 in trials_5:
     # ------Prepare to start Routine "practice_retrieval_after_encoding"-------
     routineTimer.add(9.000000)
     # update component parameters for each repeat
-    image_a_practice.setImage(image_a)
-    location1_practice.setImage(location1)
-    location2_practice.setImage(location2)
-    location3_practice.setImage(location3)
-    image_11.setImage(image_a)
-    image_12.setImage(correct_image)
     key_resp_13.keys = []
     key_resp_13.rt = []
     # keep track of which components have finished
@@ -3040,6 +3037,8 @@ for thisTrial_5 in trials_5:
                 image_a_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_a_practice, 'tStopRefresh')  # time at next scr refresh
                 image_a_practice.setAutoDraw(False)
+        if image_a_practice.status == STARTED:  # only update if drawing
+            image_a_practice.setImage(image_a, log=False)
         
         # *afc_test_practice* updates
         if afc_test_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3074,6 +3073,8 @@ for thisTrial_5 in trials_5:
                 location1_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(location1_practice, 'tStopRefresh')  # time at next scr refresh
                 location1_practice.setAutoDraw(False)
+        if location1_practice.status == STARTED:  # only update if drawing
+            location1_practice.setImage(location1, log=False)
         
         # *location2_practice* updates
         if location2_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3091,6 +3092,8 @@ for thisTrial_5 in trials_5:
                 location2_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(location2_practice, 'tStopRefresh')  # time at next scr refresh
                 location2_practice.setAutoDraw(False)
+        if location2_practice.status == STARTED:  # only update if drawing
+            location2_practice.setImage(location2, log=False)
         
         # *location3_practice* updates
         if location3_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3108,6 +3111,8 @@ for thisTrial_5 in trials_5:
                 location3_practice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(location3_practice, 'tStopRefresh')  # time at next scr refresh
                 location3_practice.setAutoDraw(False)
+        if location3_practice.status == STARTED:  # only update if drawing
+            location3_practice.setImage(location3, log=False)
         
         # *j_key_test_practice* updates
         if j_key_test_practice.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
@@ -3176,6 +3181,8 @@ for thisTrial_5 in trials_5:
                 image_11.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_11, 'tStopRefresh')  # time at next scr refresh
                 image_11.setAutoDraw(False)
+        if image_11.status == STARTED:  # only update if drawing
+            image_11.setImage(image_a, log=False)
         
         # *image_12* updates
         if image_12.status == NOT_STARTED and tThisFlip >= 6-frameTolerance:
@@ -3193,6 +3200,8 @@ for thisTrial_5 in trials_5:
                 image_12.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image_12, 'tStopRefresh')  # time at next scr refresh
                 image_12.setAutoDraw(False)
+        if image_12.status == STARTED:  # only update if drawing
+            image_12.setImage(correct_image, log=False)
         
         # *text_7* updates
         if text_7.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
