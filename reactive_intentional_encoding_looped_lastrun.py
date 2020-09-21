@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Sun Sep 20 18:49:36 2020
+    on Sun Sep 20 22:02:16 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1764,14 +1764,14 @@ text_32 = visual.TextStim(win=win, name='text_32',
     text='default text',
     font='Helvetica',
     pos=(-0.35, -0.3), height=0.03, wrapWidth=None, ori=0, 
-    color='grey', colorSpace='rgb', opacity=1, 
+    color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 text_33 = visual.TextStim(win=win, name='text_33',
     text='default text',
     font='Helvetica',
     pos=(0.35, -0.3), height=0.03, wrapWidth=None, ori=0, 
-    color='grey', colorSpace='rgb', opacity=1, 
+    color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 questionairre_resp2 = keyboard.Keyboard()
@@ -7055,7 +7055,7 @@ for thisTrial_15 in trials_15:
             exec('{} = thisTrial_15[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "small_dog_question"-------
-    routineTimer.add(2.500000)
+    routineTimer.add(1.500000)
     # update component parameters for each repeat
     # keep track of which components have finished
     small_dog_questionComponents = [text_22]
@@ -7092,7 +7092,7 @@ for thisTrial_15 in trials_15:
             text_22.setAutoDraw(True)
         if text_22.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_22.tStartRefresh + 2.5-frameTolerance:
+            if tThisFlipGlobal > text_22.tStartRefresh + 1.5-frameTolerance:
                 # keep track of stop time/frame for later
                 text_22.tStop = t  # not accounting for scr refresh
                 text_22.frameNStop = frameN  # exact frame index
@@ -7947,7 +7947,7 @@ for thisTrial_17 in trials_17:
             exec('{} = thisTrial_17[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "small_dog_question"-------
-    routineTimer.add(2.500000)
+    routineTimer.add(1.500000)
     # update component parameters for each repeat
     # keep track of which components have finished
     small_dog_questionComponents = [text_22]
@@ -7984,7 +7984,7 @@ for thisTrial_17 in trials_17:
             text_22.setAutoDraw(True)
         if text_22.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_22.tStartRefresh + 2.5-frameTolerance:
+            if tThisFlipGlobal > text_22.tStartRefresh + 1.5-frameTolerance:
                 # keep track of stop time/frame for later
                 text_22.tStop = t  # not accounting for scr refresh
                 text_22.frameNStop = frameN  # exact frame index
